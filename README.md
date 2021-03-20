@@ -1,1 +1,1 @@
-# kucism_cooperation
+# kucism_corporation
