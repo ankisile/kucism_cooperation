@@ -5,22 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <script src="main.js" defer></script>
     <title>Kusitms-Contribution Rate</title>
 </head>
 <body>
+    <!-- Profile Area-->
     <div class="area_profile">
+        <!-- Menu Bar -->
         <div class="ToggleBar">
             <i class="fas fa-bars"></i>
         </div>
+        <!-- User Profile -->
         <ul class="userProfile">
             <li><h3>USER NAME</h3></li>
             <li><i class="far fa-user"></i></li>
             <li><i class="fas fa-medal"></i><p>최고의 팀원</p></li>
         </ul>
-        <ul class="userInfo">
-            <li>팀플 벳지 총 0개</li>
-            <li>팀플 기여도 평균: </li>
-        </ul>
+        <!-- User Info -->
+        <div class="userInfo">
+            <p class="Rate">팀플 기여도 평균:</p>
+            <div class="BadgeAndList">
+                <a href="javascript:doDisplay();">
+                    <p class="Badge">팀플 배지 총 2개<button class="moreBtn"><i class="fas fa-caret-down"></i></button></p>
+                </a>
+                <div id="totalBadge">
+                    <ul>
+                        <li>최고의 팀원</li>
+                        <li>성실한 팀원</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
