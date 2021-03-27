@@ -1,0 +1,18 @@
+:root{
+    /* Color */
+    --blue:#3D99F5;
+    --light-blue:#EDF8FF;
+    --dark-blue:#1A7EC0;
+    --black:#000;
+    --gray:#C4C4C4;
+    --light-gray:F4F5F7;
+    --placeholder-color:#A89D9D;
+    --table-gray-color:rgba(196, 196, 196, 0.3);
+    --yellow:FFC700;
+    
+    /* Font-size */
+    --font-large:22px;
+    --font-medium:20px;
+    --font-small:14px;
+    --font-micro:12px;
+}
