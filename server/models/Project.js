@@ -22,7 +22,7 @@ const projectSchema = mongoose.Schema({
         type:Array
     },
     getMedal:{
-        type:Boolean
+        type:Number //기본값 0 있으면 1
     }
 
 }, {timestamps:true})

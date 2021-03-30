@@ -19,9 +19,7 @@ const {Title, Text} = Typography;
 function MainPage(props) {
     const [UserInfo, setUserInfo] = useState([])
     //const [ProjectResult, setProjectResult] = useState([]) //제출 누르고 project db 가져오기
-    const ProjectResult = ['img1', 'img2'] 
-    const [Member, setMember] = useState("") //usestate 안해도될듯?
-    const [Members, setMembers] = useState(['gg', 'aa', 'bb', 'vv']) //usestate안해도될듯?
+    
     const [Projects, setProjects] = useState([])
     const [MedalProjects, setMedalProjects] = useState([])
     // 재확인 기능
@@ -31,6 +29,13 @@ function MainPage(props) {
     const [ProjectTitle, setProjectTitle] =useState("")
     const [FilePath, setFilePath] =useState("")
 
+    
+    const [Member, setMember] = useState("") 
+    //데이터분석팀으로 받아야할 값
+    const Members = ["younhee", "song", "sing", "sung"]
+    const MebersContribution = [45,20,20,20]
+    const ProjectResult = ['img1', 'img2'] 
+    
     const handleChangeTitle = (e) => {
         console.log(e.currentTarget)
         setProjectTitle(e.currentTarget.value)
@@ -80,16 +85,37 @@ function MainPage(props) {
     
     /////// 추가한거!!!!!
     // 클릭하면 프로젝트 지워진다.
-    const onClickDelete = (title, member)=>{
+    const onClickDelete = (id, member)=>{
         const variables = {
-            title,
+            id,
             member
         }
-
+        let variable ={
+            userId : localStorage.getItem('userId')
+        }
         axios.post('/api/project/deleteProject', variables)
         .then(response=>{
             if(response.data.success){
                 alert('리스트에서 지우는데 성공했습니다.')
+                axios.post('/api/project/getProjects', variable)
+                .then(response=>{
+                    if(response.data.success){
+                        setProjects(response.data.projects)
+                        console.log(response.data.projects)
+                    }else{
+                        alert("저장된 프로젝트들을 가져오지 못했습니다.")
+                    }
+                })
+        
+                axios.post('/api/project/getMedalProjects', variable)
+                .then(response=>{
+                if(response.data.success){
+                    setMedalProjects(response.data.medalProjects)
+                    console.log(response.data.medalProjects)
+                }else{
+                    alert("저장된 프로젝트들을 가져오지 못했습니다.")
+                }
+                })
             }else{
                 alert('리스트에서 지우는데 실패했습니다.')
             }
@@ -112,19 +138,24 @@ function MainPage(props) {
     }
 
     const onSaveResult = (e)=>{
-        
         // 민영님이 저장하신 txt path경로,title & 데이터분석팀이 저장한 img path경로, members의 기여도 필요.
         // getMedal 여부= 자신의 기여도>= (100%n)*1.3 정도? 1.3인분 이상이면 medal획득?
         e.preventDefault();
+        let MemberContributionDegree = MebersContribution[Member]
+        let isPossibleMedal = 1
+        //
+
         if(ProjectTitle ==="" ||FilePath===""){
-            return alert("ldjfld")
+            return alert("프로젝트 명을 입력해주세요.")
         }
         let projectVariables= {
              member:localStorage.getItem('userId'),
-             contributionDegree: 40,
+             contributionDegree: MemberContributionDegree,
              title: ProjectTitle,
              kakaoFile: FilePath,
-             getMedal :true, 
+             getMedal :isPossibleMedal,
+             members: Members,
+
         }
         axios.post('/api/project/saveProject', projectVariables)
         .then(response=>{
@@ -169,7 +200,8 @@ function MainPage(props) {
             <td>{project.title}</td>
             <td>{project.contributionDegree}</td>
             <td>
-            <Button type="primary" onClick={showModal}>
+            {/*사실 title이 아니라 project._id임 */}
+            <Button type="primary" onClick={()=>onClickDelete(project._id, project.member)}>
                 삭제 
             </Button>
             </td>
@@ -184,7 +216,7 @@ function MainPage(props) {
         axios.post('/api/users/getUser', variable)
         .then(response=>{
             if(response.data.success){
-                setUserInfo(response.data.userInfo)
+                setUserInfo(response.data.userInfo[0])
                 console.log(response.data.userInfo)
             }else{
                 alert("저장된 유저정보를 가져오지 못했습니다.")
@@ -222,7 +254,7 @@ function MainPage(props) {
             <Sider style={{backgroundColor:'#EDF8FF'}}>
                {/*프로파일 */}
                {UserInfo && MedalProjects && 
-               <Profile medalProjects = {MedalProjects} userInfo={UserInfo} /> }
+               <Profile medalProjects = {MedalProjects} userName={UserInfo.name} Projects ={Projects} /> }
             </Sider>
             <Layout  style={{ minHeight: '100vh', backgroundColor:'#ffffff', width:'80%', margin:'3rem'}}>
                     
@@ -270,11 +302,10 @@ function MainPage(props) {
         </div>
                          </div>
 
-                        <div  style={{ padding: 12}}>
+                        <div  style={{ margin: "auto", width:"75%"}}>
                             <h2>분석결과</h2>
                             <hr/>
                             
-
                             <Row gutter={[16, 16]}>
                             {ProjectResult && ProjectResult.map((result, index)=>(
                             <React.Fragment key={index}>

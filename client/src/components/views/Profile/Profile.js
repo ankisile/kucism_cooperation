@@ -5,12 +5,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import axios from 'axios';
 
 function Profile(props) {
-    const MedalProjects = props.medalProjects; //props.Projects;
-    const UserInfo = props.userInfo // props.UserInfo;
-    const [ShowList, setShowList] = useState(false)
-    const showMedal = ()=>{
-        setShowList(!ShowList)
-    }
+    let MedalProjects = props.medalProjects; //props.Projects;
+    const [ProjectContributionAverage, setProjectContributionAverage] = useState(0)
+    let Projects= props.Projects;
+    
     
     
     return (
@@ -19,7 +17,7 @@ function Profile(props) {
         <div className="area_profile">
           {/* User Profile */}
           <ul className="userProfile">
-            <li><h3>{UserInfo.name}</h3></li>
+            <li><h3>{props.userName}</h3></li>
             <li><FontAwesomeIcon icon={faUser} /></li>
             <li><FontAwesomeIcon icon={faMedal} style={{color:'#FFC700'}} /><p>최고의 팀원</p></li>
           </ul>

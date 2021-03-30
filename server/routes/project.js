@@ -37,7 +37,7 @@ router.post("/getProjects", (req, res) => {
 });
 
 router.post("/getMedalProjects", (req, res) => {
-    Project.find({ "member": req.body.userId, "getMedal": true})
+    Project.find({ "member": req.body.userId, "getMedal": 1})
     .exec((err, medalProjects)=>{
         if(err) return res.status(400).send(err)
         res.status(200).json({success:true, medalProjects})
@@ -76,7 +76,7 @@ router.post("/uploadProject", (req, res) => {
 
 router.post("/deleteProject", (req, res) => {
 
-    Project.findOneAndDelete({ "title" : req.body.title, "member" : req.body.member })
+    Project.findOneAndDelete({ "_id" : req.body.id, "member" : req.body.member })
     .exec((err, doc) => {
         if(err) return res.status(400).send(err) 
         res.status(200).json({success: true, doc })
