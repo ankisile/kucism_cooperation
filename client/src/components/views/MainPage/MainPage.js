@@ -22,6 +22,8 @@ function MainPage(props) {
     
     const [Projects, setProjects] = useState([])
     const [MedalProjects, setMedalProjects] = useState([])
+    const [FreeRiderProjects, setFreeRiderProjects] = useState([])
+    const [ProjectContributionAverage, setProjectContributionAverage] = useState(0)
     // 재확인 기능
     const [isModalVisible, setIsModalVisible] = useState(false);
 
@@ -33,7 +35,7 @@ function MainPage(props) {
     const [Member, setMember] = useState("") 
     //데이터분석팀으로 받아야할 값
     const Members = ["younhee", "song", "sing", "sung"]
-    const MebersContribution = [45,20,20,20]
+    const MembersContribution = [45,20,20,1]
     const ProjectResult = ['img1', 'img2'] 
     
     const handleChangeTitle = (e) => {
@@ -101,6 +103,13 @@ function MainPage(props) {
                 .then(response=>{
                     if(response.data.success){
                         setProjects(response.data.projects)
+                        let sum =0;
+                        response.data.projects.forEach(function(project){sum+=project.contributionDegree});
+                        if(response.data.projects.length ===0){
+                            setProjectContributionAverage(0)
+                        }else{
+                        setProjectContributionAverage(Math.round(sum / response.data.projects.length))
+                        }
                         console.log(response.data.projects)
                     }else{
                         alert("저장된 프로젝트들을 가져오지 못했습니다.")
@@ -116,6 +125,16 @@ function MainPage(props) {
                     alert("저장된 프로젝트들을 가져오지 못했습니다.")
                 }
                 })
+                axios.post('/api/project/getFreeRiderProjects', variable)
+                .then(response=>{
+                    if(response.data.success){
+                        setFreeRiderProjects(response.data.freeRiderProjects)
+                        console.log(response.data.freeRiderProjects)
+                    }else{
+                        alert("저장된 프로젝트들을 가져오지 못했습니다.")
+                    }
+                })
+
             }else{
                 alert('리스트에서 지우는데 실패했습니다.')
             }
@@ -141,8 +160,18 @@ function MainPage(props) {
         // 민영님이 저장하신 txt path경로,title & 데이터분석팀이 저장한 img path경로, members의 기여도 필요.
         // getMedal 여부= 자신의 기여도>= (100%n)*1.3 정도? 1.3인분 이상이면 medal획득?
         e.preventDefault();
-        let MemberContributionDegree = MebersContribution[Member]
-        let isPossibleMedal = 1
+        let isPossibleMedal = 0 //default
+        let isPossibleFreeRider = 0 //default
+        let MemberContributionDegree = MembersContribution[Member] 
+        
+        if (MemberContributionDegree ===Math.max.apply(null, MembersContribution)){
+            isPossibleMedal = 1
+        }
+
+        MemberContributionDegree = MembersContribution[Member] * Members.length
+        if (MemberContributionDegree <= 50){
+            isPossibleFreeRider = 1
+        }
         //
 
         if(ProjectTitle ==="" ||FilePath===""){
@@ -155,7 +184,7 @@ function MainPage(props) {
              kakaoFile: FilePath,
              getMedal :isPossibleMedal,
              members: Members,
-
+             getFreeRider: isPossibleFreeRider
         }
         axios.post('/api/project/saveProject', projectVariables)
         .then(response=>{
@@ -172,8 +201,17 @@ function MainPage(props) {
          axios.post('/api/project/getProjects', userVariable)
          .then(response=>{
              if(response.data.success){
-                 setProjects(response.data.projects)
-                 console.log(response.data.projects)
+                setProjects(response.data.projects)
+                console.log(response.data.projects)
+                let sum =0;
+                response.data.projects.forEach(function(project){sum+=project.contributionDegree});
+                if(response.data.projects.length ===0){
+                    setProjectContributionAverage(0)
+                }else{
+                setProjectContributionAverage(Math.round(sum / response.data.projects.length))
+                }
+                
+                
              }else{
                  alert("저장된 프로젝트들을 가져오지 못했습니다.")
              }
@@ -188,6 +226,16 @@ function MainPage(props) {
              }
          })
 
+         axios.post('/api/project/getFreeRiderProjects', userVariable)
+        .then(response=>{
+            if(response.data.success){
+                setFreeRiderProjects(response.data.freeRiderProjects)
+                console.log(response.data.freeRiderProjects)
+            }else{
+                alert("저장된 프로젝트들을 가져오지 못했습니다.")
+            }
+        })
+
     }
         /////// 추가한거!!!!!
     // 프로젝트들 테이블로 띄우기
@@ -196,7 +244,7 @@ function MainPage(props) {
     const projectsTable = Projects.map((project, index) => {
 
         return <tr>
-            <td>{index}</td>
+            <td>{index+1}</td>
             <td>{project.title}</td>
             <td>{project.contributionDegree}</td>
             <td>
@@ -228,12 +276,20 @@ function MainPage(props) {
         .then(response=>{
             if(response.data.success){
                 setProjects(response.data.projects)
+                let sum =0;
+
+                response.data.projects.forEach(function(project){sum+=project.contributionDegree});
+                if(response.data.projects.length ===0){
+                    setProjectContributionAverage(0)
+                }else{
+                setProjectContributionAverage(Math.round(sum / response.data.projects.length))
+                }
                 console.log(response.data.projects)
             }else{
                 alert("저장된 프로젝트들을 가져오지 못했습니다.")
             }
         })
-        //처음에 메달을 획득한 프로젝트들 가져오기
+        //처음에 금메달을 획득한 프로젝트들 가져오기
         axios.post('/api/project/getMedalProjects', variable)
         .then(response=>{
             if(response.data.success){
@@ -243,6 +299,18 @@ function MainPage(props) {
                 alert("저장된 프로젝트들을 가져오지 못했습니다.")
             }
         })
+
+        axios.post('/api/project/getFreeRiderProjects', variable)
+        .then(response=>{
+            if(response.data.success){
+                setFreeRiderProjects(response.data.freeRiderProjects)
+                console.log(response.data.freeRiderProjects)
+            }else{
+                alert("저장된 프로젝트들을 가져오지 못했습니다.")
+            }
+        })
+        
+
     },[])
 
     
@@ -254,7 +322,7 @@ function MainPage(props) {
             <Sider style={{backgroundColor:'#EDF8FF'}}>
                {/*프로파일 */}
                {UserInfo && MedalProjects && 
-               <Profile medalProjects = {MedalProjects} userName={UserInfo.name} Projects ={Projects} /> }
+               <Profile medalProjects = {MedalProjects} freeRiderProjects ={FreeRiderProjects} userName={UserInfo.name} projectContributionAverage ={ProjectContributionAverage} /> }
             </Sider>
             <Layout  style={{ minHeight: '100vh', backgroundColor:'#ffffff', width:'80%', margin:'3rem'}}>
                     
@@ -268,7 +336,7 @@ function MainPage(props) {
 
            <Form onSubmit={onSaveResult}>
                 <div style={{display:'flex', justifyContent:'space-between'}}>
-                    <Title level={4}>프로젝트명</Title>
+                    <Title level={4}>프로젝트</Title>
                     <Input
                     onChange={handleChangeTitle}
                     value={ProjectTitle}
@@ -291,7 +359,7 @@ function MainPage(props) {
                                 {/*<FileAddOutlined style={{fontSize:'3em', color:'white'}} />*/}
                                 <br> 
                                 </br><br></br>
-                                {FilePath?<div style={{color:'white'}}>파일이 업로드 되엇습니다.</div>
+                                {FilePath?<div style={{color:'white'}}>파일이 업로드 되었습니다.</div>
                                 :<Text strong style={{color:'white'}}>Click or drag file to this area to upload</Text>}
                             </div>
                         )}
@@ -334,7 +402,7 @@ function MainPage(props) {
                         <div style={{margin: "auto", width:"75%" }} >
                                 <h1> 나의 분석 기록 </h1>
                                 <p>
-                                    You can delete or view details
+                                    You can delete or view details (기여도 100점은 1인의 역할을 다했을 경우의 점수입니다.)
                                 </p>
                             
                             <table striped bordered hover size="sm">

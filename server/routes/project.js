@@ -44,6 +44,15 @@ router.post("/getMedalProjects", (req, res) => {
     })
 });
 
+router.post("/getFreeRiderProjects", (req, res) => {
+    Project.find({ "member": req.body.userId, "getFreeRider": 1})
+    .exec((err, freeRiderProjects)=>{
+        if(err) return res.status(400).send(err)
+        res.status(200).json({success:true, freeRiderProjects})
+    })
+});
+
+
 router.post("/saveProject", (req, res) => {
     const project = new Project(req.body)
     project.save((err, doc)=>{
