@@ -12,7 +12,7 @@ const projectSchema = mongoose.Schema({
     contributionResult:{
         type:Array
     },
-    kakaoFaile:{
+    kakaoFile:{
         type:String
     },
     title:{

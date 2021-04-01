@@ -2,6 +2,9 @@ const express = require('express');
 const { Project } = require('../models/Project');
 const router = express.Router();
 const multer=require("multer");
+const {PythonShell} = require('python-shell');
+
+
 
 //=================================
 //             project
@@ -61,12 +64,35 @@ router.post("/saveProject", (req, res) => {
     })
 });
 
-router.post("/uploadfiles", (req, res) => {
+router.post("/uploadfiles", (req, res, next) => {
+    console.log("hi")
+    //여기서 python 실행하기 
+    //PythonShell.runString('x=1+1;print(x)', null, function (err) {
+        //if (err) throw err;
+        //console.log('finished');
+    //})
+
+    
 
     upload(req, res, err => {
         if (err) {
             return res.json({ success: false, err })
         }
+        let filePath = res.req.file.path;
+        var options={ //이 옵션으로 파이썬과 통신
+            mode : 'text', //txt파일같은거. 
+            encoding : 'utf8', //인코딩 utfi
+            pythonOptions:['-u'],
+            scriptPath:`${__dirname}`, //스크립트 있는곳
+            args : [filePath], //python에게 전달
+            //pythonPath: '/usr/bin/python3' //파이썬 폴더
+        };
+        
+        var test = new PythonShell('/test.py', options); 
+        test.on('message', function (message){
+            console.log(message);
+        })
+
         return res.json({ success: true, filePath: res.req.file.path, fileName: res.req.file.filename })
     })
 

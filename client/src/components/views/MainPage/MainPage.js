@@ -61,7 +61,7 @@ function MainPage(props) {
                     fileName: response.data.fileName
                 }
                 setFilePath(response.data.filePath)
-
+                console.log(response.data.message)
             } else {
                 alert('파일 업로드 실패')
             }
