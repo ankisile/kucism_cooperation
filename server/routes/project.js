@@ -16,7 +16,7 @@ var storage = multer.diskStorage({
         cb(null, 'uploads/txt')
     },
     filename: (req, file, cb) => {
-        cb(null, `${Date.now()}_${file.originalname}`) 
+        cb(null, `${Date.now()}`) 
     },
     fileFilter: (req, file, cb) => {
         const ext = path.extname(file.originalname)
@@ -88,11 +88,14 @@ router.post("/uploadfiles", (req, res, next) => {
             //pythonPath: '/usr/bin/python3' //파이썬 폴더
         };
         
+        let members = [];
+        let members_contribution_degree= [];
+        let img_path = [];
         var test = new PythonShell('/test.py', options); 
         test.on('message', function (message){
             console.log(message);
         })
-
+        // members: members, members_contribution_degree: members_contribution_degree, img_path:img_path
         return res.json({ success: true, filePath: res.req.file.path, fileName: res.req.file.filename })
     })
 

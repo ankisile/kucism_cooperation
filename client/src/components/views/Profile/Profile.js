@@ -33,7 +33,7 @@ function Profile(props) {
                 <ul>
                 {MedalProjects.map((project, index)=>(
                         <React.Fragment key={index}>
-                            <li>{project.title}</li>
+                            <li>{project.title} 금메달</li>
                         </React.Fragment>
                 ))}
                 </ul>

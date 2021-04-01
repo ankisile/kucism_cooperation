@@ -34,6 +34,11 @@ function MainPage(props) {
     
     const [Member, setMember] = useState("") 
     //데이터분석팀으로 받아야할 값
+    //const [Members, setMembers] = useState([])
+    //const [MembersContribution, setMembersContribution] = useState([])
+    //const [ProjectResult, setProjectResult] = useState([])
+
+
     const Members = ["younhee", "song", "sing", "sung"]
     const MembersContribution = [45,20,20,1]
     const ProjectResult = ['img1', 'img2'] 
@@ -61,6 +66,9 @@ function MainPage(props) {
                     fileName: response.data.fileName
                 }
                 setFilePath(response.data.filePath)
+                //setMembers(response.data.members)
+                //setMembersContribution(response.data.members_contribution_degree)
+                //setProjectResult(response.data.img_path)
                 console.log(response.data.message)
             } else {
                 alert('파일 업로드 실패')
@@ -184,7 +192,9 @@ function MainPage(props) {
              kakaoFile: FilePath,
              getMedal :isPossibleMedal,
              members: Members,
-             getFreeRider: isPossibleFreeRider
+             getFreeRider: isPossibleFreeRider,
+             //contributionResult: ProjectResult
+
         }
         axios.post('/api/project/saveProject', projectVariables)
         .then(response=>{
@@ -246,7 +256,8 @@ function MainPage(props) {
         return <tr>
             <td>{index+1}</td>
             <td>{project.title}</td>
-            <td>{project.contributionDegree}</td>
+            {project.contributionDegree >= 100 ? <td style={{color:'#1A7EC0'}}>{project.contributionDegree}</td>:  
+            <td style={{color:'rgba(216, 84, 84, 0.856)'}}> {project.contributionDegree}</td> }
             <td>
             {/*사실 title이 아니라 project._id임 */}
             <Button type="primary" onClick={()=>onClickDelete(project._id, project.member)}>
@@ -325,18 +336,18 @@ function MainPage(props) {
                <Profile medalProjects = {MedalProjects} freeRiderProjects ={FreeRiderProjects} userName={UserInfo.name} projectContributionAverage ={ProjectContributionAverage} /> }
             </Sider>
             <Layout  style={{ minHeight: '100vh', backgroundColor:'#ffffff', width:'80%', margin:'3rem'}}>
-                    
-                    <div style={{margin: '3rem'}}>
-                        <div style={{ padding: 12}}>
+            <div style={{margin: '1rem'}}>
+                <div style={{ padding: 12}}>
                          {/*카톡 txt파일 */}
                          <div style={{maxWidth:'500px',margin:'1rem auto', textAlign:'center'}}>
             <div style ={{ marginBottom:'2rem'}}>
+                <Title level={3} style={{fontSize:'40pt', color:'#61a1e2'}}>NO PAIN, NO GAIN</Title>
                 <Title level={3}>대화 내용 분석기</Title>
             </div>
 
            <Form onSubmit={onSaveResult}>
                 <div style={{display:'flex', justifyContent:'space-between'}}>
-                    <Title level={4}>프로젝트</Title>
+                    <Title level={4} style={{width:'100px'}}>프로젝트</Title>
                     <Input
                     onChange={handleChangeTitle}
                     value={ProjectTitle}
@@ -383,6 +394,7 @@ function MainPage(props) {
                             </React.Fragment>
                             ))}
                             </Row>
+                            
                             <label> 이름 </label>
                             <Radio.Group onChange={onChangeRadio} value={Member}>
                                 {Members && Members.map((member, index)=>(
@@ -391,6 +403,7 @@ function MainPage(props) {
                                 </React.Fragment>
                                 ))}
                             </Radio.Group>
+                            
                             <br/>
                             <div style={{display:'flex', justifyContent:'center', alignItems:'center'}}>
                             <Button type="primary" onClick={onSaveResult}>저장</Button>
