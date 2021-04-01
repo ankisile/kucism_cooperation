@@ -23,3 +23,15 @@ tr:nth-child(even){
     width: 350px;
     height:45px;
 }
+
+.tableheader{
+    display:'flex';
+    text-align: center;
+    background-color: #c6e5ff;
+}
+
+
+.tablechild{
+    display:'flex';
+    text-align: center;
+}

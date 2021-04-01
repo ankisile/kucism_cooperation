@@ -254,11 +254,11 @@ function MainPage(props) {
     const projectsTable = Projects.map((project, index) => {
 
         return <tr>
-            <td>{index+1}</td>
-            <td>{project.title}</td>
-            {project.contributionDegree >= 100 ? <td style={{color:'#1A7EC0'}}>{project.contributionDegree}</td>:  
-            <td style={{color:'rgba(216, 84, 84, 0.856)'}}> {project.contributionDegree}</td> }
-            <td>
+            <td class="tablechild">{index+1}</td>
+            <td class="tablechild">{project.title}</td>
+            {project.contributionDegree >= 100 ? <td class="tablechild" style={{color:'#1A7EC0'}}>{project.contributionDegree}</td>:  
+            <td class="tablechild" style={{color:'rgba(216, 84, 84, 0.856)'}}> {project.contributionDegree}</td> }
+            <td class="tablechild">
             {/*사실 title이 아니라 project._id임 */}
             <Button type="primary" onClick={()=>onClickDelete(project._id, project.member)}>
                 삭제 
@@ -382,7 +382,7 @@ function MainPage(props) {
                          </div>
 
                         <div  style={{ margin: "auto", width:"75%"}}>
-                            <h2>분석결과</h2>
+                            <h2 style={{fontSize:'25px'}}>분석결과</h2>
                             <hr/>
                             
                             <Row gutter={[16, 16]}>
@@ -413,18 +413,18 @@ function MainPage(props) {
                         
                         {/*분석 기록 테이블 */}
                         <div style={{margin: "auto", width:"75%" }} >
-                                <h1> 나의 분석 기록 </h1>
+                                <h1 style={{fontSize:'25px', marginTop:'20px'}}> 나의 분석 기록 </h1>
                                 <p>
-                                    You can delete or view details (기여도 100점은 1인의 역할을 다했을 경우의 점수입니다.)
+                                    기여도 100점은 1인의 역할을 다했을 경우의 점수입니다.
                                 </p>
                             
                             <table striped bordered hover size="sm">
                                 <thead>
                                     <tr>
-                                        <th>No</th>
-                                        <th style={{width:"60%"}}>프로젝트 명</th>
-                                        <th>기여도</th>
-                                        <th>관리</th>
+                                        <th class="tableheader">No</th>
+                                        <th class="tableheader" style={{width:"63%", paddingLeft: '10px'}}>프로젝트 명</th>
+                                        <th class="tableheader" style={{width:"17%"}}>기여도</th>
+                                        <th class="tableheader">관리</th>
                                     </tr>
                                 </thead>
 
