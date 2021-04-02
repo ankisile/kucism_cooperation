@@ -66,7 +66,7 @@
 ScikitLearn 패키지 이용 / linear Regression 모델 구현
 ### 4. 생성한 모델을 통해 기여도 예측
 <img width="849" alt="KakaoTalk_Image_2021-04-02-22-23-16" src="https://user-images.githubusercontent.com/53250432/113419674-e3586a80-9402-11eb-9ec8-b28161ba625f.png">
-<img width="849" alt="KakaoTalk_Image_2021-04-02-22-23-16" src="https://user-images.githubusercontent.com/53250432/113419677-e5222e00-9402-11eb-9e3f-51d80569321c.png">
+<img width="849" alt="KakaoTalk_Image_2021-04-02-22-23-16" src="https://user-images.githubusercontent.com/53250432/113419913-582ba480-9403-11eb-9041-06975a97c573.png">
 <img width="849" alt="KakaoTalk_Image_2021-04-02-22-23-16" src="https://user-images.githubusercontent.com/53250432/113419697-ece1d280-9402-11eb-8f6d-e502a990b74f.png">
 <img width="849" alt="KakaoTalk_Image_2021-04-02-22-23-16" src="https://user-images.githubusercontent.com/53250432/113419687-e8b5b500-9402-11eb-928c-ab5772b32606.png">
 
