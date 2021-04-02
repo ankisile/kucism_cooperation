@@ -78,17 +78,20 @@ def make_username_key(sample_data):  # User Name 추출 in sample_data
     return (User_name)
 
 if __name__=="__main__":
+    
+    st = sys.argv[1]
+    print(st)
+
     df=csv_to_df("data.csv")
 
     mlr=make_ML_model(df)
-    st = sys.argv[1]
     #input_file=input_for_analysis()
-    input_file="dataset\\original_data\\29.txt" #여기에 경로
+    input_file=sys.argv[1]
+    #input_file="dataset\\original_data\\29.txt" #여기에 경로
     initial_df = tdd.app_run(input_file)
     #filename list는 그냥 전역변수 filenames
     username=make_username_key(initial_df) #username list
     contri_list=calc_contribution(mlr,initial_df) #기여도 list
-    print(st)
     #print(contri_list)
     send_to_server=[tdd.filenames,username,contri_list]
     #print(send_to_server)

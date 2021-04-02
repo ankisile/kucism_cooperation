@@ -90,7 +90,7 @@ router.post("/uploadfiles", (req, res, next) => {
         })*/
         PythonShell.run('/ML.py', options, function(err,results){
             if(err){
-                console.log('err');
+                console.log(err.message);
             }
             else{
                 console.log(results);
