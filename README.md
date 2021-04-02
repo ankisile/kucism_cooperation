@@ -63,4 +63,6 @@ Back-end : Node.js 기반
 
 Data-base : MongoDB 
 
+데이터 분석 : Python ( mecab, scikit-learn )
+
 서버 배포 : AWS 아마존 웹 서비스
