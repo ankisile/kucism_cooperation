@@ -44,7 +44,7 @@
 <img width="1000" alt="_2021-04-02__9 10 14" src="https://user-images.githubusercontent.com/53250432/113415090-6c6aa400-93f9-11eb-95ff-fe098cd645fd.png">
 
 
-## 2. 데이터 분석 밑 내용
+## 2. 데이터 분석 및 내용
 
 ## 3. 오류
 
