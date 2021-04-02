@@ -49,3 +49,11 @@
 ## 3. 오류
 
 ### 4. 사용언어
+
+Front-end : React 기반 
+
+Back-end : Node.js 기반 
+
+Data-base : MongoDB 
+
+서버 배포 : AWS 아마존 웹 서비스
