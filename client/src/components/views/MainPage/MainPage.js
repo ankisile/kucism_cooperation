@@ -39,7 +39,7 @@ function MainPage(props) {
     //const [ProjectResult, setProjectResult] = useState([])
 
 
-    const Members = ["younhee", "song", "sing", "sung"]
+    const Members = ["이름1", "이름2", "이름3", "이름4"]
     const MembersContribution = [45,20,20,1]
     const ProjectResult = ['img1', 'img2'] 
     

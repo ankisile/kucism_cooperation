@@ -73,7 +73,7 @@ router.post("/uploadfiles", (req, res, next) => {
         if (err) {
             return res.json({ success: false, err })
         }
-        
+        /*
         let filePath = res.req.file.path;
         var options={ //이 옵션으로 파이썬과 통신
             mode : 'text', //txt파일같은거. 
@@ -87,7 +87,7 @@ router.post("/uploadfiles", (req, res, next) => {
         var test = new PythonShell('/ML.py', options); 
         test.on('message', function (message){
             console.log(err.message);
-        })
+        })*/
         /*
         console.log('dirname: ' + __dirname);
         PythonShell.run('/ML.py', options, function(err,results){
