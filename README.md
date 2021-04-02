@@ -40,8 +40,9 @@
 
 <img width="740" alt="_2021-04-02__9 10 59" src="https://user-images.githubusercontent.com/53250432/113415078-67a5f000-93f9-11eb-9b61-0625110025f7.png">
 <img width="740" alt="_2021-04-02__9 11 20" src="https://user-images.githubusercontent.com/53250432/113415086-6a084a00-93f9-11eb-8c4b-5d1adb3af42a.png">
-<img width="1000" alt="_2021-04-02__9 10 01" src="https://user-images.githubusercontent.com/53250432/113415087-6b397700-93f9-11eb-8480-ed548e8b0a01.png">
-<img width="1000" alt="_2021-04-02__9 10 14" src="https://user-images.githubusercontent.com/53250432/113415090-6c6aa400-93f9-11eb-95ff-fe098cd645fd.png">
+<img width="1437" alt="_2021-04-02__9 10 14" src="https://user-images.githubusercontent.com/53250432/113416573-95406880-93fc-11eb-9ab0-30daa9afebe8.png">
+<img width="1420" alt="_2021-04-02__9 42 56" src="https://user-images.githubusercontent.com/53250432/113416555-8fe31e00-93fc-11eb-9b78-a82abb25e563.png">
+
 
 
 ## 2. 데이터 분석 및 내용
