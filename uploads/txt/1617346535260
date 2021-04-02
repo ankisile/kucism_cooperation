@@ -1,0 +1,1017 @@
+김지수, 정지우, 김나진 님과 카카오톡 대화
+저장한 날짜 : 2021-03-26 23:00:11
+
+--------------- 2020년 11월 10일 화요일 ---------------
+김나진님이 정지우님, 정지우님, 송민영님을 초대하였습니다.
+[김나진] [오후 10:27] ..?
+[송민영] [오후 10:27] ㅋㅋㅋㅋㅋㅋㅋㅋ
+[김나진] [오후 10:35] 사진
+[정지우] [오후 10:36] #...
+services:
+  #...
+  web:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    volumes:
+      - ".:/var/www/html"
+    depends_on:
+      - db
+    ports:
+      - "80:80"
+[정지우] [오후 10:36] 검색해봤는데 웹쪽 서비스에 포트를 저렇게 해야하는 것 같기도 하고
+[송민영] [오후 10:36] 그 blank space 뜨는거 검색해봤는데
+[송민영] [오후 10:36] stackoverflow에서 
+[송민영] [오후 10:37] ini_set('display_errors', '1');
+[송민영] [오후 10:37] 이거 치면 나온다고 하거든
+[송민영] [오후 10:37] 아직 안해봤는데
+[송민영] [오후 10:37] 한번해봐
+[정지우] [오후 10:41] 아니다
+[정지우] [오후 10:41] 음..
+[김나진] [오후 10:49] version: '3'
+services:
+    web:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        container_name: goofy-web
+        depends_on:
+            - db
+        volumes:
+            - ./prob:/var/www/html/problem/
+        ports:
+            - "22210:80"
+        environment:
+            DB_HOST: db 
+            DB_NAME: problem
+            DB_USER: master 
+            DB_PASSWORD: imgoofy 
+#        command:
+#            - /setup.sh
+    db:
+        container_name: goofy-db
+        image: mysql:8.0
+        command: --default-authentication-plugin=mysql_native_password 
+        restart: always
+        environment:
+            MYSQL_ROOT_PASSWORD: root
+            MYSQL_DATABASE: problem
+            MYSQL_USER: master
+            MYSQL_PASSWORD: imgoofy
+        ports:
+            - "23211:80"
+        volumes:
+            - "./goofy-db/:/docker-entrypoint-initdb.d/"
+[정지우] [오후 10:55] define('DB_HOST', getenv('DB_HOST')); 이렇게 하고 $host 자리에 DB_HOST 넣으면 안되나?
+[김나진] [오후 10:55] 어디에 넣을까요
+[정지우] [오후 10:56] config.php 파일에서 define('DB_HOST', getenv('DB_HOST')); 하고 index_process.php에서 connect($host ~)의 $host에 DB_HOST로
+[정지우] [오후 10:56] 되는지 모르겠지만..
+[정지우] [오후 10:56] 이걸로 되는거야? 아니면 이걸로 바꾼거?
+[송민영] [오후 10:57] 나는 
+[송민영] [오후 10:57] 80:80으로 하니깐
+[송민영] [오후 10:57] 에러떠서
+[송민영] [오후 10:57] 그냥 22210:80으로 하고 있어
+[김나진] [오후 10:57] 제가 가진거랑 달라서요 제 거엔 envirionment가 없어요
+[정지우] [오후 10:58] 응 생각해보니까 80은 이미 할당되어있으니까 안되겠더라고 그냥 22210:80으로 하자
+[정지우] [오후 10:58] 아아
+[송민영] [오후 11:11] mysqli_connect위에 코드쓰니깐
+[송민영] [오후 11:11] html이라는거라던지
+[송민영] [오후 11:11] 그런게 보이거든
+[정지우] [오후 11:11] 응응? 캡쳐해서 보여줄래?
+[송민영] [오후 11:12] 아까 그냥 우분투에서 했을때 나도 이런 현상이 나와서
+[송민영] [오후 11:12] html 코드를 한번 위로 올려봤단 말이야
+[정지우] [오후 11:12] 아 html을 위로 응응
+[송민영] [오후 11:12] 사진
+[송민영] [오후 11:12] 그랬더니
+[송민영] [오후 11:12] 사진
+[송민영] [오후 11:13] 그 html 코드는 잘 나오는데
+[정지우] [오후 11:13] ...되는건가??hello가 언제 뜨는거야??
+[송민영] [오후 11:13] mysqli_connect 환경설정할때 더 설정해야 되는게 있지 않을까 싶은데
+[송민영] [오후 11:13] mysqli_connect 위에 썼을때 코드가 제대로 출력ㅇ이 되고
+[송민영] [오후 11:13] mysqli_connect에서 문제가 발생해서
+[송민영] [오후 11:13] 그런거 같은데
+[정지우] [오후 11:13] 아..
+[송민영] [오후 11:13] 그 우분투 환경에서 이런 문제 떴을때
+[송민영] [오후 11:13] 난 에러가
+[송민영] [오후 11:14] Fatal error: Uncaught Error: Call to undefined function mysqli_connect()
+[송민영] [오후 11:14] 이런식으로 나왔거든
+[송민영] [오후 11:14] ini_set그거 하니깐
+[송민영] [오후 11:14] 아닐수도 있는데
+[송민영] [오후 11:14] 뭔가 지금 상황이 비슷해서
+[송민영] [오후 11:14] 그래서 찾아보니깐
+[송민영] [오후 11:14] https://stackoverflow.com/questions/49427530/fatal-error-uncaught-error-call-to-undefined-function-mysqli-connect
+[정지우] [오후 11:14] 그럼 그때처럼 해결하면 되는거겠네?
+[송민영] [오후 11:15] docker에서는 이렇게 하라는거 같아서
+[송민영] [오후 11:15] 그냥 우분투에서는
+[정지우] [오후 11:15] docker-php-ext-install mysqli 
+[송민영] [오후 11:15] php.ini 파일만 수정하면 되었는데
+[정지우] [오후 11:15] 이거 파일 수정했으면 추가했어야 해,,
+[정지우] [오후 11:16] Dockerfile에서 php.ini 경로에
+[송민영] [오후 11:16] php.ini파일은 아직 수정안했어
+[정지우] [오후 11:17] 우분투 환경에서 저 에러 났을 때 php.ini 파일 수정한거 아니야? 그럼 수정해서 Dockerfile에 추가해보자 
+[정지우] [오후 11:17] 아니면 저 방법 쓰면 되는데
+[정지우] [오후 11:19] 사진
+[정지우] [오후 11:19] 다른 웹문제에서는 php.ini 이렇게 추가했었거든
+[송민영] [오후 11:19] 아 그럼 추가해야 되나보다
+[송민영] [오후 11:19] php.ini파일 다 수정하고
+[송민영] [오후 11:20] https://m.blog.naver.com/whj6648/221912391412
+[송민영] [오후 11:20] 그런데 궁금한게 윈도우는 .dll 파일이 있는데
+[송민영] [오후 11:21] 우분투는 없는걸로 알고 있는데
+[송민영] [오후 11:21] 아닌가?
+[정지우] [오후 11:21] 그치? 우분투에 맞게 고쳐야 할듯
+[정지우] [오후 11:23] https://stackoverflow.com/questions/24290589/ubuntu-php-fatal-error-call-to-undefined-function-mysqli-connect-in-when-ca
+[정지우] [오후 11:24] https://stackoverflow.com/questions/25281467/fatal-error-call-to-undefined-function-mysqli-connect?rq=1
+[정지우] [오후 11:24] sudo apt install php-mysqli 이거 설치해야 하나?
+[정지우] [오후 11:27] sudo apt-get install php7.2-mysqli 
+[정지우] [오후 11:29] 지수언니 초대할게~
+[김나진] [오후 11:30] 넵
+정지우님이 김지수님을 초대하였습니다.
+[김지수] [오후 11:30] 예아
+[김지수] [오후 11:30] 이모티콘
+[김지수] [오후 11:30] ㅎㅎ...
+[정지우] [오후 11:30] 와아~
+[김나진] [오후 11:31] 이모티콘
+[김지수] [오후 11:31] ㅋㅋㅋㅋㅋㅋ
+[김지수] [오후 11:31] 다들 문제되는 부분 어떻게 확인하고 있어? 각자 테스트서버 있음?
+[정지우] [오후 11:32] 나는 안 돌아가서..나 왜 안되지
+[정지우] [오후 11:32] 아니
+[정지우] [오후 11:32] 헐
+[정지우] [오후 11:32] 사진
+[정지우] [오후 11:32] 이게 답이다
+[송민영] [오후 11:32] ...?????
+[김나진] [오후 11:32] ?
+[정지우] [오후 11:32] ㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠ
+[송민영] [오후 11:32] 아 내가 맞았다
+[김나진] [오후 11:32] ㅋㅋㅋㅋㅋㅋㄱㅋㄱㅋㅋ
+[송민영] [오후 11:32] 나의 오류가
+[송민영] [오후 11:32] 도움이 될날이 있다니
+[정지우] [오후 11:32] 나 울것 같아...........
+[김지수] [오후 11:33] ??
+[김지수] [오후 11:33] 됐어??
+[정지우] [오후 11:33] 사진
+[정지우] [오후 11:33] 이거는 왜 나오지
+[정지우] [오후 11:33] 사진
+[정지우] [오후 11:33] 이렇게 했는데
+[송민영] [오후 11:33] error 안나와서 그런거 아니야?
+[송민영] [오후 11:34] 에러 뜨면 if문이 처리되는거고
+[정지우] [오후 11:34] 아 일단 php랑 html 코드 위치 안 바꿨는데 된거구
+[송민영] [오후 11:34] 아닌가?
+[정지우] [오후 11:34] 아 그러네 에러 아니니까
+[정지우] [오후 11:34] 좋은거네
+[송민영] [오후 11:34] 응응
+[송민영] [오후 11:34] 나의 오류가 도움이 될날이 있었어
+[송민영] [오후 11:34] 다행이다
+[김지수] [오후 11:34] 응 다행이다~~
+[정지우] [오후 11:35] 사진
+[정지우] [오후 11:35] 이거 그냥은 안 되는건가?
+[정지우] [오후 11:35] 나 webmaster랑 sm6yn23ib9 넣었는데
+[김나진] [오후 11:36] 어......?
+[김나진] [오후 11:40] 언니 수정한 파일을 알려주세요
+[김나진] [오후 11:41] ..
+[정지우] [오후 11:42] 아까는 config.php에서 $host 주석처리하고 define('DB_HOST', getenv('DB_HOST')); 넣고, index_process.php에서 $connect = mysqli_connect(DB_HOST, $username, $password, $name); 이렇게 했었고
+[정지우] [오후 11:43] FROM ubuntu:18.04
+MAINTAINER koharin
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+RUN apt-get update -y
+RUN apt-get install -y apache2 php libapache2-mod-php mysql-server php7.2-mysqli
+
+ENV APACHE_RUN_USER www-data
+ENV APACHE_RUN_GROUP www-data 
+
+ADD ./apache2.conf /etc/apache2/apache2.conf 
+ADD ./setup.sh /
+RUN chmod +x /setup.sh
+ADD ./prob /var/www/html/problem 
+RUN chmod +x /var/www/html/problem
+ADD ./goofy-db/db.sql /mysql/
+RUN service mysql start && mysql < /mysql/db.sql 
+#RUN service mysql start
+
+RUN rm /var/www/html/index.html 
+WORKDIR /var/www/html/problem 
+EXPOSE 80
+
+CMD ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
+[정지우] [오후 11:44] Dockerfile에 apt-get에 php7.2-mysqli 추가
+[김지수] [오후 11:45] 나도 파일 있으면 보내줄래?
+[김지수] [오후 11:45] 나도 에러 찾아볼게
+[김지수] [오후 11:45] 그게 불편할 거 같으면 다른 방법도 상관없고
+[정지우] [오후 11:46] 보내줄게
+[김지수] [오후 11:46] ㅇㅋㅇㅋ
+[정지우] [오후 11:47] 파일: goofy.zip
+[김지수] [오후 11:50] 이거 xxe 했던 것처럼 설치하면 되는거지?
+[김지수] [오후 11:50] ㅇㅋㅇㅋ
+[정지우] [오후 11:51] 응응 docker-compose up 이나 docker-compose up -d
+[정지우] [오후 11:51] 수정하고 나서는 docker-compose up -d --build나 
+[정지우] [오후 11:52] 컨테이너, 이미지 삭제하고 docker-compose up
+[정지우] [오후 11:52] docker kill $(docker ps -a | awk '{print $1}')
+docker rm $(docker ps -a | awk '{print $1}')
+docker rmi $(docker images | awk '{print $3}')
+[정지우] [오후 11:53] 이건 내가 만든건데 어설퍼도 전체 다 삭제하고싶을떄 써
+[김지수] [오후 11:56] 오 도커 신기신기해
+[정지우] [오후 11:58] 전혀 어설프지 않네...세개 한번에 다 복붙해서 했더니 깨끗하게 다 없앰 삭제하면 안 되는 것까지 해버렸다
+--------------- 2020년 11월 11일 수요일 ---------------
+[정지우] [오전 12:01] https://inasie.github.io/it%EC%9D%BC%EB%B0%98/ubuntu-source-list/
+[정지우] [오전 12:02] 조금 더 빨리 받으려면 kakao 서버로 바꾸면 돼
+[정지우] [오전 12:09] 생각해보니 도커에서 받는거라 적용이 안된다..로컬 우분투에 쓸때 써,,
+[송민영] [오전 12:16] 혹시 db.sql파일이 잘못되어서
+[송민영] [오전 12:17] 아이디하고 비번을 인식 못하는 걸까?
+[김지수] [오전 12:20] (지금 우분투 서버가 다운 된 거 같아서 도커 설치 못하는 중…ㅎ)
+[정지우] [오전 12:24] 앗..
+[정지우] [오전 12:47] 혹시 해결..됐니..?
+[김나진] [오전 12:50] 아니...오
+[송민영] [오전 12:50] 그 get을 못하는거 같은데
+[김지수] [오전 12:50] ㅎㅎ… 네트워크 설정 문제였네 이제 나도 같이 문제 찾아볼게
+[김지수] [오전 12:51] 뭐를 찾으면 되는거야...?
+[정지우] [오전 12:51] 사진
+[정지우] [오전 12:51] ㅠㅠ
+[김나진] [오전 12:51] 아앗..
+[송민영] [오전 12:52] 아까 get으로 받아온거
+[송민영] [오전 12:52] echo해보니깐
+[송민영] [오전 12:52] 안되던데
+[정지우] [오전 12:52] php 코드에서?
+[김나진] [오전 12:52] 아 진짜?
+[송민영] [오전 12:52] 응응
+[송민영] [오전 12:52] 다시 해봐야 될거 같은데
+[송민영] [오전 12:52] 갑자기 코드가 사라져서
+[김나진] [오전 12:53] ?
+[정지우] [오전 12:53] ???
+[송민영] [오전 12:53] 몇분전부터
+[송민영] [오전 12:53] 사진
+[송민영] [오전 12:53] 계속 이렇게 떠서
+[송민영] [오전 12:54] 다시 파일 다운받았는데도
+[정지우] [오전 12:54] 뭐야뭐야
+[정지우] [오전 12:54] 계속 다시 다운받는데도 코드가 없어진다구..?
+[송민영] [오전 12:54] 응응
+[송민영] [오전 12:54] 압출 풀면 코드가 사라져
+[김지수] [오전 12:55] 와우 짜잔이다 정말
+[송민영] [오전 12:59] 다시 확인하니깐
+[송민영] [오전 12:59] get으로 잘받아오는거 같은데
+[송민영] [오전 1:02] db에서 값을 못가져오는거 같은데
+[정지우] [오전 1:05] 그럼 db가 start 안 된게 문제인가
+[송민영] [오전 1:05] echo하고 $result['id']하니깐
+[송민영] [오전 1:05] 진짜 답을 입력해도
+[송민영] [오전 1:05] 페이지에 아무것도 안뜨는데
+[송민영] [오전 1:05] $result['id']값이
+[송민영] [오전 1:11] 사진
+[송민영] [오전 1:11] 사진
+[송민영] [오전 1:11] echo $result['id']; 한문장 추가하면 저렇게 에러뜨고
+[송민영] [오전 1:11] 안넣으면 그냥 넘어가긴하는데
+[송민영] [오전 1:11] 계쏙 nono만 뜨고
+[정지우] [오전 1:12] 그럼 연결 안 된거네..? 
+[송민영] [오전 1:12] 그런가봐
+[송민영] [오전 1:13] 사용자 계정을 추가해야 하나..?
+[정지우] [오전 1:18] 그러게
+[송민영] [오전 1:33] https://stackoverflow.com/questions/40561433/docker-mysql-2002-connection-refused
+[정지우] [오전 1:36] 사진
+[정지우] [오전 1:36] 이건가..?
+[송민영] [오전 1:51] 이거 넣어봤는데 이건 안돼
+[송민영] [오전 1:51] 사진
+[김나진] [오전 1:56] 지우 언니 웹해킹 2팀 도커 관련 파일 있어요?
+[정지우] [오전 1:57] 있는데..내가 설정한거라ㅋㅋㅋㅋ
+[정지우] [오전 1:57] 저거는 안썼었어..mysql 안써서
+[김지수] [오전 1:57] ㅋㅋㅋㅋㅋㅋㅋ
+[김나진] [오전 1:57] 앗...
+[김나진] [오전 1:58] 최고의 참고서가...
+[김지수] [오전 1:58] 응 2팀은 mysql 안 썼어
+[김지수] [오전 1:58] ㅎㅎ…
+[김나진] [오전 1:58] 어떤 문제를 만든 건가요
+[정지우] [오전 1:58] FROM ubuntu:18.04
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+RUN apt-get update
+RUN apt install -y apache2 php libapache2-mod-php 
+RUN apt-get install -y php7.2-xml
+
+ENV APACHE_RUN_USER www-data
+ENV APACHE_RUN_GROUP www-data
+
+ADD ./setting/php.ini /etc/php/7.2/apache2/php.ini 
+ADD ./setting/000-default.conf /etc/apache2/sites-available/
+ADD ./setting/apache2.conf /etc/apache2/apache2.conf 
+
+ADD ./archive /archive
+RUN chmod 400 /archive/*
+ADD ./access /var/www/poxmask
+RUN chmod 777 /var/www/poxmask/*
+[정지우] [오전 1:58] 아주 간단해..
+[정지우] [오전 1:58] version: '3'
+services:
+    web:
+        build:
+            context: .
+            dockerfile: Dockerfile 
+        container_name: access-web 
+        volumes:
+            - ./access:/var/www/poxmask
+            - ./archive:/archive
+        ports:
+            - "22211:80"
+
+[정지우] [오전 1:58] ㅋㅋㅋㅋㅋ진짜
+[김나진] [오전 1:58] ㅋㅋㅋㅋㅋㅋㅋㄱㅋㄱㅋㄱㅋ
+[송민영] [오전 2:00] sql injection 한 다른 팀들은 어떻게 했는지..
+[김지수] [오전 2:00] 그러게
+[정지우] [오전 2:00] 파일 보내줄까?보고 내일 삭제해줘!
+[정지우] [오전 2:01] 파일: infection (2).zip
+[정지우] [오전 2:01] 삭제된 메시지입니다.
+[정지우] [오전 2:02] 아 마지막에 보낸건 Dockerfile밖에 없고 설정 간단해서 그냥 삭제할게
+[김나진] [오전 2:02] 넵
+[김지수] [오전 2:02] 그 사람들은 10월 말에 다 했던데 참 신기해...
+[송민영] [오전 2:02] 포트를 3306으로 연결하면 안되나?
+[송민영] [오전 2:03] db에서
+[정지우] [오전 2:05] 그래도 상관없겠..지?3306이 mysql 그거라곤 하던데
+[정지우] [오전 2:05] 어 설마
+[김지수] [오전 2:05] 사진
+[김지수] [오전 2:05] 나 아까부터 이 상태인데
+[김나진] [오전 2:06] 혹시 docker-compose up?
+[김지수] [오전 2:06] 응
+[김나진] [오전 2:06] 그거 로깅한거래
+[정지우] [오전 2:06] 앗 맞아
+[김나진] [오전 2:06] 아까 브라우저에서 접속한대로 하면 될걸
+[김지수] [오전 2:06] ??
+[정지우] [오전 2:07] 그거 실행한거고 docker-compose up -d하면 백그라운드 실행
+[김지수] [오전 2:07] 그냥 로그 확인했다ㅡㄴ 뜻인가
+[김지수] [오전 2:07] 아하
+[김지수] [오전 2:07] 이런
+[정지우] [오전 2:07] docker-compose up -d --build 하면 될거야
+[정지우] [오전 2:13] 사진
+[정지우] [오전 2:14] 사진
+[송민영] [오전 2:18] 저거 에러 도커 리셋하라는데...?
+[송민영] [오전 2:18] https://doogle.link/%EC%95%8C-%EC%88%98-%EC%97%86%EB%8A%94-docker-%EC%98%A4%EB%A5%98-%ED%95%B4%EA%B2%B0%ED%95%98%EA%B8%B0/
+[정지우] [오전 2:18] 어 그럼 다시 빌드해야하나
+[김지수] [오전 2:21] 자꾸 물어봐서 미안하넫
+[김지수] [오전 2:21] 사진
+[김지수] [오전 2:21] 이거는 어떻게 해야하는 것인지...?
+[김지수] [오전 2:22] 웹페이지 접속이 안 되는데...
+[정지우] [오전 2:23] 아 컨테이너 생성하고 나면 실행중인 상태고 vm아이피:22210/problem/index.php로 접속하면 돼 브라우저에서!
+[송민영] [오전 2:25] 저기 .yml 파일에 ${MYSQL_ROOT_PASSWORD}
+[송민영] [오전 2:25] 이런거 어디서 받아온걸까
+[정지우] [오전 2:26] 그거 .env에 있더라구
+[정지우] [오전 2:26] 여기서도 .env 파일에 써놨다고 했었어
+[김나진] [오전 2:27] .env 파일 어디에 있어요?
+[정지우] [오전 2:30] 사진
+[송민영] [오전 2:31] 한 사람들중에 아무나 한명 끌고오면 안되나...
+[송민영] [오전 2:49] 나 중요한걸 알아냈어
+[김나진] [오전 2:49] ??
+[송민영] [오전 2:49] compose하고
+[송민영] [오전 2:49] 혹시나 해서
+[송민영] [오전 2:49] mysql에 들어가서
+[송민영] [오전 2:50] table확인해보니깐
+[송민영] [오전 2:50] empty라는데?
+[김나진] [오전 2:50] ...?
+[김나진] [오전 2:50] ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ
+[송민영] [오전 2:50] 사진
+[김지수] [오전 2:50] 와우…;;
+[송민영] [오전 2:51] 내가 잘못한거일수도 있어서
+[송민영] [오전 2:51] 한번 누가 확인해봐야될거 같은데
+[정지우] [오전 2:59] 들어갔을 때 mysql 실행중인 상태였어?
+[송민영] [오전 2:59] docker container ps로 확인했을때
+[송민영] [오전 2:59] 사진
+[송민영] [오전 2:59] 이렇게 나왔는데
+[정지우] [오전 3:00] 사진
+[정지우] [오전 3:00] 사진
+[송민영] [오전 3:01] port 어떻게 했어?
+[정지우] [오전 3:01] ❯ cat docker-compose.yml
+version: '3'
+services:
+    web:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        container_name: goofy-web
+        depends_on:
+            - db
+        volumes:
+            - ./prob:/var/www/html/problem/
+        ports:
+            - "22210:80"
+        environment:
+            DB_HOST: db 
+            DB_NAME: problem 
+            DB_USER: master
+            DB_PASSWORD: imgoofy 
+        restart: unless-stopped
+    db:
+        container_name: goofy-db
+        image: mysql:8.0
+        command: --default-authentication-plugin=mysql_native_password 
+        restart: always
+        environment:
+            MYSQL_ROOT_PASSWORD: root
+            MYSQL_DATABASE: problem
+            MYSQL_USER: master
+            MYSQL_PASSWORD: imgoofy
+        ports:
+            - "22213:3306"
+        volumes:
+            - "./goofy-db/:/docker-entrypoint-initdb.d/"
+[정지우] [오전 3:01] db에서 컨테이너 내부를 3306으로 하고 외부는 다른걸로 해줬어
+[송민영] [오전 3:05] 사진
+[정지우] [오전 3:05] 어 이거 봤던건데
+[송민영] [오전 3:06] https://medium.com/codespace69/php-mysql-phpmysql-connection-failed-php-network-getaddresses-getaddrinfo-failed-name-or-eccc868da75d
+[송민영] [오전 3:07] dns설정이 잘못되어서 나온ㄴ느 에러라는데
+[정지우] [오전 3:12] $host='localhost' 이렇게 하는게 맞는건가
+[김지수] [오전 3:17] 근데 이거 원래 id webmaster, pw sm6yn23ib9 해도 안 풀리는 게 맞는 거야?
+[정지우] [오전 3:17] 아니 그게 지금 안돼서 문제야......
+[김나진] [오전 3:18] 그러면 풀려야 되는거야
+[김지수] [오전 3:18] 앜
+[정지우] [오전 3:18] 그게 익스
+[정지우] [오전 3:18] ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ
+[김지수] [오전 3:18] 내가 문제를 드디어 찾았구나
+[정지우] [오전 3:18] 앜ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ
+[김지수] [오전 3:18] xxe랑 동시에 보려니까 정신이 없네
+[김지수] [오전 3:18] ㅋㅋㅋㅋㅋㅋ
+[김지수] [오전 3:18] 헤헤 이제 이거에 집중하겟읍니다...
+[김지수] [오전 3:18] 아무리봐도 xxe는 문제 없다
+[정지우] [오전 3:18] 지금 데몬팀 자나봐.....포너블도 안 고쳐주네ㅠ
+[김지수] [오전 3:18] 그러게
+[김지수] [오전 3:18] 아니 3시는 한창 활동할 때 아니냐구요~~~~
+[김지수] [오전 3:18] ㅡㅡ
+[정지우] [오전 3:19] 오늘도 밤샐각인데
+[김지수] [오전 3:19] 그니까
+[정지우] [오전 3:19] 배고파
+[김지수] [오전 3:19] 어제 드디어 문제 다 만들고 1시에 잠들었는데 오늘 또 밤샘…
+[김지수] [오전 3:19] 배고프다 나도...
+[정지우] [오전 3:19] ㅠㅠ
+[김지수] [오전 3:19] 엄마가 또 밤새냐고 하더라
+[김지수] [오전 3:19] OTL...
+[정지우] [오전 3:20] 내가 mysql:5.6으로 버전을 바꿔봤는데 뭔가 다를 것 같아
+[정지우] [오전 3:21] 사진
+[정지우] [오전 3:21] 이런거 떴었나
+[정지우] [오전 3:21] 사진
+[정지우] [오전 3:22] 안되네..
+[김지수] [오전 3:24] 지우아
+[김지수] [오전 3:24] user@ubuntu:~/goofy$ docker kill $(docker ps -a | awk '{print $1}')
+Error response from daemon: Cannot kill container: CONTAINER: No such container: CONTAINER
+[김지수] [오전 3:24] 이런 거 안 떠 너는?
+[정지우] [오전 3:27] 아 그거 오류는 무시해도 돼 kill할게 없어서 그런거라 rm로 넘거가도 돼
+[김지수] [오전 3:27] 아하 어쩐지 아무것도 없더라
+[김지수] [오전 3:27] ㄱㅅㄱㅅ
+[김지수] [오전 3:27] 근데 이거 다시 빌드하는거 오래걸리네
+[정지우] [오전 3:30] 응응 맞아
+[정지우] [오전 3:30] 이거 db문제만 해결하면 될것 같은데
+[정지우] [오전 3:30] 음......
+[김지수] [오전 3:30] mysqli_fetch_array(mysqli_query($connect, $query)); 중에서 뭐가 문제인지는 알아냈어?
+[김지수] [오전 3:31] $connect 문제인지, query 문제인지, mysqli_query 문제인지, mysqli_fetch_array 문제인지
+[김지수] [오전 3:31] db 문제이면 음… $connect에서 문제 생긴거야?
+[송민영] [오전 3:31] connect는 아닌거 같은데
+[송민영] [오전 3:32] mysqli_Fetch_array하니깐
+[송민영] [오전 3:32] 하고나서
+[송민영] [오전 3:32] 원소값 출력할려고 하니깐
+[송민영] [오전 3:32] 안나와서
+[송민영] [오전 3:32] 잘모르겠네욤
+[송민영] [오전 3:33] 그리고 새로 포트 연결해서 하니깐
+[송민영] [오전 3:33] php_network_Getaddresses:getaddrinfo failed라는 에러가떠서
+[송민영] [오전 3:33] 이건 connect부분 문제가 맞는데
+[정지우] [오전 3:33] 그거는 포트 뭐로 했을때야?
+[송민영] [오전 3:33] 80으로 바꾸면 table이 생성이 안되는거 같아서
+[송민영] [오전 3:33] 3300인가
+[송민영] [오전 3:33] 그거
+[김나진] [오전 3:33] 3306
+[정지우] [오전 3:36] config.php 어떻게 했어? localhost로 해야하는거지?
+[정지우] [오전 3:37] 사진
+[정지우] [오전 3:37] 나 docker-compose.yml에서 db쪽에 22210:80하는데 생성하긴 해
+[송민영] [오전 3:38] table도 생성되었어?
+[송민영] [오전 3:39] 나호스트는 db로만했었어
+[정지우] [오전 3:41] 사진
+[정지우] [오전 3:41] 내부적으로 3306 쓰나..?
+[정지우] [오전 3:42] ❯ docker run -ti goofyadministrator_web bash
+root@2add20ff5d59:/var/www/html/problem# service mysql status
+ * MySQL is stopped.
+root@2add20ff5d59:/var/www/html/problem# service mysql start 
+ * Starting MySQL database server mysqld                                                                                                                                                                    No directory, logging in with HOME=/
+                                                                                                                                                                                                     [ OK ]
+root@2add20ff5d59:/var/www/html/problem# mysql
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 4
+Server version: 5.7.32-0ubuntu0.18.04.1 (Ubuntu)
+
+Copyright (c) 2000, 2020, Oracle and/or its affiliates. All rights reserved.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| problem            |
+| sys                |
++--------------------+
+5 rows in set (0.00 sec)
+
+mysql> use problem;
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Database changed
+mysql> show tables;
++-------------------+
+| Tables_in_problem |
++-------------------+
+| user              |
++-------------------+
+1 row in set (0.00 sec)
+
+mysql> select * from user;
++-----------+------------+
+| id        | pw         |
++-----------+------------+
+| webmaster | sm6yn23ib9 |
++-----------+------------+
+1 row in set (0.00 sec)
+[송민영] [오전 3:44] 어
+[송민영] [오전 3:44] 그럼 되는건가?
+[정지우] [오전 3:44] 모르겠어..음..
+[정지우] [오전 3:50] config.php랑 index_process.php 보내볼래? index_process.php 처리가 잘 안되네..index.php는 되는데
+[정지우] [오전 3:52] config.php, index_process.php 코드 좀 보내줘..
+[김지수] [오전 3:52] 삭제 됐어?
+[송민영] [오전 3:53] <?php
+  include "./config.php";
+ 
+    #$connect = mysqli_connect($host, $username, $password, $name);
+    $connect = mysqli_connect(DB_HOST, $username, $password, $name);
+ 
+     
+    if (!$connect) {
+        echo "Error: " . mysqli_connect_error();
+        exit();
+    }
+    else{ echo "bbbbbbbbbbbb<br>"; }
+  ?>
+ 
+ 
+  <html>
+  <head>
+  <title>Goofy Administrator</title>
+  <style type="text/css">
+  body { background:white; color:black; font-size:10pt; }
+  input { background:silver; color:black; font-size:9pt; }
+  </style>
+  </head>
+  <body><br><br>
+  <center>
+  <form method=get action=index_process.php>
+  <table border=0 align=center cellpadding=10 cellspacing=0>
+  <tr><td colspan=2 align=center><h1>Goofy Administrator</h1></td></tr>
+  <tr><td align=center>id : <input name='id' size=30></td><td></td></tr>
+  <tr><td align=center>pw : <input name='pw' size=30></td><td><input type=submit></td></tr>
+  </form>
+  <?php
+  if(preg_match('/prob|_|\.|\(\)/i', $_GET['pw'])) exit("No Hack ~_~");
+ 
+  $query = "select id from user where id='{$_GET['id']}' and pw='{$_GET['pw']}'";
+  $result = mysqli_fetch_array(mysqli_query($connect, $query));
+
+  if($result===null){
+    echo "Oh.... nonono...<br>Now stand back and let me tell you my tale of woe.
+    <h2>Don't be a webm45ter</h2>";
+  }
+  else {echo "<h2>Hello webmaster!</h2>";
+ 
+  $_GET['pw']=addslashes($_GET['pw']);
+  $query="select id, pw from user where id='{$_GET['id']}' and pw='{$_GET['pw']}'";
+  $result=mysqli_fetch_array(mysqli_query($connect, $query));
+  if($result){
+   if($result['id'] == $_GET['id'] && ($result['pw']) && ($result['pw'] == $_GET['pw']))
+      echo "POX{v4cc1ne_p4ssw0rd_9et_daedanhae}";
+  }
+}
+ 
+  ?>
+  </center>
+  </body>
+  </html> 
+[정지우] [오전 3:53] 아니 막 고치다보니까 안되는건가 해서
+[송민영] [오전 3:53] <?php
+//php versioin: 7.4.7
+/*
+DB_HOST
+DB_USERNAME
+DB_PASSWORD
+DB_NAME
+*/
+$host = 'db';
+#define('DB_HOST', getenv('DB_HOST'));
+ 
+$username = 'master';
+$password = 'imgoofy';
+$name = 'problem';
+ 
+?> 
+[정지우] [오전 4:08] 근데 우분투환경에서는 어떻게 했어..? 로컬에서 그냥 mysql에 만들어주면 된건가?
+[김지수] [오전 4:15] 이거처럼 수정하면 Php.ini도 수정가능한가?
+[정지우] [오전 4:17] 응응 그치 넣은걸로 바꿔주면 되니까
+[정지우] [오전 4:19] https://noanswercode.tistory.com/1
+[정지우] [오전 4:20] 사진
+[정지우] [오전 4:21] 기본적으로 열려있는게 80이라 컨테이너 내부 포트는 80으로 하거나 여기서 수정해야 할듯?
+[정지우] [오전 4:25] https://hatpub.tistory.com/112
+[정지우] [오전 4:33] https://hub.docker.com/r/mattrayner/lamp/#introduction
+[정지우] [오전 4:42] https://blog.leedoing.com/186
+[정지우] [오전 4:43] 이걸 보고 도커만들기 했는데..왜안되지
+[송민영] [오전 4:49] 나 처음 할때 그거보고 했는데
+[송민영] [오전 4:49] 안됐어...
+[정지우] [오전 5:01] 사진
+[정지우] [오전 5:02] 왜 계속 안될까..php-mysqli만 있으면 될줄 알았는데
+[김지수] [오전 5:03] 사진
+[김지수] [오전 5:03] 에러 있긴 한데 webmaster 출력되긴 함
+[정지우] [오전 5:03] 오???????????????
+[김나진] [오전 5:03] 와...
+[김지수] [오전 5:04] 저 에러들은 내가 실험한다고 막 써서 그렇지 수정하면 나아질걸
+[김지수] [오전 5:04] 내가 뭐가 문제라고 생각했냐면
+[송민영] [오전 5:04] 와
+[정지우] [오전 5:04] 사진
+[김지수] [오전 5:04] mysqli
+[김지수] [오전 5:05] 여기 확인삼아 살펴봤는데 mysqli_query가 boolean 값이 출력되어서 mysqli_fetch_array가 안 되는 거더라고
+[김지수] [오전 5:06] 그래서 fetch_array 빼고 그냥 mysqli_query만 쓰니까 출력되더라
+[김지수] [오전 5:07] 한 번 수정해봐!
+[김나진] [오전 5:07] 응
+[정지우] [오전 5:10] 생각해보니까 db.sql을 내가 수정했었네
+[정지우] [오전 5:10] create database problem;
+use problem;
+create table user( no int(11) not null auto_increment, id varchar(20) not null, pw varchar(20) null, primary key(no));
+insert into user(id, pw) values('webmaster', 'sm6yn23ib9');
+/*lock table user write;*/
+[정지우] [오전 5:10] 이거에서
+[정지우] [오전 5:11] create database problem;
+use problem;
+/*create table user( no int(11) not null auto_increment, id varchar(20) not null, pw varchar(20) null, primary key(no)); */
+create table user ( id varchar(10), pw varchar(10));
+insert into user(id, pw) values('webmaster', 'sm6yn23ib9');
+lock table user write;
+[정지우] [오전 5:11] 계속 이렇게 했었는데 나는 테이블 생성이 잘 됐었어
+[김지수] [오전 5:15] 아니다 이거 이상하게 입력해도 hello webmaster 출력되네 다시 해봐야겠다...
+[정지우] [오전 5:16] ㅠㅠ
+[김지수] [오전 5:16] 일단 이걸로 수정하고 다시...
+[김나진] [오전 5:30] 사진
+[김나진] [오전 5:31] 사진
+[정지우] [오전 5:32] ???왜 다르지
+[김나진] [오전 5:32] 사진
+[김지수] [오전 5:33] 삭제된 메시지입니다.
+[김나진] [오전 5:33] 사진
+[김나진] [오전 5:33] 음 내것만 이상한가보네
+[김지수] [오전 5:33] 지우가 준 코드 똑같이 복붙했는데 테이블 있어
+[김나진] [오전 5:35] 나중에 'or id='webmaster' and length(pw)=10%23
+[김나진] [오전 5:35] 이런거 못 쓸까봐 10 을 30으로 바꿨어
+[김나진] [오전 5:37] yml이 좀 다른가?
+[김지수] [오전 5:37] 너가 보낸 거에서 db는 전혀 안 건드렸는데
+[김지수] [오전 5:37] 흠
+[정지우] [오전 5:37] version: '3'
+services:
+    web:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        container_name: goofy-web
+        depends_on:
+            - db
+        volumes:
+            - ./prob:/var/www/html/problem/
+        ports:
+            - "22210:80"
+#        environment:
+#            DB_HOST: db 
+#            DB_NAME: problem 
+#            DB_USER: master
+#            DB_PASSWORD: imgoofy 
+#        restart: unless-stopped
+    db:
+        container_name: goofy-db
+        image: mysql:5.7
+        command: --default-authentication-plugin=mysql_native_password 
+        restart: always
+        environment:
+            MYSQL_ROOT_PASSWORD: root
+            MYSQL_DATABASE: problem
+            MYSQL_USER: master
+            MYSQL_PASSWORD: imgoofy
+        ports:
+           - "22213:3306"
+        volumes:
+            - "./goofy-db/:/docker-entrypoint-initdb.d/"
+[김나진] [오전 5:39] 포트가 달랐군
+[김지수] [오전 5:39] 아하
+[김지수] [오전 5:40] if ($result === FALSE) 이렇게 비교해야 돼
+[김지수] [오전 5:40] $result===null 하면 안 됨
+[김나진] [오전 5:40] 아하
+[김지수] [오전 5:40] <?php
+
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
+include "./config.php";
+
+    $connect = mysqli_connect($host, $username, $password, $name);
+#    $connect = mysqli_connect(DB_HOST, $username, $password, $name);
+
+    if(mysqli_connect_errno()) {
+        echo "Failed to connect to MySQL: " . mysqli_connect_error();
+    }
+    else{ echo "aaaaaa<br>"; }
+
+    if (!$connect) {
+        echo "Error: " . mysqli_connect_error();
+        exit();
+    }
+    else{ echo "bbbbbbbbbbbb<br>"; }
+  ?>
+
+  <html>
+  <head>
+  <title>Goofy Administrator</title>
+  <style type="text/css">
+  body { background:white; color:black; font-size:10pt; }
+  input { background:silver; color:black; font-size:9pt; }
+  </style>
+  </head>
+  <body><br><br>
+  <center>
+  <form method=get action=index_process.php>
+  <table border=0 align=center cellpadding=10 cellspacing=0>
+  <tr><td colspan=2 align=center><h1>Goofy Administrator</h1></td></tr>
+  <tr><td align=center>id : <input name='id' size=30></td><td></td></tr>
+  <tr><td align=center>pw : <input name='pw' size=30></td><td><input type=submit></td></tr>
+  </form>
+  <?php
+  if(preg_match('/prob|_|\.|\(\)/i', $_GET['pw'])) exit("No Hack ~_~");
+
+  $query = "select id from user where id='{$_GET['id']}' and pw='{$_GET['pw']}'";
+  
+  //if (mysqli_query($connect, $query)) echo "mysqli_query ok".PHP_EOL;
+  //else echo "mysqli_query error".PHP_EOL;
+
+  $result = mysqli_query($connect, $query);
+  if ( $result === TRUE ) {
+    echo "조회된 행의 수 : ".mysqli_num_rows($result)."<br />";
+
+    while ($row = mysqli_fetch_assoc($result)) {
+        printf ("%s<br />", $row["id"]);
+    }
+
+    // 결과 해제
+    mysqli_free_result($result);
+
+  } else {
+    echo "Error : ".mysqli_error($connect);
+  }
+
+  if($result===FALSE){
+    echo "Oh.... nonono...<br>Now stand back and let me tell you my tale of woe.
+    <h2>Don't be a webm45ter</h2>";
+  }
+  else {echo "<h2>Hello webmaster!</h2>";
+
+  $_GET['pw']=addslashes($_GET['pw']);
+  $query="select id, pw from user where id='{$_GET['id']}' and pw='{$_GET['pw']}'";
+
+  $result = mysqli_query($connect, $query);
+
+  if($result)
+    if($result['id'] == $_GET['id'] && ($result['pw']) && ($result['pw'] == $_GET['pw']))
+    echo "POX{v4cc1ne_p4ssw0rd_9et_daedanhae}";
+  }
+
+  ?>
+  </center>
+  </body>
+  </html>
+[김지수] [오전 5:41] 사진
+[김지수] [오전 5:41] 그럼 이렇게 출력되는데 왜 테이블이 없다는지 몰겟네
+[정지우] [오전 5:42] 이렇게 하니까
+[정지우] [오전 5:43] 사진
+[정지우] [오전 5:43] 사진
+[김지수] [오전 5:43] 엥… 뭐지
+[김나진] [오전 5:43] 앞에 ! 붙이는게 나을까요
+[정지우] [오전 5:43] 뭐지...
+[김지수] [오전 5:43] 그 fetch_array는 그대로 쓰고?
+[김지수] [오전 5:44] 상관 없지 않을까...?
+[김나진] [오전 5:44] 네
+[송민영] [오전 5:46] 포트 3306으로 하니깐 계속 에러뜨는데...
+[김지수] [오전 5:47] 지우가 80으로 하라고 하지 않았어 아까?
+[김나진] [오전 5:48] 사진
+[김나진] [오전 5:49] 테이블이 없고 웹에서는 mysql 연결이 안 된다네요
+[김지수] [오전 5:49] 오잉...
+[김나진] [오전 5:50] db:에서 포트를 22213:80 으로 했어요
+[정지우] [오전 5:50] 22210:80, 22210:3306 둘다 됐었어
+[정지우] [오전 5:50] 아 맞아 22213:3306
+[김나진] [오전 5:50] 3306이에요?
+[정지우] [오전 5:50] 둘다 됐어 마지막으로 보여준건 3306
+[정지우] [오전 5:52] 사진
+[김나진] [오전 5:53] 주석을 빼먹었던...
+[김지수] [오전 5:56] lower_case_table_names 1로 준 적 있어?
+[김나진] [오전 5:56]  ...그게 뭐야?
+[김지수] [오전 5:56] 아 없어? 아까 본 거 같기도 해서 물어봤는데
+[김지수] [오전 5:57] db 관련 설정이야!
+[김나진] [오전 5:57] yml?
+[김지수] [오전 5:58] 글쎄 어디서 봤는지 기억 안 나...
+[김지수] [오전 5:59] 내가 잘못 본걸수도 있고
+[김나진] [오전 6:00] 사진
+[김지수] [오전 6:00] 오옹…
+[김나진] [오전 6:00] 아무렇게나 줬더니 헬로 뜬다
+[김지수] [오전 6:01] <?php
+
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
+include "./config.php";
+
+    $connect = mysqli_connect($host, $username, $password, $name);
+#    $connect = mysqli_connect(DB_HOST, $username, $password, $name);
+
+    if(mysqli_connect_errno()) {
+        echo "Failed to connect to MySQL: " . mysqli_connect_error();
+    }
+    else{ echo "aaaaaa<br>"; }
+
+    if (!$connect) {
+        echo "Error: " . mysqli_connect_error();
+        exit();
+    }
+    else{ echo "bbbbbbbbbbbb<br>"; }
+  ?>
+
+  <html>
+  <head>
+  <title>Goofy Administrator</title>
+  <style type="text/css">
+  body { background:white; color:black; font-size:10pt; }
+  input { background:silver; color:black; font-size:9pt; }
+  </style>
+  </head>
+  <body><br><br>
+  <center>
+  <form method=get action=index_process.php>
+  <table border=0 align=center cellpadding=10 cellspacing=0>
+  <tr><td colspan=2 align=center><h1>Goofy Administrator</h1></td></tr>
+  <tr><td align=center>id : <input name='id' size=30></td><td></td></tr>
+  <tr><td align=center>pw : <input name='pw' size=30></td><td><input type=submit></td></tr>
+  </form>
+  <?php
+  if(preg_match('/prob|_|\.|\(\)/i', $_GET['pw'])) exit("No Hack ~_~");
+
+  $query = "select id from user where id='{$_GET['id']}' and pw='{$_GET['pw']}'";
+  
+  //if (mysqli_query($connect, $query)) echo "mysqli_query ok".PHP_EOL;
+  //else echo "mysqli_query error".PHP_EOL;
+
+//  $result = mysqli_fetch_array(mysqli_query($connect, $query));
+  $result = mysqli_query($connect, $query);
+  echo "TEMPORARY";
+  if ( $result === TRUE ) {
+    echo "조회된 행의 수 : ".mysqli_num_rows($result)."<br />";
+
+    while ($row = mysqli_fetch_assoc($result)) {
+        printf ("%s<br />", $row["id"]);
+    }
+
+    // 결과 해제
+    mysqli_free_result($result);
+
+  } else {
+    echo "Error : ".mysqli_error($connect);
+  }
+
+	$result = mysqli_query($connect, $query);
+
+  if($result===FALSE) {
+    echo "Oh.... nonono...<br>Now stand back and let me tell you my tale of woe.
+    <h2>Don't be a webm45ter</h2>";
+  }
+  else {echo "<h2>Hello webmaster!</h2>";
+
+  $_GET['pw']=addslashes($_GET['pw']);
+  $query="select id, pw from user where id='{$_GET['id']}' and pw='{$_GET['pw']}'";
+
+  $result = mysqli_query($connect, $query);
+
+  if($result)
+    if($result['id'] == $_GET['id'] && ($result['pw']) && ($result['pw'] == $_GET['pw']))
+    echo "POX{v4cc1ne_p4ssw0rd_9et_daedanhae}";
+  }
+
+  ?>
+  </center>
+  </body>
+  </html>
+[김지수] [오전 6:01] 이렇게 수정하면 hello는 안 뜰걸...
+[김지수] [오전 6:01] 뭔가 수정했는데 기억이 안 나...
+[정지우] [오전 6:01] 사진
+[정지우] [오전 6:01] 문제는 정답을 주면 이렇게 떠
+[김지수] [오전 6:02] 사진
+[김지수] [오전 6:02] 나는 이렇게 뜨는데
+[김지수] [오전 6:02] ㅋㅋ...
+[김나진] [오전 6:02] 사진
+[김나진] [오전 6:02] 텅 빈 테이블...
+[김지수] [오전 6:05] 흐음… 나는 있긴 한데… 뭐가 다른 거지
+[정지우] [오전 6:06] config.php에서 $host='db' 이렇게 했어? 
+[김지수] [오전 6:06] 내 생각엔 Error: table ~ 어쩌구는 내가 display_error 추가해서 보이는거 같아 그래서 그거 빼면 나랑 똑같은 상황인 거 같은데
+[김지수] [오전 6:07] 삭제된 메시지입니다.
+[김지수] [오전 6:07] 사진
+[정지우] [오전 6:07] 응응 그치
+[김지수] [오전 6:08] 그치 근데 if 문에서 else가 뜬걸로 봐선 mysqli_query 문제 같은데
+[김지수] [오전 6:08] 저거 고치면 잘 나오지 않을까?
+[김나진] [오전 6:08] 넵
+[김지수] [오전 6:09] https://usefull.tistory.com/162
+[김지수] [오전 6:09] 이거 보고 fetch_array에서 mysqli_query로 바꾼건데
+[김나진] [오전 6:19] 지우언니 테이블 생성 잘 돼요?
+[정지우] [오전 6:22] ❯ docker run -ti goofyadministrator_web bash
+root@291cd2fc6c1d:/var/www/html/problem# service mysql start
+ * Starting MySQL database server mysqld                                                         No directory, logging in with HOME=/
+                                                                                          [ OK ]
+root@291cd2fc6c1d:/var/www/html/problem# mysql 
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 4
+Server version: 5.7.32-0ubuntu0.18.04.1 (Ubuntu)
+
+Copyright (c) 2000, 2020, Oracle and/or its affiliates. All rights reserved.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| problem            |
+| sys                |
++--------------------+
+5 rows in set (0.00 sec)
+
+mysql> use problem;
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Database changed
+mysql> show tables;
++-------------------+
+| Tables_in_problem |
++-------------------+
+| user              |
++-------------------+
+1 row in set (0.00 sec)
+
+mysql> select * from user;
++-----------+------------+
+| id        | pw         |
++-----------+------------+
+| webmaster | sm6yn23ib9 |
++-----------+------------+
+1 row in set (0.00 sec)
+[김나진] [오전 6:28] 사진
+[김나진] [오전 6:28] 잘 되네요
+[김나진] [오전 6:28] 하하
+[정지우] [오전 6:44] 오 그치 
+[김나진] [오전 6:45] 그러면 코드 문제려나요
+[김지수] [오전 6:58] 사진
+[김지수] [오전 6:58] 아직도 저렇게 뜨는데 해결한 사람 있어…?
+[김지수] [오전 6:58] 왜 Table 'problem.user' 가 존재하지 않을가
+[김지수] [오전 6:59] OTL
+[송민영] [오전 7:11] 죄송하지만 속이 너무 안좋아서 그런데 자러가봐도 될까요...ㅠㅠ
+[김나진] [오전 7:14] 지금 기현상이 벌어지고 있어요
+[김지수] [오전 7:14] 응!
+[김지수] [오전 7:15] 얼른 자~~
+[김지수] [오전 7:15] ??
+[김나진] [오전 7:15] mysql이랑 연결 됐다가 안 됐다가 그래요
+[송민영] [오전 7:15] 네네 감사합니다ㅠㅠ
+[김지수] [오전 7:15] ㅋㅋㅋㅋㅋㅋㅋㅋㅋ
+[김지수] [오전 7:15] 머야ㅋㅋㅋㅋ
+[김나진] [오전 7:15] 맞는걸 입력해도 반응이 없어
+[김지수] [오전 7:16] 이런…
+[김지수] [오전 7:16] 반응할 때도 있고?
+[김나진] [오전 7:16] 반응x
+[김지수] [오전 7:16] 흐음 그럼 나처럼 저 table doesn't exit 뜬 건 아니고?
+[김나진] [오전 7:16] 노노랑 헬로 둘 다 안나와
+[김지수] [오전 7:17] 오옹...
+[김지수] [오전 7:17] 뭐지...
+[김지수] [오전 7:18] 해보고 계속 안 되면 다시 알림ㄱㄱ
+[김지수] [오전 7:19] 아침 조지고 와야지
+[김지수] [오전 7:19] 배고프다
+[김나진] [오전 7:40] 슬슬 알바 갈 준비를 해야해서...
+[김나진] [오전 7:40] 이만 갈게..
+[정지우] [오전 8:17] 이거....
+[김지수] [오전 8:21] 아이구 다들 고생이야... 밤새다가 알바하고...
+[정지우] [오전 8:36] 그러니까 너무 고생했네
+[정지우] [오후 8:20] 삭제된 메시지입니다.
+[정지우] [오후 8:21] 문제 만드느라 잠도 못자고 너무너무 고생많았어! 👍대회까지 얼마 안남아서 내가 막 예민하게 했으면 미안하구ㅠㅠ
+문제가 완성이 안돼서 아쉽게도 대회 문제에 포함은 안됐어..다른 엄청 쉬운 문제로 대체됐으니까 걱정은 안 해도 되고 내년 POX 때 시간 넉넉하게 잡고 완성도 있게 만들어서 내보자!!! 차기 학술부장 화이팅~~✊
+[송민영] [오후 9:17] 아쉽네ㅠㅠ
+[송민영] [오후 9:18] 다들 고생많았어요...!
+[김지수] [오후 10:24] 이모티콘
+[김지수] [오후 10:24] 고생 많았어~
+[김나진] [오후 11:09] 고생 많으셨어요

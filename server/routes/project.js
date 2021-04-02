@@ -84,21 +84,24 @@ router.post("/uploadfiles", (req, res, next) => {
             //pythonPath: '/usr/bin/python3' //파이썬 폴더
         };
         
-        /*var test = new PythonShell('/ML.py', options); 
+        var test = new PythonShell('/ML.py', options); 
         test.on('message', function (message){
-            console.log(message);
-        })*/
+            console.log(err.message);
+        })
+        /*
+        console.log('dirname: ' + __dirname);
         PythonShell.run('/ML.py', options, function(err,results){
             if(err){
+                console.log('err');
+                console.log(err);
                 console.log(err.message);
             }
             else{
+                console.log('success');
                 console.log(results);
             }
         })
-
-
-
+        */
         return res.json({ success: true, filePath: res.req.file.path, fileName: res.req.file.filename })
     })
 
